@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ .Permalink }}/list/list.css">
+    <link rel="stylesheet" href="{{ .Permalink }}/partials/header.css">
+    <title>Vincent's Blog</title>
+</head>
+<body>
+
+    {{ partial "header.html"}}
+    <br>
+    
+    {{block "main" .}}
+    {{end}}
+
+</body>
+</html>

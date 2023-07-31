@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #1f242d;
+  padding: 16px 32px;
+  border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+}
+nav .nav-container {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container h1 {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+nav .nav-container .menu {
+  display: none;
+  justify-content: flex-end;
+  margin: 0 -16px;
+}
+nav .nav-container .menu a {
+  color: #FFF;
+  margin: 0 16px;
+  font-weight: 600;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+  text-transform: uppercase;
+}
+nav .nav-container .menu a.is-active, nav .nav-container .menu a:hover {
+  background-color: rgba(225, 215, 225, 0.3);
+}
+nav .nav-container .hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+nav .nav-container .hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #EEEEEE;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+nav .nav-container .hamburger.is-active span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+}
+nav .nav-container .hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+}
+nav .nav-container .hamburger.is-active span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+nav .nav-container .hamburger.is-active:hover span {
+  background-color: #7FC0E6;
+}/*# sourceMappingURL=header.css.map */
