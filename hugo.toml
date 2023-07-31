@@ -4,4 +4,5 @@ title = 'My New Hugo Site'
 theme = 'ga-hugo-theme'
 tags = []
 
-
+[permalinks]
+  home = "/index.html"

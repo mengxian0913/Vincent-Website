@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+$dark: #212121;
+$primary: #8c38ff;
+$babyblue: #7FC0E6;
+$card: rgba(99, 145, 158, 0.77);
+$nav_color: rgba(225, 215, 225, 0.3);
+$light: #EEEEEE;
+$bg-color: #1f242d;
+$second-bg-color: #323946;
+$text_color: #FFF;
+$greenblue: rgba(12, 70, 103, 0.644);
+// $progress: rgba(58, 120, 168, 0.644);
+$progress: rgba(73, 175, 231, 0.777);
+$mobile_font_size: 16px;
+$circle_color: rgb(27, 73, 88);
+ 
+
+nav{
+    // height: 9vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $bg-color;
+    padding: 16px 32px;
+    border-bottom: 3px $greenblue solid;
+    backdrop-filter: blur(0.5px);
+
+    
+    .nav-container{
+        max-width: 1280px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h1{
+            // font-size: 28px;
+            font-size:  20px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    
+        .menu{
+            display: none;
+            justify-content: flex-end;
+            margin: 0 -16px;
+    
+            a{
+                color: #FFF;
+                margin: 0 16px;
+                font-weight: 600;
+                transition: .4s;
+                padding: 8px 16px;
+                border-radius: 99px;
+                text-transform: uppercase;
+                &.is-active, &:hover{
+                    background-color: rgba(225, 215, 225, 0.3);
+                }
+            }
+        }
+
+        .hamburger{
+            display: block;
+            position: relative;
+            z-index: 1;
+            user-select: none;
+            appearance: none;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+
+            span{
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+    
+                background-color: $light;
+                border-radius: 6px;
+                z-index: 1;
+                transform-origin: 0 0;
+                transition: .4s;
+            }
+    
+            &.is-active span:nth-child(1){
+                transform: translate(0px, -2px) rotate(45deg);
+            }
+    
+            &.is-active span:nth-child(2){
+                opacity: 0;
+                transform: translateX(15px);
+            }
+    
+            &.is-active span:nth-child(3){
+                transform: translate(-3px, 3px) rotate(-45deg);
+            }
+    
+            &.is-active:hover span{
+                background-color: $babyblue;
+            }
+        }
+
+    }
+}

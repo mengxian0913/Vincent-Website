@@ -28,11 +28,11 @@ html{
     color: #FFF;
 }
 
-
 .posts-container{
-    
+    position: absolute;
+    top: 10vh;
     width: 100vw;
-    height: auto;
+    // height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,3 +77,4 @@ html{
         }
     }
 }
+

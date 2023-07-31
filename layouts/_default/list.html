@@ -1,5 +1,15 @@
-{{ define "main" }}
-     <div class="posts-container"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
+     <title>POSTS</title>
+</head>
+<body>
+     {{ partial "header.html" . }}
+
+     <div class="posts-container">
           <ul>
                {{ range .Pages }}
                     <li>
@@ -10,5 +20,7 @@
                     </li>
                {{ end }}
           </ul>
-     </div>     
-{{end}}
+     </div>
+
+</body>
+</html>
