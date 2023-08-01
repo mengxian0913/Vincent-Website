@@ -414,7 +414,7 @@ nav{
                 .circular-progress{
                     &::before{
                         background-color: rgb(27, 73, 88);
-                        background-image: url(../icon/webdesign.png);
+                        background-image: url("{{ .Site.BaseURL }}/images/webdesign.png");
                         background-attachment: scroll;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -428,7 +428,7 @@ nav{
                 .circular-progress{
                     &::before{
                         background-color: $circle_color;
-                        background-image: url(../icon/deep-learning.png);
+                        background-image: url("{{ .Site.BaseURL }}/images/deep-learning.png");
                         background-attachment: scroll;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -442,7 +442,7 @@ nav{
                 .circular-progress{
                     &::before{
                         background-color: rgb(27, 73, 88);
-                        background-image: url(../icon/badminton-field.png);
+                        background-image: url(../images/badminton-field.png);
                         background-attachment: scroll;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -456,7 +456,6 @@ nav{
     }
 
 }
-
 
 .sec3{
     width: 100vw;

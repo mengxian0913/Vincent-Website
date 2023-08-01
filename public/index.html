@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://example.org//index/index.css">
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/index/index.css">
+    
+
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      
-     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
      
-     <link rel="stylesheet" href="http://example.org//slide/styles.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/slide/slide.css">
     <title>MengXian's Blog</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
         <section class="sec1" id="home">
                 <div class="home">
                     <div class="ph-container">
-                        <img src="http://example.org//images/me.jpg" alt="我的大頭照">                        
+                        <img src="https://vincent-s-blog.web.app//images/IMG_0878 2.JPG" alt="我的大頭照">                        
                     </div>
                     <h2>
                         Here is Vincent Yang
@@ -68,7 +70,7 @@
             </div>
             <div id="posts-section">
                 <h1>Welcome to my blog!</h1>
-                <a href="http://example.org/posts">Go to Blog</a>
+                <a href="https://vincent-s-blog.web.app/posts">Go to Blog</a>
             </div>
         </section>
 
@@ -315,10 +317,10 @@
         <section class="sec5">
             <footer>
                 <div class="follow">
-                    <a href="https://www.instagram.com/meng_337/"><img src="http://example.org//icon/Instagram_icon-icons.com_66804.ico" alt="instagram-logo"></a>
-                    <a href="https://github.com/mengxian0913"><img src="http://example.org//icon/github-logo_icon-icons.com_73546.ico" alt="github-logo"></a>
-                    <a href = "mailto:mengxian0913@gmail.com"><img src="http://example.org//icon/4202011emailgmaillogomailsocialsocialmedia-115677_115624.ico" alt="mail-logo"></a>
-                    <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><img src="http://example.org//icon/Youtube_icon-icons.com_66802.ico" alt="youtube-logo"></a>
+                    <a href="https://www.instagram.com/meng_337/"><img src="https://vincent-s-blog.web.app//icon/Instagram_icon-icons.com_66804.ico" alt="instagram-logo"></a>
+                    <a href="https://github.com/mengxian0913"><img src="https://vincent-s-blog.web.app//icon/github-logo_icon-icons.com_73546.ico" alt="github-logo"></a>
+                    <a href = "mailto:mengxian0913@gmail.com"><img src="https://vincent-s-blog.web.app//icon/4202011emailgmaillogomailsocialsocialmedia-115677_115624.ico" alt="mail-logo"></a>
+                    <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><img src="https://vincent-s-blog.web.app//icon/Youtube_icon-icons.com_66802.ico" alt="youtube-logo"></a>
                     
                 </div>
             </footer>
@@ -334,11 +336,37 @@
 
     </div>
 </body>
-    <script src="http://example.org//js/index.js"></script>
+    <script src="https://vincent-s-blog.web.app/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>      
 
     
-    <script src="http://example.org//js/slide.js"></script>
+    <script src="https://vincent-s-blog.web.app/js/slide.js"></script>
+
+
+
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+        
+        
+      
+        
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyAMwCptTPCw_T45MzkpEdA2A4j2n1l-UN8",
+          authDomain: "vincent-s-blog.firebaseapp.com",
+          projectId: "vincent-s-blog",
+          storageBucket: "vincent-s-blog.appspot.com",
+          messagingSenderId: "783012555676",
+          appId: "1:783012555676:web:d9e0bf24824f2987e67659",
+          measurementId: "G-WKMFMC1P2H"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 
 </html>

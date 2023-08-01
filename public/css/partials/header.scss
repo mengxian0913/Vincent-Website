@@ -33,11 +33,15 @@ nav{
         justify-content: space-between;
         align-items: center;
         
-        h1{
-            font-size:  20px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            
+        a{
+            span{
+                font-size:  18px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $text_color;
+            }
         }
     
         .hamburger{
@@ -94,7 +98,7 @@ nav{
     position: fixed;
     z-index: 90;
     top: -100vh;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     background-color: $dark;
     border-bottom: #EEEEEE .5px solid;
@@ -102,7 +106,7 @@ nav{
     .menu2{
         padding: 20px;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         position: relative;
         top: 27%;
         left: 50%;
@@ -116,29 +120,28 @@ nav{
 
         .menu2-container{
             width: 100vw;
-            height: 100vh;
+            height: auto;
             padding: 20px;
-            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: flex-start;
+            // align-items: flex-start;
+
             .box{
-                margin-bottom: 20px;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-    
-                height: auto;
-                width: 100%;
+                width: fit-content;
+                height: fit-content;
+                margin: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
     
                 a{
                     text-transform: uppercase;
-                    padding: 0 10px;
                     color: #FFF;
                     font-weight: 600; 
-                    font-size: 20px;
+                    font-size: 15px;
                     transition: .4s;
-                    padding: 8px 16px;
+                    padding: 4px 12px;
                     border-radius: 99px;
                     
                     &.is-active, &:hover{
