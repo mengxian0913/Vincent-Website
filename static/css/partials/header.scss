@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 $dark: #212121;
-$primary: #8c38ff;
-$babyblue: #7FC0E6;
-$card: rgba(99, 145, 158, 0.77);
 $nav_color: rgba(225, 215, 225, 0.3);
 $light: #EEEEEE;
 $bg-color: #1f242d;
 $second-bg-color: #323946;
 $text_color: #FFF;
 $greenblue: rgba(12, 70, 103, 0.644);
-// $progress: rgba(58, 120, 168, 0.644);
-$progress: rgba(73, 175, 231, 0.777);
-$mobile_font_size: 16px;
-$circle_color: rgb(27, 73, 88);
+$babyblue: #7FC0E6;
+
  
 
 nav{
@@ -34,20 +29,23 @@ nav{
         height: auto;
         margin: 0 auto;
 
-        display: flex;
+        display: flex;  
         justify-content: space-between;
         align-items: center;
         
-        h1{
-            // font-size: 28px;
-            font-size:  20px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            
+        a{
+            span{
+                font-size:  18px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $text_color;
+            }
         }
     
         .hamburger{
-            padding: 20px;
+            padding: 2px;
             display: block;
             position: relative;
             z-index: 1;
@@ -100,45 +98,61 @@ nav{
     position: fixed;
     z-index: 90;
     top: -100vh;
-    height: 50vh;
+    height: 90vh;
     width: 100vw;
     background-color: $dark;
     border-bottom: #EEEEEE .5px solid;
 
     .menu2{
+        padding: 20px;
         width: 100%;
-        height: auto;
+        height: 100%;
         position: relative;
-        top: 30%;
+        top: 27%;
         left: 50%;
         transform: translate(-50%, -25%);
-        .box{
-            margin-bottom: 20px;
-            &:last-child{
-                margin-bottom: 0;
-            }
 
+        h1{
+            font-size: 20px;
+            text-transform: uppercase;
+            border-bottom: #FFF solid 1.5px;
+        }
+
+        .menu2-container{
+            width: 100vw;
             height: auto;
-            width: 100%;
+            padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
+            // justify-content: flex-start;
+            // align-items: flex-start;
 
-            a{
-                text-transform: uppercase;
-                padding: 0 10px;
-                color: #FFF;
-                font-weight: 600; 
-                font-size: 20px;
-                transition: .4s;
-                padding: 8px 16px;
-                border-radius: 99px;
-                
-                &.is-active, &:hover{
-                    background-color: rgba(25, 134, 193, 0.687);
+            .box{
+                width: fit-content;
+                height: fit-content;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                a{
+                    text-transform: uppercase;
+                    color: #FFF;
+                    font-weight: 600; 
+                    font-size: 15px;
+                    transition: .4s;
+                    padding: 4px 12px;
+                    border-radius: 99px;
+                    
+                    &.is-active, &:hover{
+                        background-color: rgba(25, 134, 193, 0.687);
+                    }
                 }
             }
+
         }
+
+        
     }
 
     &.is-active{

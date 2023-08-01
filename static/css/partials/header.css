@@ -20,14 +20,15 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
 }
-nav .nav-container h1 {
-  font-size: 20px;
+nav .nav-container a span {
+  font-size: 18px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #FFF;
 }
 nav .nav-container .hamburger {
-  padding: 20px;
+  padding: 2px;
   display: block;
   position: relative;
   z-index: 1;
@@ -73,41 +74,52 @@ nav .nav-container .hamburger.is-active:hover span {
   position: fixed;
   z-index: 90;
   top: -100vh;
-  height: 50vh;
+  height: 90vh;
   width: 100vw;
   background-color: #212121;
   border-bottom: #EEEEEE 0.5px solid;
 }
 .nav2-container .menu2 {
+  padding: 20px;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
-  top: 30%;
+  top: 27%;
   left: 50%;
   transform: translate(-50%, -25%);
 }
-.nav2-container .menu2 .box {
-  margin-bottom: 20px;
+.nav2-container .menu2 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: #FFF solid 1.5px;
+}
+.nav2-container .menu2 .menu2-container {
+  width: 100vw;
   height: auto;
-  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav2-container .menu2 .menu2-container .box {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav2-container .menu2 .box:last-child {
-  margin-bottom: 0;
-}
-.nav2-container .menu2 .box a {
+.nav2-container .menu2 .menu2-container .box a {
   text-transform: uppercase;
-  padding: 0 10px;
   color: #FFF;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   transition: 0.4s;
-  padding: 8px 16px;
+  padding: 4px 12px;
   border-radius: 99px;
 }
-.nav2-container .menu2 .box a.is-active, .nav2-container .menu2 .box a:hover {
+.nav2-container .menu2 .menu2-container .box a.is-active, .nav2-container .menu2 .menu2-container .box a:hover {
   background-color: rgba(25, 134, 193, 0.687);
 }
 .nav2-container.is-active {

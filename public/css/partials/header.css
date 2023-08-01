@@ -5,7 +5,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: #FFF;
+  background-color: #1f242d;
   padding: 16px 32px;
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
   -webkit-backdrop-filter: blur(0.5px);
@@ -27,7 +27,7 @@ nav .nav-container h1 {
   text-transform: uppercase;
 }
 nav .nav-container .hamburger {
-  padding: 20px;
+  padding: 2px;
   display: block;
   position: relative;
   z-index: 1;
@@ -73,20 +73,32 @@ nav .nav-container .hamburger.is-active:hover span {
   position: fixed;
   z-index: 90;
   top: -100vh;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
   background-color: #212121;
   border-bottom: #EEEEEE 0.5px solid;
 }
 .nav2-container .menu2 {
+  padding: 20px;
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: relative;
-  top: 30%;
+  top: 27%;
   left: 50%;
   transform: translate(-50%, -25%);
 }
-.nav2-container .menu2 .box {
+.nav2-container .menu2 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: #FFF solid 1.5px;
+}
+.nav2-container .menu2 .menu2-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  margin: 10px;
+}
+.nav2-container .menu2 .menu2-container .box {
   margin-bottom: 20px;
   height: auto;
   width: 100%;
@@ -94,10 +106,10 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: center;
   align-items: center;
 }
-.nav2-container .menu2 .box:last-child {
+.nav2-container .menu2 .menu2-container .box:last-child {
   margin-bottom: 0;
 }
-.nav2-container .menu2 .box a {
+.nav2-container .menu2 .menu2-container .box a {
   text-transform: uppercase;
   padding: 0 10px;
   color: #FFF;
@@ -107,7 +119,7 @@ nav .nav-container .hamburger.is-active:hover span {
   padding: 8px 16px;
   border-radius: 99px;
 }
-.nav2-container .menu2 .box a.is-active, .nav2-container .menu2 .box a:hover {
+.nav2-container .menu2 .menu2-container .box a.is-active, .nav2-container .menu2 .menu2-container .box a:hover {
   background-color: rgba(25, 134, 193, 0.687);
 }
 .nav2-container.is-active {
