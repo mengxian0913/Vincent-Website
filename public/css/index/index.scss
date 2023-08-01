@@ -311,7 +311,47 @@ nav{
     }
 }
 
+
 .sec2{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .title{
+        h1{
+            padding: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+
+.sec3{
+    width: 100vw;
+    min-height: 70vh;
+
+    .title{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            padding: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+    
+}
+
+
+.sec4{
     background-color: $second-bg-color;
     width: 100vw;
     min-height: 50vh;
@@ -325,7 +365,7 @@ nav{
         text-transform: uppercase;
     }
     
-    .about{
+    .about{ 
         background-color: $second-bg-color;
         width: 100vw;
         height: auto;
@@ -444,44 +484,6 @@ nav{
 
 }
 
-.sec3{
-    width: 100vw;
-    min-height: 70vh;
-
-    .title{
-        width: 100vw;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h1{
-            padding: 20px;
-            text-transform: uppercase;
-        }
-    }
-
-    
-}
-
-
-.sec4{
-    width: 100vw;
-    min-height: 100vh;
-    background-color: $bg-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    .title{
-        h1{
-            padding: 20px;
-            text-transform: uppercase;
-        }
-    }
-
-}
-
 
 .sec5{
     min-height: 30vh;
@@ -572,12 +574,12 @@ nav{
         }
     }
 
-    .sec2 .about .about-me{
+    .sec4 .about .about-me{
         padding: 50px;
         font-size: 20px;
     }
 
-    .sec2 .about .skills .skill .circular-progress{
+    .sec4 .about .skills .skill .circular-progress{
         width: 200px;
         height: 200px;
 

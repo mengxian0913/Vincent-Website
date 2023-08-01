@@ -10,6 +10,7 @@ nav {
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
   -webkit-backdrop-filter: blur(0.5px);
           backdrop-filter: blur(0.5px);
+  transition: all 300ms ease-in-out;
 }
 nav .nav-container {
   max-width: 1280px;
@@ -125,4 +126,12 @@ nav .nav-container .hamburger.is-active:hover span {
 .nav2-container.is-active {
   top: 0;
   transform: translateY(65px);
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
 }/*# sourceMappingURL=header.css.map */

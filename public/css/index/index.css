@@ -240,116 +240,17 @@ nav .nav-container .hamburger.is-active:hover span {
   }
 }
 .sec2 {
-  background-color: #323946;
   width: 100vw;
-  min-height: 50vh;
+  min-height: 100vh;
+  background-color: #1f242d;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
-.sec2 .title {
+.sec2 .title h1 {
   padding: 20px;
   text-transform: uppercase;
-}
-.sec2 .about {
-  background-color: #323946;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.sec2 .about .about-me {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 550px;
-  font-size: 16px;
-  padding: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 7px;
-}
-.sec2 .about .skills {
-  max-width: 800px;
-  min-height: 50vh;
-  background-color: #323946;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  color: #212121;
-}
-.sec2 .about .skills .skill {
-  display: flex;
-  width: auto;
-  padding: 20px 0;
-  border-radius: 8px;
-  background: #323946;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 20px 0 20px;
-}
-.sec2 .about .skills .skill .circular-progress {
-  position: relative;
-  height: 160px;
-  width: 160px;
-  background-color: fuchsia;
-  border-radius: 50%;
-  background: conic-gradient(rgba(73, 175, 231, 0.777) 3.6deg, #ededed 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sec2 .about .skills .skill .circular-progress:hover .img {
-  display: none;
-}
-.sec2 .about .skills .skill .circular-progress .img {
-  position: absolute;
-  height: 135px;
-  width: 135px;
-  top: 13px;
-  left: 13px;
-  border-radius: 50%;
-  z-index: 2; /* 將圖片放在進度條底下 */
-  overflow: hidden; /* 確保圖片內容在圓形區域內 */
-  background-color: rgb(27, 73, 88);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sec2 .about .skills .skill .circular-progress .img img {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover; /* 確保圖片內容填滿整個圓形區域 */
-}
-.sec2 .about .skills .skill .circular-progress::before {
-  content: "";
-  position: absolute;
-  height: 135px;
-  width: 135px;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: 0.1s ease-in-out;
-}
-.sec2 .about .skills .skill .circular-progress .progress-value {
-  position: relative;
-  font-size: 20px;
-  font-weight: 600;
-  color: #4b94b4;
-}
-.sec2 .about .skills .skill .text {
-  font-size: 20px;
-  font-weight: 500;
-  color: #FFF;
-  margin-top: 15px;
 }
 
 .sec3 {
@@ -369,17 +270,116 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 
 .sec4 {
+  background-color: #323946;
   width: 100vw;
-  min-height: 100vh;
-  background-color: #1f242d;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
-.sec4 .title h1 {
+.sec4 .title {
   padding: 20px;
   text-transform: uppercase;
+}
+.sec4 .about {
+  background-color: #323946;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sec4 .about .about-me {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  font-size: 16px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 7px;
+}
+.sec4 .about .skills {
+  max-width: 800px;
+  min-height: 50vh;
+  background-color: #323946;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #212121;
+}
+.sec4 .about .skills .skill {
+  display: flex;
+  width: auto;
+  padding: 20px 0;
+  border-radius: 8px;
+  background: #323946;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 20px 0 20px;
+}
+.sec4 .about .skills .skill .circular-progress {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  background-color: fuchsia;
+  border-radius: 50%;
+  background: conic-gradient(rgba(73, 175, 231, 0.777) 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec4 .about .skills .skill .circular-progress:hover .img {
+  display: none;
+}
+.sec4 .about .skills .skill .circular-progress .img {
+  position: absolute;
+  height: 135px;
+  width: 135px;
+  top: 13px;
+  left: 13px;
+  border-radius: 50%;
+  z-index: 2; /* 將圖片放在進度條底下 */
+  overflow: hidden; /* 確保圖片內容在圓形區域內 */
+  background-color: rgb(27, 73, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 .about .skills .skill .circular-progress .img img {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover; /* 確保圖片內容填滿整個圓形區域 */
+}
+.sec4 .about .skills .skill .circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.1s ease-in-out;
+}
+.sec4 .about .skills .skill .circular-progress .progress-value {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4b94b4;
+}
+.sec4 .about .skills .skill .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+  margin-top: 15px;
 }
 
 .sec5 {
@@ -441,18 +441,18 @@ nav .nav-container .hamburger.is-active:hover span {
   .sec1 .home h2 {
     font-size: 22px;
   }
-  .sec2 .about .about-me {
+  .sec4 .about .about-me {
     padding: 50px;
     font-size: 20px;
   }
-  .sec2 .about .skills .skill .circular-progress {
+  .sec4 .about .skills .skill .circular-progress {
     width: 200px;
     height: 200px;
   }
-  .sec2 .about .skills .skill .circular-progress:hover .img {
+  .sec4 .about .skills .skill .circular-progress:hover .img {
     display: none;
   }
-  .sec2 .about .skills .skill .circular-progress .img {
+  .sec4 .about .skills .skill .circular-progress .img {
     position: absolute;
     height: 168px;
     width: 168px;
@@ -466,17 +466,17 @@ nav .nav-container .hamburger.is-active:hover span {
     justify-content: center;
     align-items: center;
   }
-  .sec2 .about .skills .skill .circular-progress .img img {
+  .sec4 .about .skills .skill .circular-progress .img img {
     width: 80%;
     height: 80%;
     -o-object-fit: cover;
        object-fit: cover; /* 確保圖片內容填滿整個圓形區域 */
   }
-  .sec2 .about .skills .skill .circular-progress::before {
+  .sec4 .about .skills .skill .circular-progress::before {
     width: 168px;
     height: 168px;
   }
-  .sec2 .about .skills .skill .circular-progress .progress-value {
+  .sec4 .about .skills .skill .circular-progress .progress-value {
     font-size: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
