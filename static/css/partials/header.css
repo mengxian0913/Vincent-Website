@@ -26,24 +26,8 @@ nav .nav-container h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-nav .nav-container .menu {
-  display: none;
-  justify-content: flex-end;
-  margin: 0 -16px;
-}
-nav .nav-container .menu a {
-  color: #FFF;
-  margin: 0 16px;
-  font-weight: 600;
-  transition: 0.4s;
-  padding: 8px 16px;
-  border-radius: 99px;
-  text-transform: uppercase;
-}
-nav .nav-container .menu a.is-active, nav .nav-container .menu a:hover {
-  background-color: rgba(225, 215, 225, 0.3);
-}
 nav .nav-container .hamburger {
+  padding: 20px;
   display: block;
   position: relative;
   z-index: 1;
@@ -82,4 +66,51 @@ nav .nav-container .hamburger.is-active span:nth-child(3) {
 }
 nav .nav-container .hamburger.is-active:hover span {
   background-color: #7FC0E6;
+}
+
+.nav2-container {
+  transition: 0.4s;
+  position: fixed;
+  z-index: 90;
+  top: -100vh;
+  height: 50vh;
+  width: 100vw;
+  background-color: #212121;
+  border-bottom: #EEEEEE 0.5px solid;
+}
+.nav2-container .menu2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.nav2-container .menu2 .box {
+  margin-bottom: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav2-container .menu2 .box:last-child {
+  margin-bottom: 0;
+}
+.nav2-container .menu2 .box a {
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+.nav2-container .menu2 .box a.is-active, .nav2-container .menu2 .box a:hover {
+  background-color: rgba(25, 134, 193, 0.687);
+}
+.nav2-container.is-active {
+  top: 0;
+  transform: translateY(65px);
 }/*# sourceMappingURL=header.css.map */

@@ -8,10 +8,397 @@
 <body>
 
      <div style="margin:25px;">
-          <h1>A</h1>
+          <h1>TCGS a021~a030 &#43; b001~b002題解</h1>
           <div style="color:grey; font-size:16px;">Tuesday, Aug 1, 2023</div>
           <div style="color:grey; font-size:16px;"></div>
-          <div style="font-size:18px;"></div>
+          <div style="font-size:18px;"><h4 id="編者--vincent--vicent">編者 : Vincent / Vicent??</h4>
+<h2 id="a021--我討厭偶數">a021 : 我討厭偶數</h2>
+<h4 id="考點--while-loop"><strong>考點 : while loop</strong></h4>
+<p>-&gt; <strong>程式碼範例</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;  </span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    cin<span style="color:#f92672">&gt;&gt;</span>a;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(a<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>        a<span style="color:#f92672">=</span>a<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>    cout<span style="color:#f92672">&lt;&lt;</span>a;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><h3 id="程式碼解析"><strong>程式碼解析</strong></h3>
+<p>第 12 行 : 當 a 還是偶數的時候，使用就繼續執行迴圈</p>
+<p>第 14 行 : 把 a 除以2</p>
+<hr>
+<h2 id="a022--細菌繁殖">a022 : 細菌繁殖</h2>
+<h4 id="考點--while-loop-1"><strong>考點 : while loop</strong></h4>
+<p>-&gt; <strong>程式碼範例</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,m,ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> m;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">&lt;</span> m){
+</span></span><span style="display:flex;"><span>		n<span style="color:#f92672">*=</span><span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div><h3 id="程式碼解析-1"><strong>程式碼解析</strong></h3>
+<p>題目要求<strong>繁殖時間</strong></p>
+<p>X細菌 1 分鐘 繁殖3倍 ，且每繁殖一次需要花 1 分鐘的時間</p>
+<p><strong>while 迴圈停止條件:</strong></p>
+<p><strong>第 10 行 :</strong> 當 X 的細菌 n 量大於或等於 m 就應該要停止</p>
+<p>也可以解讀成 <strong>當 n 還小於 m 時</strong> 迴圈繼續。</p>
+<p>int ans = 0; -&gt; ans 拿來存經過的時間</p>
+<hr>
+<h2 id="a023--3n1">a023 : 3N+1</h2>
+<h4 id="考點--while-loop--if-判斷式"><strong>考點 : while loop + if 判斷式</strong></h4>
+<p>-&gt; <strong>程式碼範例</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span>  <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>){
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span>(n<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) n <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span> n <span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-2"><strong>程式碼解析</strong></h3>
+<p>題目所求 : 數列總項數，所以我們在第 6 行設了一個存項數的變數    ans = 1;</p>
+<p>我們可以把題目解讀成，此數列的<strong>最後一項都是 1</strong>的數列，而你給他第一項，求出數列總項數 (長度) 。
+如此一來，我們就可以利用 while(n != 1) 的迴圈，讓程式跑到最後一項，並紀錄項數。</p>
+<p>而迴圈裡的判斷式就照著題目要求做就行了!</p>
+<p><strong>為什麼一開始 ans 要等於 1 ??</strong></p>
+<p>-&gt; <strong>因為輸入的 n 也算一項喔 ~</strong></p>
+<hr>
+<h2 id="a024--所有位數和">a024 : 所有位數和</h2>
+<h4 id="考點--while-loop--基礎數學"><strong>考點 : while loop + 基礎數學</strong></h4>
+<p>-&gt; <strong>程式碼範例</strong></p>
+<p><strong>解法 1</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;  </span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a,b<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    cin<span style="color:#f92672">&gt;&gt;</span>a;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(a<span style="color:#f92672">!=</span><span style="color:#ae81ff">0</span>)  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>        b<span style="color:#f92672">=</span>b<span style="color:#f92672">+</span>a<span style="color:#f92672">%</span><span style="color:#ae81ff">10</span>;  
+</span></span><span style="display:flex;"><span>        a<span style="color:#f92672">=</span>a<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>;  
+</span></span><span style="display:flex;"><span>                         
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>    cout<span style="color:#f92672">&lt;&lt;</span>b;  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><h3 id="程式碼解析-3"><strong>程式碼解析</strong></h3>
+<p>這題簡單來說，就是要我們把所有位數拆開然後加起來。</p>
+<p>遇到一個問題就是，要怎麼把數字拆開，並且保證每個位數拆出來後，都是&lt;10的數，其實很簡單，還記得之前教過的 mod(%) 嗎，想一下，當我們不斷的把要拆解的數字取餘數(餘數加在 b )，再將自身除以10。再配合 while 迴圈，不斷地做直到此數等於0</p>
+<hr>
+<p><strong>解法 2</strong></p>
+<h4 id="考點--string字串--char字元--array陣列--for-loop--ascii碼">考點 : <strong>string(字串) &amp; char(字元) &amp; array(陣列) &amp; for loop &amp; ascii碼</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	string a;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> b<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> a;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>a.size();i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		b <span style="color:#f92672">+=</span> a[i] <span style="color:#f92672">-</span> <span style="color:#e6db74">&#39;0&#39;</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> b;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="a025--數字倒轉">a025 : 數字倒轉</h2>
+<h4 id="考點--while-loop--基礎數學-1"><strong>考點 : while loop &amp; 基礎數學</strong></h4>
+<p>-&gt; <strong>程式碼範例</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">*=</span><span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">+=</span>n<span style="color:#f92672">%</span><span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		n<span style="color:#f92672">/=</span><span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-4"><strong>程式碼解析</strong></h3>
+<p>這題時跟上一題很相似，不一樣的就只有迴圈裡做的事情，
+我們設了一個變數來存取倒轉的值。</p>
+<p>直接舉個例子好了，假如 n = 12</p>
+<p>進到迴圈後</p>
+<h3 id="ans10-此時ans還是0---ansn10-ans變成2---n10--n變成1---ans10-ans變成20---ansn10ans變成-21---n10n變成0">ans*=10 (此時ans還是0) -&gt; ans+=n%10 (ans變成2) -&gt; n/=10  (n變成1) -&gt; ans*=10 (ans變成20) -&gt; ans+=n%10　(ans變成 21) -&gt; n/=10　(n變成0)</h3>
+<h3 id="要注意的是-第-11-行的-ans10-一定要在-ansn10-上面">要注意的是 第 11 行的 ans*=10 一定要在 ans+=n%10 上面</h3>
+<hr>
+<h2 id="a026--1000遍我愛你">a026 : 1000遍我愛你</h2>
+<p><strong>考點 : for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span>n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;i<span style="color:#f92672">&lt;=</span>n;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;I love you.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-5"><strong>程式碼解析</strong></h3>
+<p>其實就是 for 迴圈應用。
+<a href="https://hackmd.io/@2021-hhsh-ic/loop?fbclid=IwAR2upv379M6OdhOucOhti32EglbsCs2_0ajRSposXJ1-pa2MGQvYnjswHYc#for-%E8%BF%B4%E5%9C%88">for loop講義</a></p>
+<hr>
+<h2 id="a027-倒數計時">a027 倒數計時</h2>
+<p><strong>考點 : for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>n;i<span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">--</span>){
+</span></span><span style="display:flex;"><span>		cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-6"><strong>程式碼解析</strong></h3>
+<p>這題的 for 迴圈因題目要求到著輸出 (n,n-1,n-2,&hellip;..,0) 及 for 迴圈需要嚴格遞減的輸出~</p>
+<h2 id="a028-pnr">a028 P(N,R)</h2>
+<p><strong>考點 : for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,r,ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> r;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>r;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">*=</span>n<span style="color:#f92672">-</span>i;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>程式碼解析</strong></p>
+<p>其實這題只要看<strong>這個</strong></p>
+<p><img src="https://i.imgur.com/Cfc3AB0.png" alt=""></p>
+<p>就可以寫出 for 迴圈了~</p>
+<p>我們利用一個變數 ans = 1 來存答案 (ans = 1 是因為待會存答案的方式是利用乘法)</p>
+<p>觀察一下，我迴圈裡寫的<code>ans *= n-i; </code></p>
+<p>我們以範例測資 2 為例:</p>
+<p>input : 5 3</p>
+<p>output : 60</p>
+<p>迴圈跑第一次: i = 0 , ans*=n-i (ans變成 1*5 = 5)</p>
+<p>迴圈跑第二次: i = 1 , ans*=n-1 (ans變成 5*(5-1) = 20)</p>
+<p>迴圈跑第三次: i = 2 , ans*=n-1 (ans變成 20*(5-2) = 60)</p>
+<hr>
+<h2 id="a029-連續整數相加一">a029 連續整數相加(一)</h2>
+<p><strong>考點 : for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> a,b,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> a <span style="color:#f92672">&gt;&gt;</span> b;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>a;i<span style="color:#f92672">&lt;=</span>b;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">+=</span>i;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span>(i <span style="color:#f92672">!=</span> b) cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;+&#39;</span>;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span> cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;=&#39;</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-7"><strong>程式碼解析</strong></h3>
+<p>這題比較麻煩的應該是加號和等號的輸出吧!</p>
+<p>不過聰明的你應該知道 if 拿出來用就萬事通ㄌ</p>
+<p>用 if 來判斷是否輸出的是最後一個數。</p>
+<p>然後一樣要用一個變數來存最後加總的值</p>
+<hr>
+<h2 id="a030-連續整數相加二">a030 連續整數相加(二)</h2>
+<p><strong>考點 : for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> a,b,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> a <span style="color:#f92672">&gt;&gt;</span> b;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span>(a <span style="color:#f92672">&gt;</span> b){
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>a;i<span style="color:#f92672">&gt;=</span>b;i<span style="color:#f92672">--</span>){
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			ans<span style="color:#f92672">+=</span>i;
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span>(i <span style="color:#f92672">!=</span> b) cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;+&#39;</span>;
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span> cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;=&#39;</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>a;i<span style="color:#f92672">&lt;=</span>b;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			ans<span style="color:#f92672">+=</span>i;
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span>(i <span style="color:#f92672">!=</span> b) cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;+&#39;</span>;
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span> cout <span style="color:#f92672">&lt;&lt;</span> i <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;=&#39;</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>; 
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-8"><strong>程式碼解析</strong></h3>
+<p>這題跟上一題一樣，但如果我解析只有說這樣就太壞了 :)</p>
+<p>ㄟ&hellip; 這題全部的觀念跟上一題一樣，但要注意的是 a 是否小於 b</p>
+<p>如果小於的話，for 迴圈就應該要向倒數一樣的輸出。</p>
+<hr>
+<h2 id="b001-最後倒數">b001 最後倒數</h2>
+<p><strong>考點 :array &amp; for loop</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> arr[<span style="color:#ae81ff">15</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>n;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		cin <span style="color:#f92672">&gt;&gt;</span> arr[i];
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;i<span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">--</span>){
+</span></span><span style="display:flex;"><span>		cout <span style="color:#f92672">&lt;&lt;</span> arr[i] <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-9"><strong>程式碼解析</strong></h3>
+<p>這題我們用陣列來寫顯然會變得很簡單，因為只要利用 for 迴圈來控制陣列的 index(0 ~ n-1) 就可以輸出你想要的順序。</p>
+<p>然後請養成好習慣，把陣列開在全域，因為全域的記憶體比區域的還大且比較穩定。</p>
+<p><strong>切記!!</strong> 不要用變數宣告陣列大小，更好的方法是看題目給你的範圍，例如這題:</p>
+<p><img src="https://i.imgur.com/MQiwAkM.png" alt=""></p>
+<p>陣列大小就看題目給的範圍下去開就對了，然後請多開五個單位，例如程式碼 第 4 行。</p>
+<p>多開 5 位是為了要避免溢位。</p>
+<hr>
+<h2 id="b002-找最大值">b002 找最大值</h2>
+<p><strong>考點 :for loop &amp; array</strong></p>
+<p>-&gt; 程式碼範例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> arr[<span style="color:#ae81ff">15</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,m<span style="color:#f92672">=-</span><span style="color:#ae81ff">999</span>,ip;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>n;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		cin <span style="color:#f92672">&gt;&gt;</span> arr[i];
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>n;i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span>(arr[i] <span style="color:#f92672">&gt;</span> m){
+</span></span><span style="display:flex;"><span>			m <span style="color:#f92672">=</span> arr[i];
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			ip <span style="color:#f92672">=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ip <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">&lt;&lt;</span> m;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="程式碼解析-10"><strong>程式碼解析</strong></h3>
+<p>這題需要一個技巧；第 8 行，我們設了兩個變數 m 和 ip，分別拿來存最大的值和最大的值的位置。</p>
+<p>我們把值輸入到陣列裡後，再做一個 for 迴圈掃描裡面的值</p>
+<p>在第 17~21 行 就是這題的關鍵了</p>
+<p>我們利用變數 m 來存<strong>目前</strong>掃描到最大的值，如果掃描到有人比他大(例如 : arr[i])，就把 m 替換成 arr[i] 寫成 m = arr[i]，並且把位置(ip)換成 i+1 至於為甚麼要 +1 呢?  因為 i是index；我們可以想一下，假如一(串?)火車有三節車廂，我們口語會說 我坐第一節，那專業的人可能就會說，我坐(axxxx 編號) 編號的概念就像 index 啦~</p>
+<hr>
+</div>
      </div>
      
 </body>
