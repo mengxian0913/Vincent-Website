@@ -127,3 +127,29 @@ function circle() {
 
     return;
 }
+
+//// nav ///
+
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageXOffset;
+    console.log(currentScroll);
+
+    if(currentScroll <= 0){
+        body.classList.remove("scroll-up");
+    }
+
+    if(lastScroll < currentScroll && !body.classList.contains("scroll-down")) {
+        body.classList.add("scroll-down");
+        body.classList.remove("scroll-up");
+    }
+
+    if(lastScroll > currentScroll && body.classList.contains("scroll-down")) {
+        body.classList.add("scroll-down");
+        body.classList.remove("scroll-up");
+    }
+
+    lastScroll = currentScroll;
+})

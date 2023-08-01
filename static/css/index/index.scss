@@ -67,8 +67,6 @@ html{
 
 
 nav{
-
-    // height: 9vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -78,6 +76,8 @@ nav{
     padding: 16px 32px;
     border-bottom: 3px $greenblue solid;
     backdrop-filter: blur(0.5px);
+
+    transition: all 300ms ease-in-out;
 
     
     .nav-container{
@@ -219,6 +219,12 @@ nav{
     }
 }
 
+
+.scroll-down{
+    .container nav{
+        transform: translate3d(0, -100%, 0);
+    }
+}
 
 .sec1{
     position: relative;
@@ -374,6 +380,36 @@ nav{
                     align-items: center;
                     justify-content: center;
 
+
+                    &:hover{
+                        .img{
+                            display: none;
+                        }
+                    }
+
+                    .img{
+                        position: absolute;
+                        height: 135px;
+                        width: 135px;
+                        top: 13px;
+                        left: 13px;
+                        border-radius: 50%;
+                        z-index: 2; /* 將圖片放在進度條底下 */
+                        overflow: hidden; /* 確保圖片內容在圓形區域內 */
+                        background-color: $circle_color;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            position: relative;
+                            width: 80%;
+                            height: 80%;    
+                            object-fit: cover; /* 確保圖片內容填滿整個圓形區域 */
+                        }
+                    }
+
                     
                     &::before{  
                         content: "";
@@ -385,12 +421,6 @@ nav{
                         transition: .1s ease-in-out;
                     }
 
-                    &:hover{
-                        &::before{
-                            background: #FFF;
-                            z-index: 0;
-                        }
-                    }
                     
     
                     .progress-value{
@@ -409,49 +439,6 @@ nav{
                     margin-top: 15px;
                 }
             }
-    
-            :nth-child(1){
-                .circular-progress{
-                    &::before{
-                        background-color: rgb(27, 73, 88);
-                        background-image: url("{{ .Site.BaseURL }}/images/webdesign.png");
-                        background-attachment: scroll;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 65% 65%;
-                        z-index: 1;
-                    }
-                }
-            }
-    
-            :nth-child(2){
-                .circular-progress{
-                    &::before{
-                        background-color: $circle_color;
-                        background-image: url("{{ .Site.BaseURL }}/images/deep-learning.png");
-                        background-attachment: scroll;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 80% 80%;
-                        z-index: 1;
-                    }
-                }
-            }
-    
-            :nth-child(3){
-                .circular-progress{
-                    &::before{
-                        background-color: rgb(27, 73, 88);
-                        background-image: url(../images/badminton-field.png);
-                        background-attachment: scroll;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 80% 80%;
-                        z-index: 1;
-                    }
-                }
-            }
-    
         }
     }
 
@@ -523,7 +510,7 @@ nav{
             }
 
             a img{
-                width: 50px;
+                width: 40px;
             }
         }
     }
@@ -594,6 +581,35 @@ nav{
         width: 200px;
         height: 200px;
 
+        &:hover{
+            .img{
+                display: none;
+            }
+        }
+
+        .img{
+            position: absolute;
+            height: 168px;
+            width: 168px;
+            top: 16px;
+            left: 16px;
+            border-radius: 50%;
+            z-index: 2; /* 將圖片放在進度條底下 */
+            overflow: hidden; /* 確保圖片內容在圓形區域內 */
+            background-color: $circle_color;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                // position: relative;
+                width: 80%;
+                height: 80%;    
+                object-fit: cover; /* 確保圖片內容填滿整個圓形區域 */
+            }
+        }
+
         &::before{
             width: 168px;
             height: 168px;
@@ -603,8 +619,5 @@ nav{
             font-size: 30px;
         }
     }
-
-
-    
 }
 
