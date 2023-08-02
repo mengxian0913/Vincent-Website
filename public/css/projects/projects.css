@@ -63,16 +63,16 @@
 .project-section .project-card .depiction .button {
   position: absolute;
   z-index: 10;
-  width: 90px;
-  height: 40px;
-  border-radius: 20px;
-  border: rgba(110, 102, 102, 0.591) 2px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(60, 74, 128, 0.656);
-  bottom: 10px;
-  right: 10px;
+  bottom: -15px;
+  border: none;
+  font-size: 12px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .project-section .project-card .depiction .button a {
   color: #FFF;
