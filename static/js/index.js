@@ -7,16 +7,15 @@ const nav2_container = document.querySelector('.nav2-container');
 const arrow = document.querySelector('.arrow');
 
 
-let nowPosition = link1[0];
-nowPosition.classList.add('is-active');
-
+let nowPosition1 = link1[0];
+nowPosition1.classList.add('is-active');
 
 
 link1.forEach(function(element){
     element.addEventListener('click', function(){
-        nowPosition.classList.toggle('is-active');
-        nowPosition = element;
-        nowPosition.classList.toggle('is-active');
+        nowPosition1.classList.remove('is-active');
+        nowPosition1 = element;
+        nowPosition1.classList.add('is-active');
     });
 });
 
@@ -25,9 +24,9 @@ let nowPosition2 = link2[0];
 nowPosition2.classList.add('is-active');
 link2.forEach(function(element){
     element.addEventListener('click', function(){
-        nowPosition2.classList.toggle('is-active');
+        nowPosition2.classList.remove('is-active');
         nowPosition2 = element;
-        nowPosition2.classList.toggle('is-active');
+        nowPosition2.classList.add('is-active');
         nav2_container.classList.remove('is-active');
         hamburger.classList.remove('is-active');
     });
@@ -51,17 +50,17 @@ hamburger.addEventListener('click', function(){
 const section = document.querySelectorAll('section');
 
 function checkIfHitTop(){
-    for(let i = 0; i < section.length; i++){
+    for(let i = 0; i < section.length - 1; i++){
         var rect = section[i].getBoundingClientRect();
         var Top = rect.top;
         
         if(Top <= window.innerHeight * 10 / 100 || (i == section.length-1 && Top <= window.innerHeight * 95 / 100)){
-            nowPosition.classList.toggle('is-active');
-            nowPosition2.classList.toggle('is-active');
-            nowPosition = link1[i];
+            nowPosition1.classList.remove('is-active');
+            nowPosition2.classList.remove('is-active');
+            nowPosition1 = link1[i];
             nowPosition2 = link2[i];
-            nowPosition.classList.toggle('is-active');
-            nowPosition2.classList.toggle('is-active');
+            nowPosition1.classList.add('is-active');
+            nowPosition2.classList.add('is-active');
         }
 
     }

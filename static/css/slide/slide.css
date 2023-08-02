@@ -86,7 +86,7 @@
     z-index: 10;
     bottom: -15px;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFF;
     padding: 8px 16px;
     background-color: #4070F4;
@@ -94,7 +94,6 @@
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-
 }
 
 

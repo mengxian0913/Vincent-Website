@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/index/index.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/projects/projects.css">
      <!-- Swiper CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
@@ -79,7 +80,7 @@
             
             <!-- 專案展示區開始 -->
             <div id="project-section">
-                {{ partial "project-slide.html" }}
+                {{ partial "partials/project-slide.html" . }}
             </div>
             <!-- 專案展示區結束 -->
             
@@ -94,7 +95,13 @@
             
             <div class="about">
                 <article class="about-me">
-                    I am a Computer Science scholar at Feng Chia University. I am dedicated to learning front-end design skills and researching algorithms. I am also an avid badminton player.
+
+                    {{ with .Site.GetPage "section" "short-autobiography" }}
+                        {{ .Content }}
+                    {{ else }}
+                        <p>About page not found</p>
+                    {{ end }}
+
                 </article>
     
                 <div class="skills">
