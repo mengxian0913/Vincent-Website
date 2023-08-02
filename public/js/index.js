@@ -73,7 +73,7 @@ window.addEventListener('wheel', checkIfHitTop);
 
 
 arrow.addEventListener('click', function(){
-    const scrollToPosition = window.innerHeight * 91 / 100;
+    const scrollToPosition = window.innerHeight;
     window.scrollTo({
         top: scrollToPosition,
         behavior: 'smooth'
@@ -148,8 +148,8 @@ window.addEventListener('scroll', () => {
     }
 
     if(currentScroll < lastScroll  && body.classList.contains("scroll-down")) {
-        body.classList.add("scroll-down");
-        body.classList.remove("scroll-up");
+        body.classList.add("scroll-up");
+        body.classList.remove("scroll-down");
     }
 
     lastScroll = currentScroll;

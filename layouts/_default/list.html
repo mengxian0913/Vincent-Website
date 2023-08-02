@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
      <title>Vincent's Blog</title>
 </head>
 <body>
 
-     {{ partial "header.html" . }}
+     <div class="container">
+          {{ partial "header.html" . }}
 
-     <div class="posts-container">
-          <ul>
-               {{ range .Pages }}
-                    <li>
-                         <a href="{{ .Permalink }}">
-                              <h2>{{ .Title }}</h2>
-                              <p>{{ .Date.Format "2006-01-02" }}</p>
-                         </a>
-                    </li>
-               {{ end }}
-          </ul>
+          <div class="posts-container">
+               <ul>
+                    {{ range .Pages }}
+                         <li>
+                              <a href="{{ .Permalink }}">
+                                   <h2>{{ .Title }}</h2>
+                                   <p>{{ .Date.Format "2006-01-02" }}</p>
+                              </a>
+                         </li>
+                    {{ end }}
+               </ul>
+          </div>
      </div>
 
 </body>

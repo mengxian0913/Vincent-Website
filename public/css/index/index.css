@@ -166,6 +166,10 @@ nav .nav-container .hamburger.is-active:hover span {
   transform: translate3d(0, -100%, 0);
 }
 
+.scroll-up .container nav {
+  border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
+}
+
 .sec1 {
   position: relative;
   height: 100vh;

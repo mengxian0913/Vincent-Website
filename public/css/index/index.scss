@@ -226,6 +226,12 @@ nav{
     }
 }
 
+.scroll-up{
+    .container nav{
+        border-bottom: 3px $greenblue solid;
+    }
+}
+
 .sec1{
     position: relative;
     height: 100vh;
@@ -539,7 +545,6 @@ nav{
 
 
 @media screen and (min-width: 830px){
-
 
     nav .nav-container{
 

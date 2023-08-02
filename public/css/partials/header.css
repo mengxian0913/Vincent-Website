@@ -10,6 +10,7 @@ nav {
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
   -webkit-backdrop-filter: blur(0.5px);
           backdrop-filter: blur(0.5px);
+  transition: all 300ms ease-in-out;
 }
 nav .nav-container {
   max-width: 1280px;
@@ -20,10 +21,14 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
 }
+nav .nav-container a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
 nav .nav-container a span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
-  letter-spacing: 2px;
   text-transform: uppercase;
   color: #FFF;
 }
@@ -125,4 +130,12 @@ nav .nav-container .hamburger.is-active:hover span {
 .nav2-container.is-active {
   top: 0;
   transform: translateY(65px);
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
 }/*# sourceMappingURL=header.css.map */

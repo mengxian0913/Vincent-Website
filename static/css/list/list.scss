@@ -28,11 +28,17 @@ html{
     color: #FFF;
 }
 
+
+.containert{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
 .posts-container{
     position: absolute;
     top: 10vh;
     width: 100vw;
-    // height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,3 +84,17 @@ html{
     }
 }
 
+
+@media (max-width: 768px) {
+    /* 手機版樣式設定 */
+    .posts-container ul li a{
+    
+        h2{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 10px;
+        }
+    }
+}

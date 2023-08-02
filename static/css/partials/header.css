@@ -21,10 +21,14 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
 }
+nav .nav-container a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
 nav .nav-container a span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
-  letter-spacing: 2px;
   text-transform: uppercase;
   color: #FFF;
 }

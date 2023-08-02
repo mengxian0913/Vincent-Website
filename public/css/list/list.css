@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html {
   height: 100%;
@@ -21,6 +22,11 @@ html {
   overflow-x: hidden;
   background-color: #1f242d;
   color: #FFF;
+}
+
+.containert {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .posts-container {
@@ -64,4 +70,14 @@ html {
 .posts-container ul li a p {
   color: rgba(255, 255, 255, 0.5843137255);
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  /* 手機版樣式設定 */
+  .posts-container ul li a h2 {
+    font-size: 16px;
+  }
+  .posts-container ul li a p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=list.css.map */

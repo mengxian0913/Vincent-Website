@@ -15,6 +15,7 @@
     <div class="menu2">
         <h1>tags</h1>
         <div class="menu2-container">
+            <div class="box"><a href="/posts/">all posts</a></div>
             {{ range $tag, $pages := .Site.Taxonomies.tags }}
                 <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a></div>
             {{ end }}
