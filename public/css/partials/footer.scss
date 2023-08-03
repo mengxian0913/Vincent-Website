@@ -1,0 +1,47 @@
+$second-bg-color: #323946;;
+
+ 
+.sec5{
+    min-height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: $second-bg-color;
+    
+    footer{
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .follow{
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            a{
+                margin: 7px;
+            }
+
+            a img{
+                width: 40px;
+            }
+        }
+    }
+
+    span{
+        width: 80vw;
+        border-bottom: #EFEFEF 1px solid;
+    }
+
+    .copyright{
+        position: relative;
+        top: 10px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+}

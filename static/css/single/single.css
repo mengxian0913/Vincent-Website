@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50px;
+}
+.container .article-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .article-container article {
+  width: 70vw;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 25px;
+  background-color: #323946;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  /* 手機版樣式設定 */
+  .container .article {
+    margin: 0;
+    width: 100vw;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=single.css.map */

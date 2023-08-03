@@ -1,0 +1,38 @@
+$bg-color: #1f242d;
+$second-bg-color: #323946;
+
+.container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+    .article-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        article{
+            width: 70vw;
+            max-width: 1200px;
+            min-height: 100vh;
+            margin: 25px;
+            background-color: #323946;
+            padding: 30px;
+        }
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    /* 手機版樣式設定 */
+
+    .container .article{
+        margin: 0;
+        width: 100vw;
+        padding: 20px;
+    }
+}

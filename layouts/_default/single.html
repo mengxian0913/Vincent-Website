@@ -3,16 +3,35 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Document</title>
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/single/single.css">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/footer.css">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/basic_setting/basic_setting.css">
+     <title>Vincent's Blog</title>
 </head>
 <body>
+     {{ partial "header.html" .}}
+    
+     <div class="container">
 
-     <div style="margin:25px;">
-          <h1>{{.Title}}</h1>
-          <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-          <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-          <div style="font-size:18px;">{{.Content}}</div>
+          <div class="article-container">
+               <article>
+                    <h1>{{.Title}}</h1>
+                    
+                    <div style="color:grey; font-size:16px;">
+                         {{ dateFormat "Monday, Jan 2, 2006" .Date }}
+                         {{if .Params.author}}Author: {{.Params.Author}}{{end}}
+                    </div>
+     
+                    <hr color= "white" size="2" width="95%">
+                    
+                    <div style="font-size:18px;">{{.Content}}</div>
+               </article>
+          </div>
+          
+          
+          {{ partial "footer" . }}
      </div>
-     {{ partial "footer" . }}
 </body>
+     <script src="{{ .Site.BaseURL }}/js/header.js"></script>
 </html>

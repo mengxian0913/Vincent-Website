@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vincent-s-blog.web.app/posts/css_percentage_vs_auto/</loc>
+    <lastmod>2023-08-03T13:20:58+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/front-end-development/</loc>
+    <lastmod>2023-08-03T13:20:58+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/</loc>
+    <lastmod>2023-08-03T13:20:58+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/posts/</loc>
+    <lastmod>2023-08-03T13:20:58+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/</loc>
+    <lastmod>2023-08-03T13:20:58+08:00</lastmod>
+  </url><url>
     <loc>https://vincent-s-blog.web.app/projects/</loc>
     <lastmod>2023-08-02T15:41:48+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/projects/project2/</loc>
-    <lastmod>2023-08-02T15:41:48+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/</loc>
     <lastmod>2023-08-02T15:41:48+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/projects/project1/</loc>
@@ -18,12 +30,6 @@
     <lastmod>2023-08-02T13:54:46+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/posts/autobiography/</loc>
-    <lastmod>2023-08-02T13:54:46+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/posts/</loc>
-    <lastmod>2023-08-02T13:54:46+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/tags/</loc>
     <lastmod>2023-08-02T13:54:46+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/posts/page3/</loc>
