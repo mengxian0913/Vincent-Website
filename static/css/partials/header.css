@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav {
   position: fixed;
   top: 0;
@@ -137,4 +138,21 @@ nav .nav-container .hamburger.is-active:hover span {
 
 .scroll-up nav {
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
+}
+
+@media (max-width: 768px) {
+  /* 手機版樣式設定 */
+  .nav2-container .menu2 {
+    padding: 8px;
+  }
+  .nav2-container .menu2 .menu2-container {
+    padding: 8px;
+  }
+  .nav2-container .menu2 .menu2-container .box {
+    margin: 6px;
+  }
+  .nav2-container .menu2 .menu2-container .box a {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
 }/*# sourceMappingURL=header.css.map */

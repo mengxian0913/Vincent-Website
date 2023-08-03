@@ -173,3 +173,25 @@ nav{
         border-bottom: 3px $greenblue solid;
     }
 }
+
+@media (max-width: 768px) {
+    /* 手機版樣式設定 */
+
+    .nav2-container .menu2{
+        padding: 8px;
+        .menu2-container{
+            padding: 8px;
+            .box{
+                margin: 6px;
+                a{
+                    font-size: 14px;
+                    padding: 3px 10px;
+                }
+            }
+        }
+
+        
+    }
+
+    
+}

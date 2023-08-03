@@ -51,9 +51,12 @@ html {
 
 @media (max-width: 768px) {
   /* 手機版樣式設定 */
-  .container .article {
+  .container {
     margin: 0;
     width: 100vw;
-    padding: 20px;
+  }
+  .container .article-container article {
+    width: 100%;
+    margin: 10px;
   }
 }/*# sourceMappingURL=single.css.map */
