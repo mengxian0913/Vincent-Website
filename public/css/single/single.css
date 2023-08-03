@@ -45,6 +45,9 @@ html {
   background-color: #323946;
   padding: 30px;
 }
+.container .article-container article h1 {
+  color: #FFF;
+}
 
 @media (max-width: 768px) {
   /* 手機版樣式設定 */
