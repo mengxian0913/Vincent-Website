@@ -50,18 +50,12 @@ html{
 }
 
 
-body{
+.container{
     width: 100vw;
     height: auto;
-}
-
-
-
-.container{
-    width: 100%;
-    height: auto;
-    position: relative;
+    position: absolute;
     top: 50px;
+    // margin-top: 50px;
     .article-container{
         width: 100%;
         height: auto;
