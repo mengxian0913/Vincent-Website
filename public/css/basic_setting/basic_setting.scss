@@ -9,6 +9,7 @@ html{
 }
 
 *{
+    line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -16,12 +17,11 @@ html{
     text-decoration: none;
     scroll-behavior: smooth;
     border: none;
-    line-height: 30px;
 }
 
 :root    
 {
-    min-height: 100vh;
+    height: auto;
     overflow-x: hidden;
     background-color: $bg-color;
     color: #FFF;

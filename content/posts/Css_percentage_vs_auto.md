@@ -2,7 +2,7 @@
 title: "Css 中 width:100% vs width:auto"
 date: 2023-08-03T13:20:58+08:00
 draft: false
-tags: ["Front-end development"]
+tags: ["front-end developing"]
 ---
 
 **在CSS中，width: 100%和width: auto是用于控制元素宽度的两种不同方式。它们的差异在于如何处理元素的尺寸和布局。**

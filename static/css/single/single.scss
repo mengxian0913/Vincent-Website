@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 $bg-color: #1f242d;
 $second-bg-color: #323946;
+ 
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*{
+    line-height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+}
+
+:root    
+{
+    height: auto;
+    overflow-x: hidden;
+    background-color: $bg-color;
+    color: #ffffffcc;
+}
+
 
 .container{
     width: 100%;
@@ -14,6 +41,7 @@ $second-bg-color: #323946;
         align-items: center;
 
         article{
+            line-height: 45px;
             width: 70vw;
             max-width: 1200px;
             min-height: 100vh;

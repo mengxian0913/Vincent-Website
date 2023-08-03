@@ -6,7 +6,6 @@
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/single/single.css">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/footer.css">
-     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/basic_setting/basic_setting.css">
      <title>Vincent's Blog</title>
 </head>
 <body>
@@ -16,9 +15,9 @@
 
           <div class="article-container">
                <article>
-                    <h1>{{.Title}}</h1>
+                    <h1 style="line-height: 45px;">{{.Title}}</h1>
                     
-                    <div style="color:grey; font-size:16px;">
+                    <div style="line-height: 45px; color:grey; font-size:16px;">
                          {{ dateFormat "Monday, Jan 2, 2006" .Date }}
                          {{if .Params.author}}Author: {{.Params.Author}}{{end}}
                     </div>

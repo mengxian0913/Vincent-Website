@@ -1,6 +1,6 @@
 <nav>
     <div class="nav-container">
-       <a href="/"><span>Vincent's Blog</span></a>
+       <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
         
         <div class="hamburger">
             <span></span>
@@ -15,9 +15,9 @@
     <div class="menu2">
         <h1>tags</h1>
         <div class="menu2-container">
-            <div class="box"><a href="/posts/">all posts</a></div>
+            <div class="box"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
             {{ range $tag, $pages := .Site.Taxonomies.tags }}
-                <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a></div>
+                <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="line-height: 30px;">{{ $tag }}</a></div>
             {{ end }}
         </div>
         
