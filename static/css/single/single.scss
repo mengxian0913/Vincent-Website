@@ -40,15 +40,18 @@ html{
 
 
 
-
-
-
 :root    
 {
     height: auto;
     overflow-x: hidden;
     background-color: $bg-color;
     color: #ffffffcc;
+}
+
+
+body{
+    width: 100vw;
+    height: auto;
 }
 
 
