@@ -3,8 +3,9 @@ languageCode = 'en-us, zh-TW, zh'
 title = 'My New Hugo Site'
 theme = 'ga-hugo-theme'
 tags = []
-
+paginate = 3
 staticDir = "static"
+
 
 [permalinks]
   home = "/index.html"

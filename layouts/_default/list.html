@@ -4,18 +4,18 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/footer.css">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/basic_setting/basic_setting.css">
      <title>Vincent's Blog</title>
 </head>
 <body>
+     {{ partial "header.html" . }}
 
-     <div class="container">
-          {{ partial "header.html" . }}
-
+     <div class="container">     
           <div class="posts-container">
                <ul>
-                    {{ range .Pages }}
+                    {{ range .Paginator.Pages }}
                          <li>
                               <a href="{{ .Permalink }}">
                                    <h2>{{ .Title }}</h2>
@@ -24,9 +24,25 @@
                          </li>
                     {{ end }}
                </ul>
-          </div>
-     </div>
 
+               <div class="prev-next-pages">
+
+                    {{ if .Paginator.HasPrev }}
+                         <button>
+                              <a href="{{ .Paginator.Prev.URL }}">Prev</a>
+                         </button>
+                    {{ end }}
+                    
+                    {{ if .Paginator.HasNext }}
+                         <button>
+                              <a href="{{ .Paginator.Next.URL }}">Next</a>
+                         </button>
+                    {{ end }}
+               </div>
+          </div>
+
+          {{ partial "footer.html" .}}
+     </div>
 </body>
      <script src="{{ .Site.BaseURL }}/js/header.js"></script>
 </html>

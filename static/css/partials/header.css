@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  letter-spacing: 1.5px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -142,6 +146,9 @@ nav .nav-container .hamburger.is-active:hover span {
 
 @media (max-width: 768px) {
   /* 手機版樣式設定 */
+  nav .nav-container a span {
+    font-size: 18px;
+  }
   .nav2-container .menu2 {
     padding: 8px;
   }
