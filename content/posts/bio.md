@@ -13,6 +13,7 @@ tags: ['alg']
 
 -> **程式碼範例**
 
+
 ```cpp
 #include<iostream>  
   
@@ -33,8 +34,9 @@ int main()
       
     return 0;  
       
-}  
+} 
 ```
+
 ### **程式碼解析**
 
 第 12 行 : 當 a 還是偶數的時候，使用就繼續執行迴圈
@@ -49,7 +51,7 @@ int main()
 
 -> **程式碼範例**
 
-```cpp
+```cpp =
 #include<iostream>
 using namespace std;
 
@@ -78,7 +80,7 @@ int main(){
 
 X細菌 1 分鐘 繁殖3倍 ，且每繁殖一次需要花 1 分鐘的時間
 
-**while 迴圈停止條件:**
+
 
 **第 10 行 :** 當 X 的細菌 n 量大於或等於 m 就應該要停止 
 

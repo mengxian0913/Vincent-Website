@@ -1,8 +1,4 @@
 @charset "UTF-8";
-* {
-  letter-spacing: 1.5px;
-}
-
 nav {
   position: fixed;
   top: 0;
