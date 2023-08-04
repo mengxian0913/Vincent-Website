@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 $bg-color: #1f242d;
 $second-bg-color: #323946;
 
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*{
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+}
+
+:root    
+{
+    height: auto;
+    overflow-x: hidden;
+    background-color: $bg-color;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 .container{
     width: 100vw;

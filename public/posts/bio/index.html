@@ -46,38 +46,30 @@
 
           <div class="article-container">
                <article>
-                    <h1 style="line-height: 45px;">TCGS a021~a030 &#43; b001~b002題解</h1>
+                    <h1>TCGS a021~a030 &#43; b001~b002題解</h1>
                     
-                    <div style="line-height: 45px; color:grey; font-size:16px;">
+                    <div style="color:grey;">
                          Tuesday, Aug 1, 2023
                          
                     </div>
-     
-                    <hr color= "white" size="2" width="95%">
                     
                     <div id="markdown-content"><h4 id="編者--vincent--vicent">編者 : Vincent / Vicent??</h4>
 <h2 id="a021--我討厭偶數">a021 : 我討厭偶數</h2>
 <h4 id="考點--while-loop"><strong>考點 : while loop</strong></h4>
 <p>-&gt; <strong>程式碼範例</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;  </span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;  
-</span></span><span style="display:flex;"><span>  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()  
-</span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>{  
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a;  
-</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a;        
 </span></span><span style="display:flex;"><span>    cin<span style="color:#f92672">&gt;&gt;</span>a;  
-</span></span><span style="display:flex;"><span>      
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(a<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span><span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>    {  
 </span></span><span style="display:flex;"><span>        a<span style="color:#f92672">=</span>a<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;  
 </span></span><span style="display:flex;"><span>    }  
 </span></span><span style="display:flex;"><span>    cout<span style="color:#f92672">&lt;&lt;</span>a;  
-</span></span><span style="display:flex;"><span>      
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;  
-</span></span><span style="display:flex;"><span>      
 </span></span><span style="display:flex;"><span>} 
 </span></span></code></pre></div><h3 id="程式碼解析"><strong>程式碼解析</strong></h3>
 <p>第 12 行 : 當 a 還是偶數的時候，使用就繼續執行迴圈</p>
@@ -90,21 +82,14 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,m,ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> m;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">&lt;</span> m){
 </span></span><span style="display:flex;"><span>		n<span style="color:#f92672">*=</span><span style="color:#ae81ff">3</span>;
-</span></span><span style="display:flex;"><span>		
 </span></span><span style="display:flex;"><span>		ans<span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>} 
 </span></span></code></pre></div><h3 id="程式碼解析-1"><strong>程式碼解析</strong></h3>
 <p>題目要求<strong>繁殖時間</strong></p>
@@ -120,24 +105,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span>  <span style="color:#a6e22e">main</span>(){
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>){
-</span></span><span style="display:flex;"><span>		
 </span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">++</span>;
-</span></span><span style="display:flex;"><span>		
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span>(n<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) n <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-</span></span><span style="display:flex;"><span>		
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span> n <span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
 </span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="程式碼解析-2"><strong>程式碼解析</strong></h3>
 <p>題目所求 : 數列總項數，所以我們在第 6 行設了一個存項數的變數    ans = 1;</p>

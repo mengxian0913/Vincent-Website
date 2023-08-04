@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 $dark: #212121;
 $nav_color: rgba(225, 215, 225, 0.3);
 $light: #EEEEEE;
@@ -7,6 +8,10 @@ $text_color: #FFF;
 $greenblue: rgba(12, 70, 103, 0.644);
 $babyblue: #7FC0E6;
 
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 nav{
     position: fixed;
@@ -38,8 +43,8 @@ nav{
             height: auto;
             span{
                 font-size:  20px;
-                font-weight: 900;
-                // letter-spacing: 2px;
+                font-weight: 600;
+                letter-spacing: 2px;
                 text-transform: uppercase;
                 color: $text_color;
             }

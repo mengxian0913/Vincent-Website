@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $bg-color: #1f242d;
 $second-bg-color: #323946;
@@ -47,15 +48,17 @@ html{
     overflow-x: hidden;
     background-color: $bg-color;
     color: #ffffffcc;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 
 .container{
+
     width: 100vw;
     height: auto;
     position: absolute;
     top: 50px;
-    // margin-top: 50px;
     .article-container{
         width: 100%;
         height: auto;
@@ -119,10 +122,8 @@ pre{
         .article-container{
             article{
                 width: 100%;
-                margin: 10px;
+                margin: 10px 0px;
             }
         }
-
-
     }
 }

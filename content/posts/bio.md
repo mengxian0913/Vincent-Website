@@ -16,24 +16,18 @@ tags: ['alg']
 
 ```cpp
 #include<iostream>  
-  
-using namespace std;  
-  
+using namespace std;
+
 int main()  
-  
 {  
-    int a;  
-      
+    int a;        
     cin>>a;  
-      
     while(a%2==0)
     {  
         a=a/2;  
     }  
     cout<<a;  
-      
     return 0;  
-      
 } 
 ```
 
@@ -56,21 +50,14 @@ int main()
 using namespace std;
 
 int main(){
-	
 	int n,m,ans = 0;
-	
 	cin >> n >> m;
-	
 	while(n < m){
 		n*=3;
-		
 		ans++;
 	}
-	
 	cout << ans;
-	
 	return 0;
-	
 } 
 ```
 
@@ -101,24 +88,15 @@ int ans = 0; -> ans 拿來存經過的時間
 using namespace std;
 
 int  main(){
-	
 	int n,ans=1;
-	
 	cin >> n;
-	
 	while(n != 1){
-		
 		ans ++;
-		
 		if(n%2 != 0) n = 3*n + 1;
-		
 		else n = n/2;
 	}
-	
 	cout << ans;
-	
 	return 0;
-	
 }
 ```
 ### **程式碼解析**
