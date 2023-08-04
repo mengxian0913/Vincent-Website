@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/posts/posts.css">
+    <title>Vincent's Blog</title>
+</head>
+
+
+
+<div class="timeline">
+    <ul>
+
+        {{ $counter := 0 }}
+        {{ $maximum_posts := 5 }}
+        {{ range .Site.RegularPages }}
+            {{ if eq .Section "posts" }}
+                {{ $counter = add $counter 1 }}
+                {{ with . }}
+                    <li>
+                        <a href="{{ .Permalink }}">
+                            <div class="timeline-title">
+                                <h1>{{ .Title }}</h1>
+                            </div>
+
+                            <div class="timeline-content">
+                                <p>{{ printf "%.50s . . ." .Summary }}</p>
+                                <p>{{ .Date.Format "2006-01-02" }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {{ end }}
+
+                {{ if ge $counter $maximum_posts }}
+                    {{ break }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+        <li>
+            <a href="{{ .Site.BaseURL }}posts">
+                <div class="timeline-title">
+                    <h1>ALL POSTS</h1>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<!-- <div class="posts-container">
+
+    <ul>
+        {{ $counter := 0 }}
+        {{ $maximum_posts := 5 }}
+        {{ range .Site.RegularPages }}
+            {{ if eq .Section "posts" }}
+                {{ $counter = add $counter 1 }}
+                {{ with . }}
+                    <li>
+                        <a href="{{ .Permalink }}">
+                            <h2>{{ .Title }}</h2>
+                            <p>{{ .Date.Format "2006-01-02" }}</p>
+                        </a>
+                    </li>
+                {{ end }}
+
+                {{ if ge $counter $maximum_posts }}
+                    {{ break }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </ul>
+
+</div> -->
+
+</html>
+
+
+
+

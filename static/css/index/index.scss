@@ -4,7 +4,6 @@
 $bg-color: #1f242d;
 $second-bg-color: #323946;
 $dark: #212121;
-$primary: #8c38ff;
 $babyblue: #7FC0E6;
 $card: rgba(99, 145, 158, 0.77);
 $nav_color: rgba(225, 215, 225, 0.3);
@@ -322,7 +321,6 @@ nav{
 
 .sec2{
     width: 100vw;
-    min-height: 100vh;
     background-color: $bg-color;
     display: flex;
     flex-direction: column;
@@ -334,7 +332,6 @@ nav{
             text-transform: uppercase;
         }
     }
-
 }
 
 

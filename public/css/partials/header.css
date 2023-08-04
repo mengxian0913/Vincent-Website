@@ -101,7 +101,7 @@ nav .nav-container .hamburger.is-active:hover span {
   transform: translate(-50%, -25%);
 }
 .nav2-container .menu2 h1 {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   border-bottom: #FFF solid 1.5px;
 }
@@ -126,9 +126,9 @@ nav .nav-container .hamburger.is-active:hover span {
   text-transform: uppercase;
   color: #FFF;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   transition: 0.4s;
-  padding: 4px 12px;
+  padding: 3px 9px;
   border-radius: 99px;
 }
 .nav2-container .menu2 .menu2-container .box a.is-active, .nav2-container .menu2 .menu2-container .box a:hover {

@@ -246,7 +246,6 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec2 {
   width: 100vw;
-  min-height: 100vh;
   background-color: #1f242d;
   display: flex;
   flex-direction: column;

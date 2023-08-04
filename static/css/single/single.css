@@ -15,19 +15,19 @@ html {
   overflow-x: hidden;
 }
 * h1 {
-  font-size: 2rem;
+  font-size: 1.85rem;
   line-height: 42px;
 }
 * h2 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   line-height: 42px;
 }
 * h3 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 42px;
 }
 * p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 42px;
 }
 
@@ -35,7 +35,7 @@ html {
   height: auto;
   overflow-x: hidden;
   background-color: #1f242d;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8078431373);
   font-family: "Montserrat", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
 }
