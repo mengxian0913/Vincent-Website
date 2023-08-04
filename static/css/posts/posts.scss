@@ -3,7 +3,7 @@ $second-bg-color: #323946;
 $dark: #212121;
 $card: rgba(99, 145, 158, 0.77);
 $greenblue: rgba(12, 70, 103);
-$text_color: #ffffffce;
+$text_color: #ffffff;
 $summary_color: #ffffff8b;
 
 
@@ -45,12 +45,11 @@ $summary_color: #ffffff8b;
                     justify-content: center;
                     align-items: center;
                     border-radius: 10px;
-                    padding: 5px 0;
+                    padding: 5px 10px;
 
                     h1{
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 500;
-                        line-height: 30px;
                         color: $text_color;
                     }
                 }
@@ -66,6 +65,7 @@ $summary_color: #ffffff8b;
                     overflow: hidden;
                     border-radius: 10px;
                     p{
+                        font-size: 14px;
                         width: 100%;
                         height: auto;
                         color: $summary_color;

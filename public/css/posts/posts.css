@@ -37,13 +37,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 5px 0;
+  padding: 5px 10px;
 }
 .timeline ul li a .timeline-title h1 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.8078431373);
+  color: #ffffff;
 }
 .timeline ul li a .timeline-content {
   width: 100%;
@@ -57,6 +56,7 @@
   border-radius: 10px;
 }
 .timeline ul li a .timeline-content p {
+  font-size: 14px;
   width: 100%;
   height: auto;
   color: rgba(255, 255, 255, 0.5450980392);
