@@ -252,9 +252,6 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: flex-start;
   align-items: center;
 }
-.sec2 .title {
-  margin-bottom: 50px;
-}
 .sec2 .title h1 {
   padding: 20px;
   text-transform: uppercase;
@@ -447,6 +444,9 @@ nav .nav-container .hamburger.is-active:hover span {
   }
   .sec1 .home h2 {
     font-size: 22px;
+  }
+  .sec2 .title {
+    margin-bottom: 30px;
   }
   .sec4 .about .about-me {
     padding: 50px;

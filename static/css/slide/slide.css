@@ -11,7 +11,7 @@
 .slide-container{
     width: 85vw;
     /* max-width: 1120px; */
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .slide-content{
@@ -127,6 +127,13 @@
 }
 
 @media screen and (max-width: 860px) {
+
+    .slide-container{
+        width: 85vw;
+        /* max-width: 1120px; */
+        padding:0;
+    }
+ 
     .slide-content{
         margin: 0 10px;
     }

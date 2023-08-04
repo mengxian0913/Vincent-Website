@@ -166,7 +166,6 @@ nav{
 }
 
 
-
 .nav2-container{
 
     transition: .4s;
@@ -327,7 +326,6 @@ nav{
     justify-content: flex-start;
     align-items: center;
     .title{
-        margin-bottom: 50px;
         h1{
             padding: 20px;
             text-transform: uppercase;
@@ -574,6 +572,10 @@ nav{
                 font-size: 22px;
             }
         }
+    }
+
+    .sec2 .title{
+        margin-bottom: 30px;
     }
 
     .sec4 .about .about-me{
