@@ -72,13 +72,11 @@ window.addEventListener('wheel', checkIfHitTop);
 
 
 arrow.addEventListener('click', function(){
-    const scrollToPosition = window.innerHeight;
+    const scrollToPosition = window.innerHeight + 10;
     window.scrollTo({
         top: scrollToPosition,
         behavior: 'smooth'
     });
-
-    circle();
 })
 
 
