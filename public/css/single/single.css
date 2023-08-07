@@ -15,16 +15,16 @@ html {
   overflow-x: hidden;
 }
 * h1 {
-  line-height: 42px;
+  line-height: 45px;
 }
 * h2 {
-  line-height: 42px;
+  line-height: 45px;
 }
 * h3 {
-  line-height: 42px;
+  line-height: 45px;
 }
 * p {
-  line-height: 42px;
+  line-height: 35px;
 }
 
 :root {
@@ -34,6 +34,22 @@ html {
   color: rgba(255, 255, 255, 0.8078431373);
   font-family: "Montserrat", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.load {
+  width: 100vw;
+  height: 100vh;
+  background-color: #323946;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load h1 {
+  font-size: 25px;
 }
 
 .container {
@@ -51,7 +67,7 @@ html {
 }
 .container .article-container article {
   line-height: 45px;
-  width: 70vw;
+  width: 60vw;
   max-width: 1200px;
   min-height: 100vh;
   margin: 25px;
@@ -68,18 +84,8 @@ pre {
 
 @media (max-width: 768px) {
   /* 手機版樣式設定 */
-  * h1 {
-    line-height: 40px;
-  }
-  * h2 {
-    line-height: 40px;
-  }
-  * h3 {
-    line-height: 40px;
-  }
   * p {
     font-size: 16px;
-    line-height: 40px;
   }
   .container {
     margin: 0;

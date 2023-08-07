@@ -6,13 +6,24 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us, zh-TW, zh</language>
-    <lastBuildDate>Thu, 03 Aug 2023 13:20:58 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 13:59:16 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alg</title>
+      <link>https://vincent-s-blog.web.app/posts/alg/alg/</link>
+      <pubDate>Sun, 06 Aug 2023 13:59:16 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/alg/alg/</guid>
+      <description>12 03 2023 Training Contest problems Problem 1: Experimental Data Vincent has a physics experiment class on Wednesday morning. During the class, he needs to repeat the experiment and calculate the experimental data. Vincent needs you to help him calculate the experimental data.
+Calculation Formula:
+Error Value: ( \left| \frac{{(R_{\text{aver}} - R)}}{R} \right| \times 100% ) Resistance Formula: ( \frac{R_{1}}{R_{2}} = \frac{L_{1}}{L_{2}} ) Vincent conducted (T) experiments, and he has theoretical values (R) and (R_{1}), as well as values (L_{1}, L_{2}) for each experiment.</description>
+    </item>
+    
     <item>
       <title>Css 中 width:100% vs width:auto</title>
-      <link>https://vincent-s-blog.web.app/posts/css_percentage_vs_auto/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/css_percentage_vs_auto/</link>
       <pubDate>Thu, 03 Aug 2023 13:20:58 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/css_percentage_vs_auto/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/css_percentage_vs_auto/</guid>
       <description>在CSS中，width: 100%和width: auto是用于控制元素宽度的两种不同方式。它们的差异在于如何处理元素的尺寸和布局。
 h1 h2 h3 h4 blod word
 width: 100%： 当应用于一个元素时，它会使元素的宽度等于其父容器的宽度。换句话说，元素会被拉伸以填充其父容器的宽度。 如果父容器的宽度是固定的（比如设置了具体的像素值），那么元素的宽度也会是固定的。 如果父容器的宽度是相对的（例如使用百分比定义），那么元素的宽度会根据父容器的大小进行调整。
@@ -40,10 +51,10 @@ width: auto： 这是默认的宽度设置，它允许元素根据其内容自�
     
     <item>
       <title>Autobiography</title>
-      <link>https://vincent-s-blog.web.app/posts/autobiography/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/autobiography/</link>
       <pubDate>Wed, 02 Aug 2023 13:54:46 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/autobiography/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/autobiography/</guid>
       <description>關於我: 我是土地管理學系大二的學生，來自台南市，是家中的老么，我的父親從事起重工程職業，而在我學習土地管理之專業學科時，我對建設、工程等領域的好奇心便開始慢慢萌芽，我重視且好奇父親的起重工程職業，同時我在國高中時期對社會學、城鄉發展亦具有高度的好奇心，因此除了本科系專業知識外，我選擇開始接觸公共管理、建設工程等相關領域。
 滴水穿石，努力不懈:(課內學習) 大一階段，我的歷年成績呈現穩定上升，修習學分慢慢增加的同時GPA亦向上成長，其中，以系必修的會計學與經濟學的成績變化為例，大一上的會計學僅拿64分，因此下學期我明白自身須加倍努力的地方，同時也維持平時的讀書習慣，經濟學科便拿了77分，我也透過經濟學的期末專題，對不動產之研究更進一步了解且累積專題製作之經驗，我了解自己並非天才型選手，但我深信滴水穿石之道理，未來無論是出國交換或在校學習，我都有信心能維持成績穩定上升。
 社會關懷，連結世界:(課外活動) 課餘活動，我參加本校的防災教育志工隊，我是一位喜歡與人相處且開朗正向的人，在防災志工隊出隊期間，我們曾去過育幼院帶領孩子學習正確防災觀念，我將在大二接任器材幹部，我認為防災教育志工隊存在的意義不僅有傳遞出防災觀念，更傳播了社會之間的關懷與溫暖。透過社團參與和社會機構的互動，使我放眼國際，全球仍有許多相異文化與觀念的地區及人民，是我能以不同形式去交流並認識，親身體會。 海外研修動機: 自我能力評估與學習成果:</description>
@@ -51,28 +62,28 @@ width: auto： 这是默认的宽度设置，它允许元素根据其内容自�
     
     <item>
       <title>Page3</title>
-      <link>https://vincent-s-blog.web.app/posts/page3/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/page3/</link>
       <pubDate>Tue, 01 Aug 2023 13:32:57 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/page3/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/page3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Page2</title>
-      <link>https://vincent-s-blog.web.app/posts/page2/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/page2/</link>
       <pubDate>Tue, 01 Aug 2023 00:55:07 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/page2/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/page2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TCGS a021~a030 &#43; b001~b002題解</title>
-      <link>https://vincent-s-blog.web.app/posts/bio/</link>
+      <link>https://vincent-s-blog.web.app/posts/alg/bio/</link>
       <pubDate>Tue, 01 Aug 2023 00:33:59 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/bio/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/alg/bio/</guid>
       <description>編者 : Vincent / Vicent?? a021 : 我討厭偶數 考點 : while loop -&amp;gt; 程式碼範例
 #include&amp;lt;iostream&amp;gt; using namespace std; int main() { int a; cin&amp;gt;&amp;gt;a; while(a%2==0) { a=a/2; } cout&amp;lt;&amp;lt;a; return 0; } 程式碼解析 第 12 行 : 當 a 還是偶數的時候，使用就繼續執行迴圈
 第 14 行 : 把 a 除以2

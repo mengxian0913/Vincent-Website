@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 03 Aug 2023 13:20:58 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/front-end-developing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css 中 width:100% vs width:auto</title>
-      <link>https://vincent-s-blog.web.app/posts/css_percentage_vs_auto/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/css_percentage_vs_auto/</link>
       <pubDate>Thu, 03 Aug 2023 13:20:58 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/css_percentage_vs_auto/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/css_percentage_vs_auto/</guid>
       <description>在CSS中，width: 100%和width: auto是用于控制元素宽度的两种不同方式。它们的差异在于如何处理元素的尺寸和布局。
 h1 h2 h3 h4 blod word
 width: 100%： 当应用于一个元素时，它会使元素的宽度等于其父容器的宽度。换句话说，元素会被拉伸以填充其父容器的宽度。 如果父容器的宽度是固定的（比如设置了具体的像素值），那么元素的宽度也会是固定的。 如果父容器的宽度是相对的（例如使用百分比定义），那么元素的宽度会根据父容器的大小进行调整。

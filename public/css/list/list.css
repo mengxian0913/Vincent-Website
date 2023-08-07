@@ -24,6 +24,22 @@ html {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.load {
+  width: 100vw;
+  height: 100vh;
+  background-color: #323946;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load h1 {
+  font-size: 25px;
+}
+
 .container {
   width: 100vw;
   height: auto;

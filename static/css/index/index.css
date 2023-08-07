@@ -24,10 +24,25 @@ html {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.load {
+  width: 100vw;
+  height: 100vh;
+  background-color: #323946;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load h1 {
+  font-size: 25px;
+}
+
 .container {
   width: 100%;
-  min-height: 100vh;
-  height: 200vh;
+  height: auto;
 }
 
 nav {
@@ -252,6 +267,7 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .sec2 .title {
   width: 90vw;
@@ -276,8 +292,8 @@ nav .nav-container .hamburger.is-active:hover span {
 
 .sec3 {
   width: 100vw;
-  min-height: 70vh;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .sec3 .title {
   width: 90vw;
@@ -341,6 +357,7 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .sec4 .about .about-me {
   width: 80%;
@@ -473,6 +490,9 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 
 @media screen and (min-width: 830px) {
+  nav {
+    background-color: #1f242d;
+  }
   nav .nav-container h1 {
     font-size: 20px;
   }

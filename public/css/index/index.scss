@@ -83,10 +83,29 @@ html{
 }
 
 
+
+.load{
+    width: 100vw;
+    height: 100vh;
+    background-color: $second-bg-color;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 25px;
+    }
+
+}
+
 .container{
     width: 100%;
-    min-height: 100vh;
-    height: 200vh;
+    height: auto;
 }
 
 
@@ -102,7 +121,6 @@ nav{
     backdrop-filter: blur(0.5px);
 
     transition: all 300ms ease-in-out;
-
     
     .nav-container{
         max-width: 1280px;
@@ -115,7 +133,6 @@ nav{
         align-items: center;
         
         h1{
-            // font-size: 28px;
             font-size:  18px;
             font-weight: 800;
             letter-spacing: 2px;
@@ -349,6 +366,8 @@ nav{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+
     .title{
         @include titlesetting();
     }
@@ -357,8 +376,8 @@ nav{
 
 .sec3{
     width: 100vw;
-    min-height: 70vh;
     margin-top: 20px;
+    margin-bottom: 20px;
 
     .title{
         @include titlesetting();
@@ -392,6 +411,7 @@ nav{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 20px;
 
 
         .about-me{
@@ -556,6 +576,10 @@ nav{
 
 
 @media screen and (min-width: 830px){
+
+    nav{
+        background-color: $bg-color;
+    }
 
     nav .nav-container{
 

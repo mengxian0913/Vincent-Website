@@ -8,19 +8,24 @@
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
      <title>Vincent's Blog</title>
 </head>
+
+<div class="load"><h1></h1></div>
+
 <body>
      {{ partial "header.html" . }}
 
      <div class="container">     
           <div class="posts-container">
                <ul>
-                    {{ range .Paginator.Pages }}
-                         <li>
-                              <a href="{{ .Permalink }}">
-                                   <h2>{{ .Title }}</h2>
-                                   <p>{{ .Date.Format "2006-01-02" }}</p>
-                              </a>
-                         </li>
+                    {{ range .Paginator.Pages}}
+                         {{ if eq .Section "posts" }}
+                              <li>
+                                   <a href="{{ .Permalink }}">
+                                        <h2>{{ .Title }}</h2>
+                                        <p>{{ .Date.Format "2006-01-02" }}</p>
+                                   </a>
+                              </li>
+                         {{ end }}
                     {{ end }}
                </ul>
 
@@ -44,4 +49,5 @@
      </div>
 </body>
      <script src="{{ .Site.BaseURL }}/js/header.js"></script>
+     <script src="{{ .Site.BaseURL }}/js/list.js"></script>
 </html>

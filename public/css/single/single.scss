@@ -2,7 +2,9 @@
 
 $bg-color: #1f242d;
 $second-bg-color: #323946;
- 
+$line_height_1: 35px;
+$line_height_2: 45px;
+
 html{
     height: 100%;
     scroll-behavior: smooth;
@@ -18,24 +20,22 @@ html{
     overflow-x: hidden;
     
     h1{
-        line-height: 42px;     
+        line-height: $line_height_2;
     }
 
     h2{
-        line-height: 42px;     
+        line-height: $line_height_2;
     }
 
     h3{
-        line-height: 42px;     
+        line-height: $line_height_2;
     }
 
     p{
-        line-height: 42px;     
+        line-height: $line_height_1;
     }
     
 }
-
-
 
 :root    
 {
@@ -45,6 +45,26 @@ html{
     color: #ffffffce;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.load{
+    width: 100vw;
+    height: 100vh;
+    background-color: $second-bg-color;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 25px;
+    }
+
 }
 
 
@@ -63,7 +83,7 @@ html{
 
         article{
             line-height: 45px;
-            width: 70vw;
+            width: 60vw;
             max-width: 1200px;
             min-height: 100vh;
             margin: 25px;
@@ -87,23 +107,9 @@ pre{
 @media (max-width: 768px) {
     /* 手機版樣式設定 */
 
-    *{
-        h1{
-            line-height: 40px;
-        }
-    
-        h2{
-            line-height: 40px;
-            
-        }
-    
-        h3{
-            line-height: 40px;
-        }
-    
-        p{
+    *{    
+      p{
             font-size: 16px;
-            line-height: 40px;
         }
     }
 

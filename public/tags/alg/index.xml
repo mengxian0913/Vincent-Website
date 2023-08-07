@@ -6,22 +6,33 @@
     <description>Recent content in alg on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us, zh-TW, zh</language>
-    <lastBuildDate>Tue, 01 Aug 2023 00:55:07 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/alg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 13:59:16 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/alg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alg</title>
+      <link>https://vincent-s-blog.web.app/posts/alg/alg/</link>
+      <pubDate>Sun, 06 Aug 2023 13:59:16 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/alg/alg/</guid>
+      <description>12 03 2023 Training Contest problems Problem 1: Experimental Data Vincent has a physics experiment class on Wednesday morning. During the class, he needs to repeat the experiment and calculate the experimental data. Vincent needs you to help him calculate the experimental data.
+Calculation Formula:
+Error Value: ( \left| \frac{{(R_{\text{aver}} - R)}}{R} \right| \times 100% ) Resistance Formula: ( \frac{R_{1}}{R_{2}} = \frac{L_{1}}{L_{2}} ) Vincent conducted (T) experiments, and he has theoretical values (R) and (R_{1}), as well as values (L_{1}, L_{2}) for each experiment.</description>
+    </item>
+    
     <item>
       <title>Page2</title>
-      <link>https://vincent-s-blog.web.app/posts/page2/</link>
+      <link>https://vincent-s-blog.web.app/posts/else/page2/</link>
       <pubDate>Tue, 01 Aug 2023 00:55:07 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/page2/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/else/page2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TCGS a021~a030 &#43; b001~b002題解</title>
-      <link>https://vincent-s-blog.web.app/posts/bio/</link>
+      <link>https://vincent-s-blog.web.app/posts/alg/bio/</link>
       <pubDate>Tue, 01 Aug 2023 00:33:59 +0800</pubDate>
       
-      <guid>https://vincent-s-blog.web.app/posts/bio/</guid>
+      <guid>https://vincent-s-blog.web.app/posts/alg/bio/</guid>
       <description>編者 : Vincent / Vicent?? a021 : 我討厭偶數 考點 : while loop -&amp;gt; 程式碼範例
 #include&amp;lt;iostream&amp;gt; using namespace std; int main() { int a; cin&amp;gt;&amp;gt;a; while(a%2==0) { a=a/2; } cout&amp;lt;&amp;lt;a; return 0; } 程式碼解析 第 12 行 : 當 a 還是偶數的時候，使用就繼續執行迴圈
 第 14 行 : 把 a 除以2
