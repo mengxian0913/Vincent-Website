@@ -14,7 +14,14 @@
       
       <guid>https://vincent-s-blog.web.app/posts/else/test/</guid>
       <description>Math Test ( 1 + 1 = 2 )
-\( log_{2}10 \) When (a \ne 0), there are two solutions to (ax^2 + bx + c = 0) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</description>
+\( log_{2}10 \) When (a \ne 0), there are two solutions to (ax^2 + bx + c = 0) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+Bird a b c Magic This is a link test
+Use the printf() function.
+Use the printf() function.
+Use the printf() function.
+Use the printf() function.
+Use the printf() function.
+&lt;!DOCTYPE html&gt; 點擊查看隐藏内容 #include&amp;lt;iostream&amp;gt; using namespace std; int main(){ int n,ans=1; cin &amp;gt;&amp;gt; n; while(n !</description>
     </item>
     
     <item>

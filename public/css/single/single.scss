@@ -4,6 +4,8 @@ $bg-color: #1f242d;
 $second-bg-color: #323946;
 $line_height_1: 35px;
 $line_height_2: 45px;
+$text_color: #FFF;
+$link_color: #83d9e1;
 
 html{
     height: 100%;
@@ -11,8 +13,6 @@ html{
 }
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -38,12 +38,56 @@ html{
 
 :root    
 {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     height: auto;
     overflow-x: hidden;
     background-color: $bg-color;
     color: #ffffffce;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.light {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 3px; 
+}
+
+.info {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(32, 158, 226, 0.28);
+    border-radius: 3px;
+}
+
+.success {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(83, 230, 80, 0.582);
+    border-radius: 3px;
+}
+
+.warning {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(199, 113, 42, 0.783);
+    border-radius: 3px;
+}
+
+.danger {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(202, 38, 38, 0.775);
+    border-radius: 3px;
+}
+
+.mark {
+    padding: 0.3em;
+    font-size: 85%;
+    background-color: rgba(229, 229, 47, 0.726);
+    border-radius: 3px;
 }
 
 
@@ -91,6 +135,14 @@ html{
 
             h1{
                 color: #FFF;
+            }
+
+            a{
+                color: $link_color;
+        
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

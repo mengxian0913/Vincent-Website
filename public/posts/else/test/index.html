@@ -69,6 +69,67 @@
 <div>\( log_{2}10 \)</div>
 <p>When (a \ne 0), there are two solutions to (ax^2 + bx + c = 0) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+<ul>
+<li>Bird
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul>
+</li>
+<li>Magic</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=8W5BYM7bAx8&amp;ab_channel=%E4%B8%8A%E7%8F%AD%E4%B8%8D%E8%A6%81%E7%9C%8BNSFW">This is a link test</a></p>
+<p>Use the <span class="info">printf()</span> function.</p>
+<p>Use the <span class="success">printf()</span> function.</p>
+<p>Use the <span class="warning">printf()</span> function.</p>
+<p>Use the <span class="danger">printf()</span> function.</p>
+<p>Use the <span class="mark">printf()</span> function.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
+</head>
+
+<div class="spoiler">
+    <button class="spoiler-title">點擊查看隐藏内容</button>
+    <div class="spoiler-content">
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span>  <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n,ans<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>	cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span>(n <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>){
+</span></span><span style="display:flex;"><span>		ans <span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span>(n<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) n <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span> n <span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	cout <span style="color:#f92672">&lt;&lt;</span> ans;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </div>
+</div>
+
+<script>
+ 
+    document.addEventListener("DOMContentLoaded", function() {
+        var spoilerTitles = document.querySelectorAll(".spoiler-title");
+        spoilerTitles.forEach(function(title) {
+            title.addEventListener("click", function() {
+                var content = this.nextElementSibling;
+                if (content.style.height === "0px") {
+                    content.style.height = content.scrollHeight + "px";
+                } else {
+                    content.style.height = "0";
+                }
+            });
+        });
+    });
+
+</script>
+</html>
 </div>
                </article>
           </div>
