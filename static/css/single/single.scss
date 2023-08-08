@@ -17,8 +17,7 @@ html{
     text-decoration: none;
     scroll-behavior: smooth;
     border: none;
-    overflow-x: hidden;
-    
+
     h1{
         line-height: $line_height_2;
     }
@@ -39,11 +38,11 @@ html{
 
 :root    
 {
+    overflow-x: hidden;
     height: auto;
     overflow-x: hidden;
     background-color: $bg-color;
     color: #ffffffce;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
 

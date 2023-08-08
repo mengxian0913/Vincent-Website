@@ -6,14 +6,28 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us, zh-TW, zh</language>
-    <lastBuildDate>Sun, 06 Aug 2023 13:59:16 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 15:38:37 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://vincent-s-blog.web.app/posts/else/test/</link>
+      <pubDate>Tue, 08 Aug 2023 15:38:37 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/else/test/</guid>
+      <description>Math Test ( 1 + 1 = 2 )
+\( log_{2}10 \) When (a \ne 0), there are two solutions to (ax^2 + bx + c = 0) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</description>
+    </item>
+    
     <item>
       <title>Alg</title>
       <link>https://vincent-s-blog.web.app/posts/alg/alg/</link>
       <pubDate>Sun, 06 Aug 2023 13:59:16 +0800</pubDate>
       
       <guid>https://vincent-s-blog.web.app/posts/alg/alg/</guid>
-      <description>12 03 2023 Training Contest problems Problem 1: Experimental Data Vincent has a physics experiment class on Wednesday morning. During the class, he needs to repeat the experiment and calculate the experimental data. Vincent needs you to help him calculate the experimental data.
+      <description>12 03 2023 Training Contest problems Test 正文中的公式示例：
+行内公式：$E=mc^2$
+块级公式: $$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+$5 \times 5$
+Problem 1: Experimental Data Vincent has a physics experiment class on Wednesday morning. During the class, he needs to repeat the experiment and calculate the experimental data. Vincent needs you to help him calculate the experimental data.
 Calculation Formula:
 Error Value: ( \left| \frac{{(R_{\text{aver}} - R)}}{R} \right| \times 100% ) Resistance Formula: ( \frac{R_{1}}{R_{2}} = \frac{L_{1}}{L_{2}} ) Vincent conducted (T) experiments, and he has theoretical values (R) and (R_{1}), as well as values (L_{1}, L_{2}) for each experiment.</description>
     </item>

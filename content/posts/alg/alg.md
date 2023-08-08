@@ -7,6 +7,19 @@ tags: ["alg"]
 
 # 12 03 2023 Training Contest problems
 
+
+## Test
+
+
+正文中的公式示例：
+
+行内公式：$E=mc^2$
+
+块级公式: $$x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$$
+
+$5 \times 5$
+
+
 ## Problem 1: Experimental Data
 
 Vincent has a physics experiment class on Wednesday morning. During the class, he needs to repeat the experiment and calculate the experimental data. Vincent needs you to help him calculate the experimental data.

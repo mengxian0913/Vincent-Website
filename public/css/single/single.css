@@ -12,7 +12,6 @@ html {
   text-decoration: none;
   scroll-behavior: smooth;
   border: none;
-  overflow-x: hidden;
 }
 * h1 {
   line-height: 45px;
@@ -28,11 +27,11 @@ html {
 }
 
 :root {
+  overflow-x: hidden;
   height: auto;
   overflow-x: hidden;
   background-color: #1f242d;
   color: rgba(255, 255, 255, 0.8078431373);
-  font-family: "Montserrat", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
 }
 
