@@ -8,7 +8,14 @@ $text_color: #FFF;
 $greenblue: rgba(12, 70, 103, 0.644);
 $babyblue: #7FC0E6;
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
+    padding: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -99,7 +106,6 @@ nav{
 
 
 .nav2-container{
-
     transition: .4s;
     position: fixed;
     z-index: 90;
@@ -125,6 +131,7 @@ nav{
         }
 
         .menu2-container{
+            margin: 0;
             width: 100vw;
             height: auto;
             padding: 20px;
