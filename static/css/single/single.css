@@ -12,16 +12,16 @@ html {
   border: none;
 }
 * h1 {
-  line-height: 45px;
+  line-height: 30px;
 }
 * h2 {
-  line-height: 45px;
+  line-height: 30px;
 }
 * h3 {
-  line-height: 45px;
+  line-height: 30px;
 }
 * p {
-  line-height: 35px;
+  line-height: 30px;
 }
 
 :root {
@@ -75,6 +75,18 @@ html {
   font-size: 85%;
   background-color: rgba(229, 229, 47, 0.726);
   border-radius: 3px;
+}
+
+/* 修改水平分隔线的样式 */
+hr {
+  border-radius: 50px; /* 移除默认的边框 */
+  height: 2px; /* 设置分隔线高度 */
+  background-color: rgba(255, 255, 255, 0.2470588235); /* 设置分隔线颜色 */
+}
+
+img {
+  width: 80%;
+  height: auto;
 }
 
 .load {

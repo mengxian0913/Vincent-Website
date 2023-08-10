@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+        <style>
+             .swiper {
+                width: 100%;
+                max-width: 700px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(234, 232, 213, 0.21);
+                border-radius: 15px;
+            }
+            
+            .swiper-wrapper{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .swiper-slide{
+                width: fit-content;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            img{
+                width: 90%;
+            }
+
+
+            @media screen and (max-width: 600px) {
+
+                .swiper-button-prev {
+                    display: none;
+                }
+
+                .swiper-button-next {
+                    display: none;
+                }
+
+                img{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        </style>
+    </head>
+
+
+    {{ $ImagePath := (.Get "ImagePath")}}
+    {{ $ImageFiles := readDir (printf "static/%s" $ImagePath)}}
+
+    <body>
+        
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            {{ range $image := $ImageFiles }}
+                {{ $parts := split $image.Name "." }}
+                {{ $length := len $parts }}
+                {{ $ext := index $parts (sub $length 1)}}
+                {{ if in (slice "jpg" "jpeg" "png" "gif") $ext }}
+                    <div class="swiper-slide">
+                        <img src="{{add $ImagePath "/" $image.Name}}" alt="Images"> 
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+        
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+        
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+</html>
