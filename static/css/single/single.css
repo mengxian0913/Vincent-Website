@@ -23,6 +23,9 @@ html {
 * p {
   line-height: 30px;
 }
+* li {
+  line-height: 30px;
+}
 
 :root {
   margin: 0;
@@ -153,5 +156,6 @@ pre {
   .container .article-container article {
     width: 100%;
     margin: 10px 0px;
+    padding: 15px;
   }
 }/*# sourceMappingURL=single.css.map */

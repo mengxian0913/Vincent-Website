@@ -33,6 +33,10 @@ html{
     p{
         line-height: $line_height_1;
     }
+
+    li{
+        line-height: $line_height_1;
+    }
     
 }
 
@@ -183,6 +187,7 @@ pre{
             article{
                 width: 100%;
                 margin: 10px 0px;
+                padding: 15px;
             }
         }
     }
