@@ -10,6 +10,8 @@ html {
   text-decoration: none;
   scroll-behavior: smooth;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 * h1 {
   line-height: 30px;
@@ -28,8 +30,6 @@ html {
 }
 
 :root {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   height: auto;
   overflow-x: hidden;
@@ -109,7 +109,7 @@ img {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 50px;
@@ -122,7 +122,6 @@ img {
   align-items: center;
 }
 .container .article-container article {
-  line-height: 45px;
   width: 60vw;
   max-width: 1200px;
   min-height: 100vh;
