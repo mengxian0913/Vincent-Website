@@ -33,8 +33,6 @@ async function LoadingFunction(){
         
         let NowText = Loading_text + Loading_dot.substring(0, i + 1);
         Loading_h1.innerHTML = NowText;
-        console.log(NowText);
-        console.log(i);
     }
 
     return;

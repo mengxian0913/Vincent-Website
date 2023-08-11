@@ -1,0 +1,1 @@
+window.SwiperSet = new Set();

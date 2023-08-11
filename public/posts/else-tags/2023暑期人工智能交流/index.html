@@ -119,6 +119,10 @@
 
             @media screen and (max-width: 600px) {
 
+                .swiper{
+                    height: 300px;
+                }
+
                 .swiper-button-prev {
                     display: none;
                 }
@@ -138,12 +142,13 @@
 
     
     
-
+    
+    
     <body>
         
 
     
-    <div class="swiper">
+    <div class="swiper swiper1">
         
         <div class="swiper-wrapper">
         
@@ -242,39 +247,19 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
+    
         
     </body>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 
-    <script>
-        
-        const swiper = new Swiper('.swiper', {
-        
-        direction: 'horizontal',
-        loop: true,
-
-        
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-    </script>
+    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
+    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
 </html>
-<p>自從下了飛機後，發現深圳的道路上大概有 8 ~ 9 成的汽車都是電車，而這些車輛大多都來自於 <strong>比亞迪(BYD)</strong>。
-參訪比亞迪過後，了解了這間公司的技術，電動車(EV)、混合動力車(HEV)、包含刀片電池，以及能源系統。</p>
+<p>下了飛機後，發現深圳的道路上大概有 8 ~ 9 成的汽車都是電動能源車，而這些車輛大多出廠於 <strong>比亞迪(BYD)</strong>。
+在形成第一天我們參訪比亞迪，了解這間公司的技術，其中包含了電動車(EV)、混合  動力車(HEV)、包含刀片電池，以及能源系統等等。
+除了新能源汽車製造外，比亞迪也幫許多知名手機品牌代工。</p>
 <ol>
 <li>電動汽車（EV）：比亞迪是電動汽車領域的重要參與者之一。公司生產各種類型的電動車輛，包括乘用車、商用車和公交車。比亞迪在電動巴士製造方面取得了顯著成就，成為全球最大的電動巴士製造商之一。</li>
 <li>混合動力汽車（HEV）：除了純電動車輛，比亞迪還製造混合動力汽車，將傳統內燃機與電動技術相結合，提高燃油效率和減少排放。</li>
@@ -284,6 +269,140 @@
 <li>比亞迪致力於推動綠色交通和環保技術的發展，以減少對環境的影響，並在全球範圍內推廣其新能源汽車和相關產品。</li>
 </ol>
 <h3 id="span-classinfo參訪優必選深成交span"><span class="info">參訪優必選、深成交</span></h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+        <style>
+             .swiper {
+                width: 100%;
+                max-width: 700px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(234, 232, 213, 0.21);
+                border-radius: 15px;
+            }
+            
+            .swiper-wrapper{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .swiper-slide{
+                width: fit-content;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            img{
+                width: 90%;
+            }
+
+
+            @media screen and (max-width: 600px) {
+
+                .swiper{
+                    height: 300px;
+                }
+
+                .swiper-button-prev {
+                    display: none;
+                }
+
+                .swiper-button-next {
+                    display: none;
+                }
+
+                img{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        </style>
+    </head>
+
+
+    
+    
+    
+    
+    <body>
+        
+
+    
+    <div class="swiper swiper2">
+        
+        <div class="swiper-wrapper">
+        
+            
+                
+                
+                
+                
+            
+                
+                
+                
+                
+                    <div class="swiper-slide">
+                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/01.jpg" alt="Images"> 
+                    </div>
+                
+            
+                
+                
+                
+                
+                    <div class="swiper-slide">
+                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/02.jpg" alt="Images"> 
+                    </div>
+                
+            
+                
+                
+                
+                
+                    <div class="swiper-slide">
+                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/03.jpg" alt="Images"> 
+                    </div>
+                
+            
+                
+                
+                
+                
+                    <div class="swiper-slide">
+                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/04.jpg" alt="Images"> 
+                    </div>
+                
+            
+        </div>
+    
+        <div class="swiper-pagination"></div>
+
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    
+        
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
+    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
+</html>
 <h3 id="span-classinfo国家基因库span"><span class="info">国家基因库</span></h3>
 <h3 id="span-classinfo香港立法會span"><span class="info">香港立法會</span></h3>
 <hr>

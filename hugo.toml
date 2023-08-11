@@ -5,7 +5,7 @@ theme = 'ga-hugo-theme'
 tags = []
 paginate = 8
 staticDir = "static"
-
+enableInlineShortcodes =  true
 
 [permalinks]
   home = "/index.html"
@@ -21,3 +21,4 @@ staticDir = "static"
 [markup.goldmark]
   [markup.goldmark.renderer]
     unsafe = true
+
