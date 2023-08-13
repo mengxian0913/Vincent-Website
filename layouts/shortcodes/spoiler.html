@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/shortcodes/spoiler/spoiler.css">
-</head>
-
 <div class="spoiler">
     <button class="spoiler-title">{{ .Get 0 }}</button>
     <div class="spoiler-content">
         {{ .Inner | markdownify}}
     </div>
 </div>
-
-<script>
- 
-    document.addEventListener("DOMContentLoaded", function() {
-        var spoilerTitles = document.querySelectorAll(".spoiler-title");
-        spoilerTitles.forEach(function(title) {
-            title.addEventListener("click", function() {
-                var content = this.nextElementSibling;
-                if (content.style.height === "0px") {
-                    content.style.height = content.scrollHeight + "px";
-                } else {
-                    content.style.height = "0";
-                }
-            });
-        });
-    });
-
-</script>
-</html>

@@ -7,11 +7,14 @@
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
      
      <script type="text/javascript" id="MathJax-script" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
-    </script>
-
+     </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script type="module" src="https://vincent-s-blog.web.app/js/swiper.mjs"></script>
      <title>Vincent's Blog</title>
 </head>
 
@@ -82,185 +85,164 @@
 <hr>
 <h2 id="活動經歷">活動經歷</h2>
 <h3 id="span-classinfo參訪比亞迪span"><span class="info">參訪比亞迪</span></h3>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-        <style>
-             .swiper {
-                width: 100%;
-                max-width: 700px;
-                height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgba(234, 232, 213, 0.21);
-                border-radius: 15px;
-            }
-            
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-            }
-            
-            .swiper-slide{
-                width: fit-content;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<style>
+        .swiper {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(234, 232, 213, 0.21);
+            border-radius: 15px;
+        }
+        
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img{
+            width: 90%;
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .swiper{
+                height: 300px;
             }
 
+            .swiper-button-prev {
+                display: none;
+            }
+
+            .swiper-button-next {
+                display: none;
+            }
 
             img{
-                width: 90%;
+                width: 100%;
+                padding: 0;
             }
+        }
+</style>
 
 
-            @media screen and (max-width: 600px) {
-
-                .swiper{
-                    height: 300px;
-                }
-
-                .swiper-button-prev {
-                    display: none;
-                }
-
-                .swiper-button-next {
-                    display: none;
-                }
-
-                img{
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-        </style>
-    </head>
 
 
+
+ 
+
+<div class="swiper swiper1">
     
+    <div class="swiper-wrapper">
     
-    
-    
-    <body>
-        
-
-    
-    <div class="swiper swiper1">
-        
-        <div class="swiper-wrapper">
         
             
-                
-                
-                
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/01.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/02.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/03.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/04.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/05.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/06.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/07.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/08.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/09.jpg" alt="Images"> 
-                    </div>
-                
-            
-        </div>
-    
-        <div class="swiper-pagination"></div>
-
         
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/01.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/02.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/03.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/04.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/05.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/06.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/07.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/08.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/BYD/09.jpg" alt="Images"> 
+                </div>
+            
+        
     </div>
+
+    <div class="swiper-pagination"></div>
+
     
-        
-    </body>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
-    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
-</html>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <p>下了飛機後，發現深圳的道路上大概有 8 ~ 9 成的汽車都是電動能源車，而這些車輛大多出廠於 <strong>比亞迪(BYD)</strong>。
 在形成第一天我們參訪比亞迪，了解這間公司的技術，其中包含了電動車(EV)、混合  動力車(HEV)、包含刀片電池，以及能源系統等等。
 除了新能源汽車製造外，比亞迪也幫許多知名手機品牌代工。</p>
@@ -273,140 +255,119 @@
 <li>比亞迪致力於推動綠色交通和環保技術的發展，以減少對環境的影響，並在全球範圍內推廣其新能源汽車和相關產品。</li>
 </ul>
 <h3 id="span-classinfo參訪優必選深成交span"><span class="info">參訪優必選、深成交</span></h3>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-        <style>
-             .swiper {
-                width: 100%;
-                max-width: 700px;
-                height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgba(234, 232, 213, 0.21);
-                border-radius: 15px;
-            }
-            
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-            }
-            
-            .swiper-slide{
-                width: fit-content;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<style>
+        .swiper {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(234, 232, 213, 0.21);
+            border-radius: 15px;
+        }
+        
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img{
+            width: 90%;
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .swiper{
+                height: 300px;
             }
 
+            .swiper-button-prev {
+                display: none;
+            }
+
+            .swiper-button-next {
+                display: none;
+            }
 
             img{
-                width: 90%;
+                width: 100%;
+                padding: 0;
             }
+        }
+</style>
 
 
-            @media screen and (max-width: 600px) {
-
-                .swiper{
-                    height: 300px;
-                }
-
-                .swiper-button-prev {
-                    display: none;
-                }
-
-                .swiper-button-next {
-                    display: none;
-                }
-
-                img{
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-        </style>
-    </head>
 
 
+
+ 
+
+<div class="swiper swiper2">
     
+    <div class="swiper-wrapper">
     
-    
-    
-    <body>
-        
-
-    
-    <div class="swiper swiper2">
-        
-        <div class="swiper-wrapper">
         
             
-                
-                
-                
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/01.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/02.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/03.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/04.jpg" alt="Images"> 
-                    </div>
-                
-            
-        </div>
-    
-        <div class="swiper-pagination"></div>
-
         
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/01.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/02.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/03.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e6%b7%b1%e6%88%90%e4%ba%a4%e5%92%8c%e5%84%aa%e5%bf%85%e9%81%b8/04.jpg" alt="Images"> 
+                </div>
+            
+        
     </div>
+
+    <div class="swiper-pagination"></div>
+
     
-        
-    </body>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
-    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
-</html>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <p><strong>深城交</strong>是一家專注於城市交通領域的國家級高新技術企業，提供城市交通整體解決方案，包括規劃、設計、整合、運營等服務。<strong>深城交</strong>成立於1996年，是深圳市委市政府重要的交通決策支援和科研機構。</p>
 <ul>
 <li>規劃諮詢：提供城市交通規劃、軌道交通規劃、道路交通規劃、公共交通規劃等等。</li>
@@ -414,149 +375,128 @@
 <li>大數據軟體及<strong>智慧交通</strong>：提供交通大數據平台、综合交通仿真平台、智慧停車平台、車路協同平台、智慧出行平台等專業軟體產品，以及智慧城市、智慧街區、智慧道路等專業系统集成方案，為客户提供數據驅動和智能化的解决方案。</li>
 </ul>
 <h3 id="span-classinfo國家基因庫span"><span class="info">國家基因庫</span></h3>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-        <style>
-             .swiper {
-                width: 100%;
-                max-width: 700px;
-                height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgba(234, 232, 213, 0.21);
-                border-radius: 15px;
-            }
-            
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-            }
-            
-            .swiper-slide{
-                width: fit-content;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<style>
+        .swiper {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(234, 232, 213, 0.21);
+            border-radius: 15px;
+        }
+        
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img{
+            width: 90%;
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .swiper{
+                height: 300px;
             }
 
+            .swiper-button-prev {
+                display: none;
+            }
+
+            .swiper-button-next {
+                display: none;
+            }
 
             img{
-                width: 90%;
+                width: 100%;
+                padding: 0;
             }
+        }
+</style>
 
 
-            @media screen and (max-width: 600px) {
-
-                .swiper{
-                    height: 300px;
-                }
-
-                .swiper-button-prev {
-                    display: none;
-                }
-
-                .swiper-button-next {
-                    display: none;
-                }
-
-                img{
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-        </style>
-    </head>
 
 
+
+ 
+
+<div class="swiper swiper3">
     
+    <div class="swiper-wrapper">
     
-    
-    
-    <body>
-        
-
-    
-    <div class="swiper swiper3">
-        
-        <div class="swiper-wrapper">
         
             
-                
-                
-                
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/01.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/02.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/03.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/04.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/05.jpg" alt="Images"> 
-                    </div>
-                
-            
-        </div>
-    
-        <div class="swiper-pagination"></div>
-
         
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/01.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/02.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/03.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/04.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e5%9c%8b%e5%ae%b6%e5%9f%ba%e5%9b%a0%e5%ba%ab/05.jpg" alt="Images"> 
+                </div>
+            
+        
     </div>
+
+    <div class="swiper-pagination"></div>
+
     
-        
-    </body>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
-    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
-</html>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <p>國家基因庫是一個專門收集和保存各種生物樣本和數據的機構。</p>
 <ul>
 <li>保存、保護和合理利用基因資源，為國家安全和核心競爭力提供堅實基礎和有效保障。</li>
@@ -564,141 +504,126 @@
 <li>推動行業內的學術交流和樣本/數據資源共享，促進生命資源的科學合理應用，實現全球資源保護和戰略性應用。</li>
 <li>為科研工作者、相關產業的從業者和普通民眾創造學術交流、人才培訓、科普教育的廣闊空間與寶貴機遇，提升領域內人才的理論與實踐能力，培養民眾的科學態度與科學精神。</li>
 </ul>
-<h3 id="span-classinfo香港立法會span"><span class="info">香港立法會</span></h3>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Hello&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="span-classinfo香港立法會span"><span class="info">香港立法會</span></h3>
 
-        <style>
-             .swiper {
-                width: 100%;
-                max-width: 700px;
-                height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgba(234, 232, 213, 0.21);
-                border-radius: 15px;
-            }
-            
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-            }
-            
-            .swiper-slide{
-                width: fit-content;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+<style>
+        .swiper {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(234, 232, 213, 0.21);
+            border-radius: 15px;
+        }
+        
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img{
+            width: 90%;
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .swiper{
+                height: 300px;
             }
 
+            .swiper-button-prev {
+                display: none;
+            }
+
+            .swiper-button-next {
+                display: none;
+            }
 
             img{
-                width: 90%;
+                width: 100%;
+                padding: 0;
             }
+        }
+</style>
 
 
-            @media screen and (max-width: 600px) {
-
-                .swiper{
-                    height: 300px;
-                }
-
-                .swiper-button-prev {
-                    display: none;
-                }
-
-                .swiper-button-next {
-                    display: none;
-                }
-
-                img{
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-        </style>
-    </head>
 
 
+
+ 
+
+<div class="swiper swiper4">
     
+    <div class="swiper-wrapper">
     
-    
-    
-    <body>
-        
-
-    
-    <div class="swiper swiper4">
-        
-        <div class="swiper-wrapper">
         
             
-                
-                
-                
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/01.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/02.jpg" alt="Images"> 
-                    </div>
-                
             
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/03.jpg" alt="Images"> 
-                    </div>
-                
-            
-                
-                
-                
-                
-                    <div class="swiper-slide">
-                        <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/04.jpg" alt="Images"> 
-                    </div>
-                
-            
-        </div>
-    
-        <div class="swiper-pagination"></div>
-
         
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/01.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/02.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/03.jpg" alt="Images"> 
+                </div>
+            
+        
+            
+            
+            
+            
+                <div class="swiper-slide">
+                    <img src="/images/Posts/%e6%9a%91%e6%9c%9f%e8%81%af%e5%90%88%e5%a4%a7%e5%ad%b8%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e6%b4%bb%e5%8b%95/%e9%a6%99%e6%b8%af%e7%ab%8b%e6%b3%95%e9%99%a2/04.jpg" alt="Images"> 
+                </div>
+            
+        
     </div>
+
+    <div class="swiper-pagination"></div>
+
     
-        
-    </body>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-    <script src="https://vincent-s-blog.web.app/js/swiper.js"></script>
-    <script src="https://vincent-s-blog.web.app/js/config.js"></script>
-</html>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <p>參訪香港立法院，香港立法會<font style="text-decoration: underline;"> <strong>洪雯</strong> </font>議員合照。</p>
 <hr>
 <h2 id="課程想法-對於全自動駕駛的想法">課程想法 (對於全自動駕駛的想法)</h2>
@@ -768,7 +693,7 @@
      <script src="https://vincent-s-blog.web.app//js/prism.js "></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
      <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
-
+     <script src="https://vincent-s-blog.web.app/js/spoiler.js"></script>
      <script>
           MathJax = {
           tex: {
@@ -776,8 +701,7 @@
           }
           };
       </script>
-      <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-      </script>
+      
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-</html>
+</html>  
