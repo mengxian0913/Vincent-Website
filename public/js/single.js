@@ -42,8 +42,16 @@ LoadingFunction();
 
 
 // 網站加載過後
+<<<<<<< HEAD
 window.onload = function() {
     UnloadPage.style.display = "none";
     UnloadContainer.style.height = "auto";
     loadingInProgress = false;
 };
+=======
+window.addEventListener('load', function(){
+    UnloadPage.style.display = "none";
+    UnloadContainer.style.height = "auto";
+    loadingInProgress = false;
+});
+>>>>>>> 697bd6b (first-commit)
