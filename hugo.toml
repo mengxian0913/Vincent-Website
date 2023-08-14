@@ -1,10 +1,6 @@
 baseURL = 'https://vincent-s-blog.web.app/'
 languageCode = 'en-us, zh-TW, zh'
 title = 'My New Hugo Site'
-<<<<<<< HEAD
-theme = 'ga-hugo-theme'
-=======
->>>>>>> 697bd6b (first-commit)
 tags = []
 paginate = 8
 staticDir = "static"
