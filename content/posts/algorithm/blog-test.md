@@ -102,7 +102,8 @@ public:
     }
 };
 ```
->Time Complexity Proof: $lim_{n \to \infty}[n+(n-1)+(n-2)+(n-3)+ ... + 1]=O(n^2)$
+Time Complexity Proof: <br>
+$lim_{n \to \infty}[n+(n-1)+(n-2)+(n-3)+ ... + 1]=O(n^2)$
 
 ---
 
