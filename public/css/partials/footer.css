@@ -39,7 +39,7 @@
 .sec5 .copyright {
   width: 100vw;
   height: auto;
-  font-size: 10px;
+  font-size: 10px !important;
   font-weight: 400;
   display: flex;
   flex-direction: column;
