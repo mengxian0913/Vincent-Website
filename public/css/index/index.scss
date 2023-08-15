@@ -523,7 +523,7 @@ nav{
 
 
 .sec5{
-    min-height: 30vh;
+    height: auto;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -545,35 +545,32 @@ nav{
             align-items: center;
 
             a{
-                margin: 7px;
-            }
-
-            a img{
-                width: 40px;
-            }
+                img{
+                    height: 35px;
+                    width: 35px;
+                }
+            } 
         }
     }
 
     span{
+        margin: 20px 0;
         width: 80vw;
         border-bottom: #EFEFEF 1px solid;
     }
 
     .copyright{
-        position: relative;
-        top: 10px;
+        width: 100vw;
+        height: auto;
         font-size: 10px;
         font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
 }
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 830px){
 

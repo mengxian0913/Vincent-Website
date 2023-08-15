@@ -451,7 +451,7 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 
 .sec5 {
-  min-height: 30vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -472,21 +472,25 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: space-evenly;
   align-items: center;
 }
-.sec5 footer .follow a {
-  margin: 7px;
-}
 .sec5 footer .follow a img {
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 .sec5 span {
+  margin: 20px 0;
   width: 80vw;
   border-bottom: #EFEFEF 1px solid;
 }
 .sec5 .copyright {
-  position: relative;
-  top: 10px;
+  width: 100vw;
+  height: auto;
   font-size: 10px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 830px) {
