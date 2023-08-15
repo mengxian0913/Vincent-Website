@@ -434,7 +434,7 @@ signed main()
 	return 0;
 }
 ```
->Time Complexity Proof:
->證明方法同於合併排序
+Time Complexity Proof:<br>
+證明方法同於合併排序
 
 
