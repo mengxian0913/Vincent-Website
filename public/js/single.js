@@ -56,9 +56,9 @@ let CurrentScrollY = -1;
 window.addEventListener('scroll', function() {
     // 獲取目前的捲軸位置
     var scrollY = window.pageYOffset;
-  
+    console.log(scrollY);
     // 如果捲軸位置大於0，表示正在向上滾動
-    if (scrollY < CurrentScrollY) {
+    if (scrollY < CurrentScrollY && scrollY > 80) {
         ToTopArrow.style.width = "65px";
         ToTopArrow.style.height = "65px";
         ToTopArrow.style.transform =  "rotate(360deg)";
