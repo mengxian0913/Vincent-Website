@@ -106,6 +106,28 @@ img {
   font-size: 25px;
 }
 
+.to-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 99%;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  bottom: 3vh;
+  right: 3vw;
+}
+.to-top .imgcontainer {
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+.to-top .imgcontainer img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   height: auto;
@@ -145,6 +167,9 @@ pre {
   /* 手機版樣式設定 */
   * p {
     font-size: 16px;
+  }
+  .to-top {
+    display: none;
   }
   .container {
     margin: 0;
