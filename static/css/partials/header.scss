@@ -106,23 +106,21 @@ nav{
 
 
 .nav2-container{
+    z-index: 98;
     transition: .4s;
     position: fixed;
-    z-index: 90;
-    top: -100vh;
-    height: 90vh;
-    width: 100vw;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
     background-color: $dark;
-    border-bottom: #EEEEEE .5px solid;
+    // border: #eeeeee69 1px solid;
+    box-shadow: 0 4px 10px 0 rgba(59, 105, 116, 0.2), 0 2px 10px 0 rgba(244, 240, 240, 0.19);
 
     .menu2{
-        padding: 20px;
+        padding: 55px 20px 20px 20px;
         width: 100%;
         height: 100%;
         position: relative;
-        top: 27%;
-        left: 50%;
-        transform: translate(-50%, -25%);
 
         h1{
             font-size: 18px;
@@ -132,7 +130,7 @@ nav{
 
         .menu2-container{
             margin: 0;
-            width: 100vw;
+            width: 100%;
             height: auto;
             padding: 20px;
             display: flex;
@@ -169,8 +167,8 @@ nav{
     }
 
     &.is-active{
-        top: 0;
-        transform: translateY(65px);
+        right: 0;
+        // transform: translateY(65px);
     }
 }
 
@@ -194,7 +192,7 @@ nav{
     }
 
     .nav2-container .menu2{
-        padding: 8px;
+        padding: 55px 20px 20px 20px;
         .menu2-container{
             padding: 8px;
             .box{

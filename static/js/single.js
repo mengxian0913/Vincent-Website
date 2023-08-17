@@ -14,7 +14,7 @@ UnloadContainer.style.overflow = "hidden";
 
 let Loading_h1 = UnloadPage.querySelector("h1");
 const Loading_text = "Loading";
-const Loading_dot = "...";
+const Loading_dot = [".", "..", "..."];
 
 let loadingInProgress = true;
 
@@ -31,7 +31,7 @@ async function LoadingFunction(){
         i %= Loading_dot.length;
         await delay(200);
         
-        let NowText = Loading_text + Loading_dot.substring(0, i + 1);
+        let NowText = Loading_text + Loading_dot[i];
         Loading_h1.innerHTML = NowText;
     }
 
@@ -56,7 +56,6 @@ let CurrentScrollY = -1;
 window.addEventListener('scroll', function() {
     // 獲取目前的捲軸位置
     var scrollY = window.pageYOffset;
-    console.log(scrollY);
     // 如果捲軸位置大於0，表示正在向上滾動
     if (scrollY < CurrentScrollY && scrollY > 80) {
         ToTopArrow.style.width = "65px";

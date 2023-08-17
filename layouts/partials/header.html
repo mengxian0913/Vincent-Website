@@ -1,11 +1,11 @@
-<nav>
+<nav class="move-left">
     <div class="nav-container">
        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
 
         <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="hamburgers"></span>
+            <span class="hamburgers"></span>
+            <span class="hamburgers"></span>
         </div>
     </div>
 </nav>
@@ -13,7 +13,7 @@
 
 <div class="nav2-container">
     <div class="menu2">
-        <h1>tags</h1>
+        <h1>#tags</h1>
         <div class="menu2-container">
             <div class="box"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
             {{ range $tag, $pages := .Site.Taxonomies.tags }}
