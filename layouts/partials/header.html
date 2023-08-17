@@ -12,10 +12,10 @@
 
 
 <div class="nav2-container">
-    <div class="menu2">
-        <h1>#tags</h1>
-        <div class="menu2-container">
-            <div class="box"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
+    <div class="menu2 m2">
+        <h1 class="m2">#tags</h1>
+        <div class="menu2-container m2">
+            <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
             {{ range $tag, $pages := .Site.Taxonomies.tags }}
                 <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="line-height: 30px;">{{ $tag }}</a></div>
             {{ end }}

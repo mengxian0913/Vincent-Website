@@ -2,7 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const nav2_container = document.querySelector('.nav2-container');
 const body = document.body;
 
-const DomClickList = ['nav2-container', 'nav-container', 'hamburger', 'hamburgers', 'menu2'];
+const DomClickList = ['nav2-container', 'nav-container', 'hamburger', 'hamburgers', 'menu2', 'm2'];
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('is-active');
