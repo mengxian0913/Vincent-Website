@@ -7,10 +7,11 @@ staticDir = "static"
 enableInlineShortcodes =  true
 
 [permalinks]
-  home = "/index.html"
+  home = "/index.html"  
 
 
 [params]
+  jsonFilePath = "data/posts.json"
   [params.mathjax]
     enable = true
     cdn = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"

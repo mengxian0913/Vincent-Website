@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "swiper": "^10.1.0"
+    "gray-matter": "^4.0.3",
+    "swiper": "^10.1.0",
+    "toml": "^3.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
