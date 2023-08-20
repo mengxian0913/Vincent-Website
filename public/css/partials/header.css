@@ -46,7 +46,28 @@ nav .nav-container a span {
   text-transform: uppercase;
   color: #FFF;
 }
-nav .nav-container .hamburger {
+nav .nav-container .tools {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-container .tools .fa-solid {
+  position: relative;
+  bottom: 1px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  color: #555;
+  font-size: 20px;
+}
+nav .nav-container .tools .hamburger {
   padding: 2px;
   display: block;
   position: relative;
@@ -62,7 +83,7 @@ nav .nav-container .hamburger {
   background: none;
   cursor: pointer;
 }
-nav .nav-container .hamburger span {
+nav .nav-container .tools .hamburger span {
   display: block;
   width: 33px;
   height: 4px;
@@ -74,17 +95,17 @@ nav .nav-container .hamburger span {
   transform-origin: 0 0;
   transition: 0.4s;
 }
-nav .nav-container .hamburger.is-active span:nth-child(1) {
+nav .nav-container .tools .hamburger.is-active span:nth-child(1) {
   transform: translate(0px, -2px) rotate(45deg);
 }
-nav .nav-container .hamburger.is-active span:nth-child(2) {
+nav .nav-container .tools .hamburger.is-active span:nth-child(2) {
   opacity: 0;
   transform: translateX(15px);
 }
-nav .nav-container .hamburger.is-active span:nth-child(3) {
+nav .nav-container .tools .hamburger.is-active span:nth-child(3) {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
-nav .nav-container .hamburger.is-active:hover span {
+nav .nav-container .tools .hamburger.is-active:hover span {
   background-color: #7FC0E6;
 }
 

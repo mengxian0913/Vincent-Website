@@ -1,0 +1,82 @@
+* {
+  transition: all linear 300ms;
+}
+
+.search-background {
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  top: 0;
+  left: -100vw;
+}
+.search-background.is-active {
+  left: 0;
+}
+.search-background .search-container {
+  background-color: #EEE;
+  width: 98%;
+  max-width: 1000px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.search-background .search-container .row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.search-background .search-container .row input {
+  flex: 1;
+  height: 25px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+}
+.search-background .search-container .row button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.search-background .search-container .row .fa-xmark {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.search-background .search-container .row .fa-solid {
+  width: 20px;
+  color: #555;
+  font-size: 20px;
+  cursor: pointer;
+}
+.search-background .search-container #searchResults {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.search-background .search-container #searchResults ul {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style: none;
+}
+.search-background .search-container #searchResults ul li {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px 20px 5px 20px;
+}
+.search-background .search-container #searchResults ul li a {
+  color: #00e;
+}
+.search-background .search-container #searchResults ul li a:visited {
+  color: #551a8b;
+}
+.search-background .search-container #searchResults ul li a:hover {
+  color: #06e;
+}/*# sourceMappingURL=search.css.map */

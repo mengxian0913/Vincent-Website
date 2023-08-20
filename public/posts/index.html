@@ -6,25 +6,41 @@
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/list/list.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
      <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
      <title>Vincent's Blog</title>
 </head>
 
-
-
-
 <div class="load"><h1></h1></div>
+
+<div class="search-background">
+    <div class="search-container">
+        <div class="row">
+            <button class="fa-solid fa-xmark"></button>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
+            
+        </div>
+        
+        <div id="searchResults">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <body>
      <nav class="move-left">
     <div class="nav-container">
        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
-
-        <div class="hamburger">
-            <span class="hamburgers"></span>
-            <span class="hamburgers"></span>
-            <span class="hamburgers"></span>
-        </div>
+       <div class="tools">
+            <i class="fa-solid fa-magnifying-glass header-search"></i>
+            <div class="hamburger">
+                <span class="hamburgers"></span>
+                <span class="hamburgers"></span>
+                <span class="hamburgers"></span>
+            </div>
+       </div>
     </div>
 </nav>
 
@@ -53,18 +69,6 @@
 
 
      <div class="container move-left">
-
-          <div class="search-container">
-               <div class="row">
-                    <input type="text" id="searchInput" placeholder="Search...">
-                    <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
-               </div>
-               
-               <div id="searchResults">
-                    <ul>
-                    </ul>
-               </div>
-          </div>
 
           <div class="posts-container">
                <ul>

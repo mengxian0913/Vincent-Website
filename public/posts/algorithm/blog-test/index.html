@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
+     <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
      
      <script type="text/javascript" id="MathJax-script" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
@@ -26,16 +29,34 @@
      </div>
 </div>
 
+<div class="search-background">
+    <div class="search-container">
+        <div class="row">
+            <button class="fa-solid fa-xmark"></button>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
+            
+        </div>
+        
+        <div id="searchResults">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <body>
      <nav class="move-left">
     <div class="nav-container">
        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
-
-        <div class="hamburger">
-            <span class="hamburgers"></span>
-            <span class="hamburgers"></span>
-            <span class="hamburgers"></span>
-        </div>
+       <div class="tools">
+            <i class="fa-solid fa-magnifying-glass header-search"></i>
+            <div class="hamburger">
+                <span class="hamburgers"></span>
+                <span class="hamburgers"></span>
+                <span class="hamburgers"></span>
+            </div>
+       </div>
     </div>
 </nav>
 
@@ -467,6 +488,7 @@ $lim_{n \to \infty}[n+(n-1)+(n-2)+(n-3)+ &hellip; + 1]=O(n^2)$</p>
 </body>
      <script src="https://vincent-s-blog.web.app//js/header.js"></script>
      <script src="https://vincent-s-blog.web.app//js/single.js"></script>
+     <script src="https://vincent-s-blog.web.app//js/search.js"></script>
      <script src="https://vincent-s-blog.web.app//js/prism.js "></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
      <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>

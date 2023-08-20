@@ -4,6 +4,40 @@ const searchResultsUL = searchResults.querySelector('ul');
 let searchResultsList = new Set();
 let JsonContent = [];
 
+
+const searchButton = document.querySelector('.header-search');
+const searchcontainer = document.querySelector('.search-background');
+const searchchancelbox = document.querySelector('.fa-xmark');
+
+
+function SetBodyHeight(){
+    if(searchcontainer.classList.contains('is-active')){
+        document.body.style.position = "fixed";
+    }
+
+    else{
+        document.body.style.position = "static";
+    }
+}
+
+searchButton.addEventListener('click', function(){
+    searchcontainer.classList.toggle('is-active');
+    SetBodyHeight();
+});
+
+searchchancelbox.addEventListener('click', function(){
+    searchcontainer.classList.remove('is-active');
+    SetBodyHeight();
+});
+
+
+
+
+
+
+
+
+
 fetch('/json/posts.json')
     .then(response => response.json())
     .then(data => {
@@ -38,7 +72,7 @@ searchInput.onkeyup = function(){
     
     else{
         searchResultsList.clear();
-    }
+    }   
 
     // 在這裡可以根據 searchResultsList 的內容生成最終 HTML
     const searchResultsHTML = Array.from(searchResultsList)
