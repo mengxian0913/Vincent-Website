@@ -1,8 +1,9 @@
 * {
-  transition: all linear 300ms;
+  transition: all linear 1.5ms;
 }
 
 .search-background {
+  transition: all linear 300ms;
   position: absolute;
   z-index: 999;
   width: 100vw;
