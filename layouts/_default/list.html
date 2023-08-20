@@ -21,11 +21,15 @@
      <div class="container move-left">
 
           <div class="search-container">
-               <input type="text" id="searchInput" placeholder="Search...">
-               <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
-
+               <div class="row">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
+               </div>
                <!-- 顯示搜尋結果的容器 -->
-               <div id="searchResults"></div>
+               <div id="searchResults">
+                    <ul>
+                    </ul>
+               </div>
           </div>
 
           <div class="posts-container">
@@ -57,7 +61,6 @@
                     {{ end }}
                </div>
           </div>
-
 
           {{ partial "footer.html" .}}
      </div>

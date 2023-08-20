@@ -3,7 +3,7 @@ const path = require('path');
 const matter = require('gray-matter');
 
 const postsFolderPath = path.join(__dirname, 'content', 'posts');
-const jsonFilePath = path.join(__dirname, 'data', 'posts.json');
+const jsonFilePath = path.join(__dirname, 'static/json', 'posts.json');
 const jsonContent = [];
 const baseURL = "https://vincent-s-blog.web.app/posts/";
 
@@ -16,8 +16,6 @@ function GetAllPost(now_path, currentURL){
   fs.readdirSync(now_path).forEach(file => {
     const filePath = path.join(now_path, file);
     const fileNameWithoutExtension = file.replace(/\.[^.]+$/, '');
-    currentURL += fileNameWithoutExtension + "/";
-    console.log(currentURL);
     // 檢查是否為檔案
     if(fs.statSync(filePath).isFile()){
       const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -27,13 +25,13 @@ function GetAllPost(now_path, currentURL){
         title: parsedContent.data.title,
         date: parsedContent.data.date,
         content: parsedContent.content,
-        url: currentURL,
+        url: currentURL + fileNameWithoutExtension + "/",
       });
     
     }
 
     else{
-      GetAllPost(filePath, currentURL);
+      GetAllPost(filePath, currentURL + fileNameWithoutExtension + "/");
     }
 
   });

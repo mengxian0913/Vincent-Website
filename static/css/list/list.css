@@ -53,31 +53,60 @@ html {
   width: 98%;
   max-width: 1000px;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
   margin: 20px auto;
   border-radius: 5px;
 }
-.search-container input {
+.search-container .row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.search-container .row input {
   flex: 1;
-  height: 30px;
+  height: 25px;
   background: transparent;
   border: 0;
   outline: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
-.search-container button {
+.search-container .row button {
   background: transparent;
   border: 0;
   outline: 0;
 }
-.search-container .fa-solid {
-  width: 25px;
+.search-container .row .fa-solid {
+  width: 20px;
   color: #555;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
+}
+.search-container #searchResults {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.search-container #searchResults ul {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style: none;
+}
+.search-container #searchResults ul li {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px 20px 5px 20px;
+}
+.search-container #searchResults ul li a {
+  color: #00e;
+}
+.search-container #searchResults ul li a:visited {
+  color: #551a8b;
+}
+.search-container #searchResults ul li a:hover {
+  color: #06e;
 }
 
 .posts-container {

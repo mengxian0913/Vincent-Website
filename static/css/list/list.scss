@@ -61,34 +61,65 @@ html{
     width: 98%;
     max-width: 1000px;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
     margin: 20px auto;
     border-radius: 5px;
+    .row{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        
+        input{
+            flex: 1;
+            height: 25px;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 16px;
+        }
     
-    input{
-        flex: 1;
-        height: 30px;
-        background: transparent;
-        border: 0;
-        outline: 0;
-        font-size: 18px;
+        button{
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+    
+        .fa-solid{
+            width: 20px;
+            color: #555;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 
-    button{
-        background: transparent;
-        border: 0;
-        outline: 0;
-    }
+    #searchResults{
+        width: 100%;
+        height: fit-content;
 
-    .fa-solid{
-        width: 25px;
-        color: #555;
-        font-size: 22px;
-        cursor: pointer;
+        ul{
+            width: 100%;
+            height: fit-content;
+            list-style: none;
+
+            li{
+                width: 100%;
+                height: fit-content;
+                padding: 5px 20px 5px 20px;
+                a {
+                    color: #00e; 
+                    &:visited {
+                        color: #551a8b; 
+                    }
+                    &:hover {
+                        color: #06e; 
+                    }
+                }
+                
+            }
+        }
     }
+    
 
 }
 

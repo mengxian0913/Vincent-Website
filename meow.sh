@@ -1,5 +1,7 @@
 echo "Meow Meow~"
 
+node node-script.js
+
 hugo && firebase deploy
 
 git add .
