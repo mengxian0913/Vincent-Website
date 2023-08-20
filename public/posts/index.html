@@ -6,8 +6,12 @@
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/list/list.css">
+     <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
      <title>Vincent's Blog</title>
 </head>
+
+
+
 
 <div class="load"><h1></h1></div>
 
@@ -48,7 +52,16 @@
 
 
 
-     <div class="container move-left">     
+     <div class="container move-left">
+
+          <div class="search-container">
+               <input type="text" id="searchInput" placeholder="Search...">
+               <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
+
+               
+               <div id="searchResults"></div>
+          </div>
+
           <div class="posts-container">
                <ul>
                     
@@ -80,6 +93,7 @@
                </div>
           </div>
 
+
           <section class="sec5 move-left">
     <footer>
         <div class="follow">
@@ -103,4 +117,5 @@
 </body>
      <script src="https://vincent-s-blog.web.app//js/header.js"></script>
      <script src="https://vincent-s-blog.web.app//js/list.js"></script>
+     <script src="https://vincent-s-blog.web.app//js/search.js"></script>
 </html>
