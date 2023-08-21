@@ -36,12 +36,14 @@
   border-bottom: #EFEFEF 1px solid;
 }
 .sec5 .copyright {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  font-size: 10px !important;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.sec5 .copyright p {
+  font-size: 10px !important;
 }/*# sourceMappingURL=footer.css.map */
