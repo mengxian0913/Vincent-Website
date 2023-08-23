@@ -1,7 +1,7 @@
 .search-background {
   transition: all linear 300ms;
   position: absolute;
-  z-index: 999;
+  z-index: 200;
   width: 100vw;
   height: auto;
   min-height: 100vh;
@@ -61,6 +61,8 @@
   height: -moz-fit-content;
   height: fit-content;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .search-background .search-container #searchResults ul li {
   width: 100%;

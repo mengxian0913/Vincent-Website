@@ -1,0 +1,16 @@
+.catalog-container{
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    left: 2vw;
+    width: 15vw;
+    height: auto;
+    
+    background-color: beige;
+}
+
+@media (max-width: 768px){
+    .catalog-container{
+        display: none;
+    }
+}

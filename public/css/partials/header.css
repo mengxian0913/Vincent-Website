@@ -135,7 +135,7 @@ nav .nav-container .tools .hamburger.is-active:hover span {
   margin: 0;
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 8px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -180,9 +180,6 @@ nav .nav-container .tools .hamburger.is-active:hover span {
   }
   .nav2-container .menu2 {
     padding: 55px 20px 20px 20px;
-  }
-  .nav2-container .menu2 .menu2-container {
-    padding: 8px;
   }
   .nav2-container .menu2 .menu2-container .box {
     margin: 6px;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on My New Hugo Site</title>
+    <link>https://vincent-s-blog.web.app/tags/javascript/</link>
+    <description>Recent content in javascript on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us, zh-TW, zh</language>
+    <lastBuildDate>Wed, 23 Aug 2023 18:03:33 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jquery Attr 函式介紹</title>
+      <link>https://vincent-s-blog.web.app/posts/jquery/attr/</link>
+      <pubDate>Wed, 23 Aug 2023 18:03:33 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/jquery/attr/</guid>
+      <description>attr 是 jQuery 中的方法，用於獲取或設置元素的屬性值。attr 代表 &amp;ldquo;attribute&amp;rdquo;，即元素的屬性。這個方法允許您操作元素的 HTML 屬性，例如 class、id、href、src 等。
+在 jQuery 中，attr() 方法有兩種使用方式：
+獲取屬性值： 您可以使用 attr() 方法來獲取元素的特定屬性值。例如，$(element).attr(&amp;ldquo;class&amp;rdquo;) 將返回元素的 class 屬性值。 設置屬性值： 您可以使用 attr() 方法來設置元素的特定屬性值。例如，$(element).attr(&amp;ldquo;class&amp;rdquo;, &amp;ldquo;new-class&amp;rdquo;) 將把元素的 class 屬性值設置為 &amp;ldquo;new-class&amp;rdquo;。 // 獲取元素的 class 屬性值 const classValue = $(&amp;#34;element&amp;#34;).attr(&amp;#34;class&amp;#34;); // 設置元素的 class 屬性值 $(&amp;#34;element&amp;#34;).attr(&amp;#34;class&amp;#34;, &amp;#34;new-class&amp;#34;); // 獲取元素的 href 屬性值 const hrefValue = $(&amp;#34;a&amp;#34;).attr(&amp;#34;href&amp;#34;); // 設置元素的 src 屬性值 $(&amp;#34;img&amp;#34;).attr(&amp;#34;src&amp;#34;, &amp;#34;new-image.jpg&amp;#34;); </description>
+    </item>
+    
+  </channel>
+</rss>

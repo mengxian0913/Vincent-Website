@@ -18,6 +18,13 @@
      </script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script type="module" src="{{ .Site.BaseURL }}js/swiper.mjs"></script>
+
+     <!-- Jquery cdn  -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+     <!-- Catalog Style-->
+     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/catalog/catalog.css">
+
      <title>Vincent's Blog</title>
 </head>
 
@@ -33,6 +40,8 @@
 
 <body>
      {{ partial "header.html" .}}
+
+     {{ partial "catalog.html" . }}
     
      <div class="container move-left">
           <div class="article-container">
@@ -52,6 +61,7 @@
           {{ partial "footer" . }}
      </div>
 </body>
+     <script src="{{ .Site.BaseURL }}/js/catalog.js"></script>
      <script src="{{ .Site.BaseURL }}/js/header.js"></script>
      <script src="{{ .Site.BaseURL }}/js/single.js"></script>
      <script src="{{ .Site.BaseURL }}/js/search.js"></script>
