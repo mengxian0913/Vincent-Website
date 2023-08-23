@@ -1,24 +1,26 @@
-// _containerSelector = '#markdown-content';
+_containerSelector = '#markdown-content';
 
-// function generateCatalog(_selector){
-//     var P = $(_containerSelector);
+function generateCatalog(_selector){
+    var P = $(_containerSelector);
 
-//     a = P.find('h1, h2, h3, h4, h5, h6');
-//     $(_selector).html("");
+    a = P.find('h1, h2, h3, h4, h5, h6');
+    $(_selector).html("");
 
-//     a.each(function(){
-//         n = $(this).prop('tagName').toLowerCase();
-//         i = "#" + $(this).prop('id');
-//         t = $(this).text();
-//         c = $(`<a aria-label="${t}" href="${i}" rel="nofollow">${t}</a>`);
-//         l = $(`<li class="${n}_nav"></li>`).append(c);
-//         $(_selector).append(l);    
-//     })
+    a.each(function(){
+        n = $(this).prop('tagName').toLowerCase();
+        i = "#" + $(this).prop('id');
+        t = $(this).text();
+        c = $(`<a aria-label="${t}" href="${i}" rel="nofollow">${t}</a>`);
+        l = $(`<li class="${n}_nav"></li>`).append(c);
+        $(_selector).append(l);    
+    })
 
-//     return a;
-// }
+    return a;
+}
 
-// const sideElements = generateCatalog('ul.catalog-ul');
+const sideElements = generateCatalog('ul.catalog-ul');
+
+
 
 // sideElements.each((index, element) => {
 //     const name = element.id

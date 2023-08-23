@@ -26,9 +26,9 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.sec5 footer .follow a img {
-  height: 35px;
-  width: 35px;
+.sec5 footer .follow a .fa-brands {
+  color: rgba(125, 199, 231, 0.6549019608);
+  font-size: 35px;
 }
 .sec5 span {
   margin: 20px 0;
