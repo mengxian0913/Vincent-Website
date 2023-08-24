@@ -191,7 +191,7 @@ public:
 
 ---
 
-### 合併排序(Merge Sort) $O(n\times log_{2}n)$ 
+### 合併排序(Merge Sort) $O(n\times log_{2}n)$
 
 ![image alt](https://upload.wikimedia.org/wikipedia/commons/c/c5/Merge_sort_animation2.gif)
 
@@ -335,7 +335,7 @@ Time Complexity Proof
 
 ---
 
-### 快速排序 (Quick Sort) $O(n\times log_{2}n)$ <font color='#FFD306'>**TLE**</font>
+### 快速排序(Quick Sort) $O(n \times log_{2}n)$ <font color='#FFD306'>**TLE**</font>
 
 ![image alt](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
 

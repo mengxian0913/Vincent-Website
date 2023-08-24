@@ -37,9 +37,11 @@ sideElements.each((index, element) => {
         if(innerTags[i].className > htag[0].className) innerFirstTag = innerTags[i].className
         i++
     }
-
+    
+    
     const tagName = $(`[id="${name}"]`).prop("tagName")
     if(!firstTag) firstTag = tagName
+    
     if(tagName !== firstTag) sideElement.hide()
 
     all_htags.push({ sideElement, innerTags, innerFirstTag, innerTagsCount, top, tagName })
