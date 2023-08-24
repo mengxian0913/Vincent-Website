@@ -1,3 +1,7 @@
+$text_color: rgb(170, 170, 170);
+$bg-color: #1f242d;
+$second-bg-color: #323946;
+
 .catalog-container{
     position: fixed;
     z-index: 100;
@@ -5,8 +9,32 @@
     left: 2vw;
     width: 15vw;
     height: auto;
-    
-    background-color: beige;
+
+    margin: 0;
+    padding: 0;
+
+    h5{
+        margin: 0 auto 10px 0;
+        padding: 0;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0;
+            padding: 0;
+            a{
+                margin: 0;
+                padding: 0;
+                color: $text_color;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px){

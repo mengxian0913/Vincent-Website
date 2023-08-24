@@ -5,7 +5,29 @@
   left: 2vw;
   width: 15vw;
   height: auto;
-  background-color: beige;
+  margin: 0;
+  padding: 0;
+}
+.catalog-container h5 {
+  margin: 0 auto 10px 0;
+  padding: 0;
+}
+.catalog-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-container ul li {
+  margin: 0;
+  padding: 0;
+}
+.catalog-container ul li a {
+  margin: 0;
+  padding: 0;
+  color: rgb(170, 170, 170);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
