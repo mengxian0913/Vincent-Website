@@ -67,7 +67,9 @@ $(window).scroll(() => {
         const {sideElement, innerTags, innerFirstTag, innerTagsCount, top} = item
         if(index < all_htags.length - 1){
             if(innerTagsCount > 1){
-                if(curPos >= top && curPos < all_htags[index + innerTagsCount - 1].top && !isBottom){
+                let index2 = Math.min(index + innerTagsCount, all_htags.length - 1);
+
+                if(curPos >= top && curPos < all_htags[index2].top && !isBottom){
                     sideElement.attr("style", "color: #337ab7")
                     innerTags.filter((index, tag) => tag.className === innerFirstTag).slideDown()
                 }
@@ -75,11 +77,15 @@ $(window).scroll(() => {
                     sideElement.removeAttr("style", "color")
                     innerTags.filter((index, tag) => tag.className === innerFirstTag).slideUp()
                 }
-            }else{
+            }
+            
+            else{
                 if(curPos >= top && curPos < all_htags[index + innerTagsCount].top && !isBottom) sideElement.attr("style", "color: #337ab7")
                 else sideElement.removeAttr("style", "color")
             }
-        }else{
+        }
+        
+        else{
             if(curPos >= top || isBottom) sideElement.attr("style", "color: #337ab7")
             else sideElement.removeAttr("style", "color")
         }
