@@ -19,7 +19,6 @@ tags: ["演算法", "c++"]
 5. 如果數值 arr[mid] 小於 目標，將左指針移動到 mid+1
 6. 如果數值 arr[mid] 等於 目標，回傳答案
 
-{{< spoiler "展開顯示更多">}}
 ```cpp
 class Solution {
 public:
@@ -40,7 +39,6 @@ public:
     }
 };
 ```
-{{< /spoiler >}}
 
 ---
 
@@ -50,7 +48,6 @@ public:
 
 1. 比較數據中每一個值
 
-{{< spoiler "展開顯示更多">}}
 ```cpp
 class Solution {
 public:
@@ -63,7 +60,6 @@ public:
     }
 };
 ```
-{{< /spoiler >}}
 
 
 ## [912. Sort an Array](https://leetcode.com/problems/sort-an-array/)

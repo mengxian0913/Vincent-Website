@@ -47,7 +47,7 @@
       <guid>https://vincent-s-blog.web.app/posts/algorithm/blog-test/</guid>
       <description>704. Binary Search 二分搜解法 $O(log_2n)$ 因為每次搜尋都會將資料切半，所以時間複雜度為 $O(log_{2}n)$
 二分搜尋實作(左閉右閉)
-將數據由小至大排序好 設定左界及右界 尋找中間(mid) 如果數值 arr[mid] 大於 目標，將右指針移動到 mid-1 如果數值 arr[mid] 小於 目標，將左指針移動到 mid+1 如果數值 arr[mid] 等於 目標，回傳答案 展開顯示更多 class Solution { public: int search(vector&amp;lt;int&amp;gt;&amp;amp; arr, int target) { sort(arr.begin(), arr.end()); int Lptr = 0, Rptr = (int)arr.size()-1; while(Lptr &amp;lt;= Rptr) { long long mid = (Lptr + Rptr) / 2; if(arr[mid] == target) return mid; else if(arr[mid] &amp;lt; target) Lptr = mid + 1; else Rptr = mid - 1; } return -1; } }; 線性搜尋尋 $O(n)$ 線性搜尋實作</description>
+將數據由小至大排序好 設定左界及右界 尋找中間(mid) 如果數值 arr[mid] 大於 目標，將右指針移動到 mid-1 如果數值 arr[mid] 小於 目標，將左指針移動到 mid+1 如果數值 arr[mid] 等於 目標，回傳答案 class Solution { public: int search(vector&amp;lt;int&amp;gt;&amp;amp; arr, int target) { sort(arr.begin(), arr.end()); int Lptr = 0, Rptr = (int)arr.size()-1; while(Lptr &amp;lt;= Rptr) { long long mid = (Lptr + Rptr) / 2; if(arr[mid] == target) return mid; else if(arr[mid] &amp;lt; target) Lptr = mid + 1; else Rptr = mid - 1; } return -1; } }; 線性搜尋尋 $O(n)$ 線性搜尋實作</description>
     </item>
     
   </channel>
