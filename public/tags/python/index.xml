@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on My New Hugo Site</title>
+    <link>https://vincent-s-blog.web.app/tags/python/</link>
+    <description>Recent content in python on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us, zh-TW, zh</language>
+    <lastBuildDate>Mon, 11 Sep 2023 15:42:56 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始 selenium [01]</title>
+      <link>https://vincent-s-blog.web.app/posts/python/selenium_01/</link>
+      <pubDate>Mon, 11 Sep 2023 15:42:56 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/python/selenium_01/</guid>
+      <description>前言 注意事項：以下範例皆為 os 環境下實作
+使用 selenium 實作爬蟲有什麼好處呢？ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網頁中自在地穿梭。 並且，實作起來會比 Beautifulsoup 來的直觀，簡單。
+本篇文章會依序帶著大家認識 selenium
+Selenium 安裝 使用python pip 下載
+pip install selenium Webdriver 下載 brew install --cask google-drive 快速開始 引入函式 from selenium import webdriver 開啟瀏覽器 driver = webdriver.Chrome() 取得目標網站資源 url = &amp;#39;https://example.com/&amp;#39; driver.get(url) 取得目標網站資訊 title = driver.title 定位元素 from selenium.webdriver.common.by import By 網頁資料定位元素 說明 find_element(s)(By.ID, &amp;lsquo;&amp;rsquo;) 使用 id 屬性定位 find_element(s)(By.NAME, &amp;lsquo;&amp;rsquo;) 使用 name 屬性定位 find_element(s)(By.TAG_NAME, &amp;lsquo;&amp;rsquo;) 使用 tag_name 屬性定位 (div, span, input, button, etc.</description>
+    </item>
+    
+    <item>
+      <title>淺談 Python String .find() 函式</title>
+      <link>https://vincent-s-blog.web.app/posts/python/stringmethod_01/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:13 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/python/stringmethod_01/</guid>
+      <description>.find(val) 使用 find() 尋找第一個 val 出現的 index，如果沒有對應的值，回傳 -1
+ss = &amp;#34;Hello World!\n&amp;#34; print(ss.find(&amp;#34;World&amp;#34;)) # 6 print(ss.find(&amp;#34;Apple&amp;#34;)) # -1 (如果沒有找到，回傳-1) .find(val, start, end) 在 find() 函數中提供了三個參數。 回傳 start 與 end 的閉區間尋找 val 出現的 index
+ss = &amp;#34;Hello World!\n&amp;#34; print(ss.find(&amp;#34;World&amp;#34;, 6, 12)) # 6 print(ss.find(&amp;#34;World&amp;#34;, 6, 11)) # -1 (如果沒有找到，回傳-1) </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vincent-s-blog.web.app/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/posts/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/python/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/selenium/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/posts/python/selenium_01/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/tags/%E7%88%AC%E8%9F%B2/</loc>
+    <lastmod>2023-09-11T15:42:56+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/projects/</loc>
+    <lastmod>2023-09-11T15:29:49+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/projects/fcu-class-grabbing-robot/</loc>
+    <lastmod>2023-09-11T15:29:49+08:00</lastmod>
+  </url><url>
+    <loc>https://vincent-s-blog.web.app/posts/python/stringmethod_01/</loc>
+    <lastmod>2023-09-04T00:00:13+08:00</lastmod>
+  </url><url>
     <loc>https://vincent-s-blog.web.app/tags/front-end/</loc>
     <lastmod>2023-08-23T18:03:33+08:00</lastmod>
   </url><url>
@@ -12,15 +42,6 @@
     <lastmod>2023-08-23T18:03:33+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/posts/jquery/attr/</loc>
-    <lastmod>2023-08-23T18:03:33+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/</loc>
-    <lastmod>2023-08-23T18:03:33+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/posts/</loc>
-    <lastmod>2023-08-23T18:03:33+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/tags/</loc>
     <lastmod>2023-08-23T18:03:33+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/posts/else-tags/2023%E6%9A%91%E6%9C%9F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A4%E6%B5%81/</loc>
@@ -43,9 +64,6 @@
   </url><url>
     <loc>https://vincent-s-blog.web.app/posts/algorithm/blog-test/</loc>
     <lastmod>2023-08-08T22:49:50+08:00</lastmod>
-  </url><url>
-    <loc>https://vincent-s-blog.web.app/projects/</loc>
-    <lastmod>2023-08-02T15:41:48+08:00</lastmod>
   </url><url>
     <loc>https://vincent-s-blog.web.app/projects/line_bot/</loc>
     <lastmod>2023-08-02T15:41:48+08:00</lastmod>
