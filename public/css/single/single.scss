@@ -1,219 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $bg-color: #1f242d;
 $second-bg-color: #323946;
 $line_height_1: 30px;
 $line_height_2: 30px;
-$text_color: #FFF;
+$text_color: #fff;
 $link_color: #83d9e1;
 
-html{
-    height: 100%;
-    scroll-behavior: smooth;
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
-*{
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    border: none;
-    h1{
-        line-height: $line_height_2;
-    }
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  h1 {
+    line-height: $line_height_2;
+  }
 
-    h2{
-        line-height: $line_height_2;
-    }
+  h2 {
+    line-height: $line_height_2;
+  }
 
-    h3{
-        line-height: $line_height_2;
-    }
+  h3 {
+    line-height: $line_height_2;
+  }
 
-    p{
-        line-height: $line_height_1;
-    }
+  p {
+    line-height: $line_height_1;
+  }
 
-    li{
-        line-height: $line_height_1;
-    }
-    
+  li {
+    line-height: $line_height_1;
+  }
 }
 
-:root    
-{
-    overflow-x: hidden;
-    height: auto;
-    overflow-x: hidden;
-    background-color: $bg-color;
-    color: #ffffffce;
-    font-family: 'Noto Sans JP', sans-serif;
+:root {
+  overflow-x: hidden;
+  height: auto;
+  overflow-x: hidden;
+  background-color: $bg-color;
+  color: #ffffffce;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@mixin font-setting($rgbkey) {
+  padding: 0.3em;
+  font-size: 85%;
+  border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .light {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(255, 255, 255, 0.28);
-    border-radius: 3px; 
+  @include font-setting(rgba(255, 255, 255, 0.28));
 }
 
 .info {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(32, 158, 226, 0.28);
-    border-radius: 3px;
+  @include font-setting(rgba(32, 158, 226, 0.28));
 }
 
 .success {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(83, 230, 80, 0.582);
-    border-radius: 3px;
+  @include font-setting(rgba(83, 230, 80, 0.582));
 }
 
 .warning {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(199, 113, 42, 0.783);
-    border-radius: 3px;
+  @include font-setting(rgba(199, 113, 42, 0.783));
 }
 
 .danger {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(202, 38, 38, 0.775);
-    border-radius: 3px;
+  @include font-setting(rgba(202, 38, 38, 0.775));
 }
 
 .mark {
-    padding: 0.3em;
-    font-size: 85%;
-    background-color: rgba(229, 229, 47, 0.726);
-    border-radius: 3px;
+  @include font-setting(rgba(229, 229, 47, 0.726));
 }
 
 /* 修改水平分隔线的样式 */
 hr {
-    border-radius: 50px; /* 移除默认的边框 */
-    height: 2px; /* 设置分隔线高度 */
-    background-color: #ffffff3f; /* 设置分隔线颜色 */
+  border-radius: 50px; /* 移除默认的边框 */
+  height: 2px; /* 设置分隔线高度 */
+  background-color: #ffffff3f; /* 设置分隔线颜色 */
 }
 
-img{
-    width: 80%;
-    height: auto;
+img {
+  width: 80%;
+  height: auto;
 }
 
-.load{
-    width: 100vw;
-    height: 100vh;
-    background-color: $second-bg-color;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    right:0;
+.load {
+  width: 100vw;
+  height: 100vh;
+  background-color: $second-bg-color;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    h1{
-        font-size: 25px;
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.to-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 99%;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  bottom: 3vh;
+  right: 3vw;
+
+  .imgcontainer {
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    img {
+      width: 100%;
+      height: auto;
     }
-
+  }
 }
 
+.container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50px;
 
-.to-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    border-radius: 99%;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    bottom: 3vh;
-    right: 3vw;
-
-    .imgcontainer{
-        cursor: pointer;
-        transition: all ease-in-out 300ms;
-        img{
-            width: 100%;
-            height: auto;
-        }
-    }   
-}
-
-
-.container{
-
+  .article-container {
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .article-container{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    article {
+      width: 60vw;
+      max-width: 1200px;
+      min-height: 100vh;
+      margin: 25px;
+      background-color: #323946;
+      padding: 30px;
 
-        article{
-            width: 60vw;
-            max-width: 1200px;
-            min-height: 100vh;
-            margin: 25px;
-            background-color: #323946;
-            padding: 30px;
+      h1 {
+        color: #fff;
+      }
 
-            h1{
-                color: #FFF;
-            }
+      a {
+        color: $link_color;
 
-            a{
-                color: $link_color;
-        
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
-    
+  }
 }
 
-pre{
-    border-radius: 5px;
+pre {
+  border-radius: 5px;
 }
-
-
 
 @media (max-width: 768px) {
-    /* 手機版樣式設定 */
+  /* 手機版樣式設定 */
 
-    *{    
-      p{
-            font-size: 16px;
-        }
+  * {
+    p {
+      font-size: 16px;
     }
+  }
 
-    .to-top{
-        display: none;
-    }
+  .to-top {
+    display: none;
+  }
 
-    .container{
-        margin: 0;
-        width: 100vw;
-        
-        .article-container{
-            article{
-                width: 100%;
-                margin: 10px 0px;
-                padding: 15px;
-            }
-        }
+  .container {
+    margin: 0;
+    width: 100vw;
+
+    .article-container {
+      article {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 15px;
+      }
     }
+  }
 }

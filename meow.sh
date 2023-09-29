@@ -1,4 +1,4 @@
-echo "Meow Meow~"
+echo "Package your web..."
 
 node node-script.js
 

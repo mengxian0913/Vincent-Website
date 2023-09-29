@@ -116,7 +116,7 @@
      <div class="container move-left">
           <div class="article-container">
                <article>
-                    <h1>從零開始 selenium [01]</h1>
+                    <h1>從零開始 selenium 01</h1>
                     
                     <div style="color:grey;">
                          Monday, Sep 11, 2023
@@ -146,7 +146,8 @@ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>title <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>title
 </span></span></code></pre></div><h3 id="定位元素">定位元素</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.common.by <span style="color:#f92672">import</span> By
-</span></span></code></pre></div><table>
+</span></span></code></pre></div><div class='table'>
+    <table>
 <thead>
 <tr>
 <th>網頁資料定位元素</th>
@@ -172,10 +173,14 @@ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網�
 </tr>
 </tbody>
 </table>
+
+</div>
+
+
 <p>我強烈建議使用 By.XPATH 絕對定位來定位元素
 <span class='info'>以 codeforces 登入頁面為例子</span></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width: 15em;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Login&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width: 15em;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Login&#34;</span> /&gt;
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>handle_box <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, <span style="color:#e6db74">&#34;//input[@id=&#39;handleOrEmail&#39;]&#34;</span>)
 </span></span><span style="display:flex;"><span>login_button <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, <span style="color:#e6db74">&#34;//input[@value=&#39;Login&#39;]&#34;</span>)
 </span></span></code></pre></div><h3 id="點擊以及輸入事件">點擊以及輸入事件</h3>

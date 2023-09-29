@@ -3,15 +3,40 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css">
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
-     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/list/list.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css">   
      <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/table/table.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+     
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/catalog/catalog.css">
+
      <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
+     
+     <script type="text/javascript" id="MathJax-script" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+     </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script type="module" src="https://vincent-s-blog.web.app/js/swiper.mjs"></script>
+
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
      <title>Vincent's Blog</title>
 </head>
 
 <div class="load"><h1></h1></div>
+
+<div class="to-top">
+     <div class="imgcontainer">
+          <img src="https://vincent-s-blog.web.app//icon/paw-print.ico" alt="ToTopArrow" id="ToTopArrow">
+     </div>
+</div>
 
 <div class="search-background">
     <div class="search-container">
@@ -82,39 +107,27 @@
 
 
 
+     <div class="catalog-container">
+    <ul class="catalog-ul">
+        
+    </ul>
+</div>
+    
      <div class="container move-left">
-
-          <div class="posts-container">
-               <ul>
+          <div class="article-container">
+               <article>
+                    <h1>Shortcodes</h1>
                     
+                    <div style="color:grey;">
+                         Sunday, Sep 17, 2023
                          
-                              <li>
-                                   <a href="https://vincent-s-blog.web.app/posts/python/selenium_01/">
-                                        <h2>從零開始 selenium 01</h2>
-                                        <p>2023-09-11</p>
-                                   </a>
-                              </li>
-                         
+                    </div>
                     
-                         
-                              <li>
-                                   <a href="https://vincent-s-blog.web.app/posts/python/stringmethod_01/">
-                                        <h2>淺談 Python String .find() 函式</h2>
-                                        <p>2023-09-04</p>
-                                   </a>
-                              </li>
-                         
-                    
-               </ul>
-
-               <div class="prev-next-pages">
-
-                    
-                    
-                    
-               </div>
+                    <div id="markdown-content"></div>
+               </article>
           </div>
-
+          
+          
           <section class="sec5 move-left">
     <footer>
         <div class="follow">
@@ -136,7 +149,22 @@
 </section>
      </div>
 </body>
+     <script src="https://vincent-s-blog.web.app//js/catalog.js"></script>
      <script src="https://vincent-s-blog.web.app//js/header.js"></script>
-     <script src="https://vincent-s-blog.web.app//js/list.js"></script>
+     <script src="https://vincent-s-blog.web.app//js/single.js"></script>
      <script src="https://vincent-s-blog.web.app//js/search.js"></script>
-</html>
+     <script src="https://vincent-s-blog.web.app//js/prism.js "></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+     <script src="https://vincent-s-blog.web.app/js/spoiler.js"></script>
+     <script>
+          MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+          };
+      </script>
+      
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+</html>  

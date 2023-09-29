@@ -1,8 +1,8 @@
 ---
-title: "從零開始 selenium [01]"
+title: "從零開始 selenium 01"
 date: 2023-09-11T15:42:56+08:00
 draft: false
-tags: ['python', 'selenium', '爬蟲']
+tags: ["python", "selenium", "爬蟲"]
 ---
 
 ## 前言
@@ -29,7 +29,6 @@ pip install selenium
 brew install --cask google-drive
 ```
 
-
 ## 快速開始
 
 ### 引入函式
@@ -37,7 +36,6 @@ brew install --cask google-drive
 ```py
 from selenium import webdriver
 ```
-
 
 ### 開啟瀏覽器
 
@@ -64,20 +62,21 @@ title = driver.title
 from selenium.webdriver.common.by import By
 ```
 
-|  網頁資料定位元素   | 說明  |
-|  ----  | ----  |
-| find_element(s)(By.ID, '')  | 使用 id 屬性定位 |
-| find_element(s)(By.NAME, '')  | 使用 name 屬性定位 |
+{{< table >}}
+| 網頁資料定位元素 | 說明 |
+| -- | -- |
+| find_element(s)(By.ID, '') | 使用 id 屬性定位 |
+| find_element(s)(By.NAME, '') | 使用 name 屬性定位 |
 | find_element(s)(By.TAG_NAME, '')| 使用 tag_name 屬性定位 (div, span, input, button, etc.) |
 | find_element(s)(By.XPATH, "//[@]") | 使用 XPATH 絕對定位 <span class='warning'>(強力推薦)</span> |
-
+{{< /table >}}
 
 我強烈建議使用 By.XPATH 絕對定位來定位元素
 <span class='info'>以 codeforces 登入頁面為例子</span>
 
 ```html
-<input id="handleOrEmail" style="width: 15em;" name="handleOrEmail" value="">
-<input class="submit" type="submit" value="Login">
+<input id="handleOrEmail" style="width: 15em;" name="handleOrEmail" value="" />
+<input class="submit" type="submit" value="Login" />
 ```
 
 ```py
