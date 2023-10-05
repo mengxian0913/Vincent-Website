@@ -39,43 +39,43 @@ html {
 .light {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(255, 255, 255, 0.28);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .info {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(32, 158, 226, 0.28);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .success {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(83, 230, 80, 0.582);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .warning {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(199, 113, 42, 0.783);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .danger {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(202, 38, 38, 0.775);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .mark {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(229, 229, 47, 0.726);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 /* 修改水平分隔线的样式 */
@@ -90,20 +90,23 @@ img {
   height: auto;
 }
 
-.load {
-  width: 100vw;
+.load-container {
   height: 100vh;
-  background-color: #323946;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
+  width: 100vw;
+  background-color: #1f242d;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 190;
 }
-.load h1 {
-  font-size: 25px;
+.load-container .load {
+  position: absolute;
+  top: 50px;
+  width: 60vw;
+  height: 100vh;
+  background-color: #323946;
+  padding: 20px 0 0 20px;
 }
 
 .to-top {
@@ -113,7 +116,7 @@ img {
   align-items: center;
   position: fixed;
   border-radius: 99%;
-  z-index: 999;
+  z-index: 189;
   width: 60px;
   height: 60px;
   bottom: 3vh;
@@ -150,7 +153,7 @@ img {
   padding: 30px;
 }
 .container .article-container article h1 {
-  color: #FFF;
+  color: #fff;
 }
 .container .article-container article a {
   color: #83d9e1;

@@ -25,7 +25,7 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 192;
     background-color: $bg-color;
     padding: 16px 32px;
     border-bottom: 3px $greenblue solid;
@@ -130,7 +130,7 @@ nav{
 
 
 .nav2-container{
-    z-index: 98;
+    z-index: 191;
     transition: .4s;
     position: fixed;
     right: -300px;

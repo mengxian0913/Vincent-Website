@@ -39,43 +39,43 @@ html {
 .light {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(255, 255, 255, 0.28);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .info {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(32, 158, 226, 0.28);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .success {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(83, 230, 80, 0.582);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .warning {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(199, 113, 42, 0.783);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .danger {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(202, 38, 38, 0.775);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 .mark {
   padding: 0.3em;
   font-size: 85%;
-  background-color: rgba(229, 229, 47, 0.726);
   border-radius: 3px;
+  background-color: rgbkey;
 }
 
 /* 修改水平分隔线的样式 */
@@ -88,22 +88,6 @@ hr {
 img {
   width: 80%;
   height: auto;
-}
-
-.load {
-  width: 100vw;
-  height: 100vh;
-  background-color: #323946;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.load h1 {
-  font-size: 25px;
 }
 
 .to-top {
@@ -150,7 +134,7 @@ img {
   padding: 30px;
 }
 .container .article-container article h1 {
-  color: #FFF;
+  color: #fff;
 }
 .container .article-container article a {
   color: #83d9e1;

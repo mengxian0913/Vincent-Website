@@ -90,23 +90,23 @@ img {
   height: auto;
 }
 
-.load {
-  width: 100vw;
-  height: 100vh;
-  background-color: $second-bg-color;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    font-size: 25px;
-  }
-}
+// .load {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: $second-bg-color;
+//   position: fixed;
+//   z-index: 9999;
+//   top: 0;
+//   right: 0;
+//
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//
+//   h1 {
+//     font-size: 25px;
+//   }
+// }
 
 .to-top {
   display: flex;
