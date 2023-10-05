@@ -17,7 +17,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 192;
   background-color: #1f242d;
   padding: 16px 32px;
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
@@ -111,7 +111,7 @@ nav .nav-container .tools .hamburger.is-active:hover span {
 }
 
 .nav2-container {
-  z-index: 98;
+  z-index: 191;
   transition: 0.4s;
   position: fixed;
   right: -300px;

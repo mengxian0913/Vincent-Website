@@ -90,6 +90,25 @@ img {
   height: auto;
 }
 
+.load-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f242d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 190;
+}
+.load-container .load {
+  position: absolute;
+  top: 50px;
+  width: 60vw;
+  height: 100vh;
+  background-color: #323946;
+  padding: 20px 0 0 20px;
+}
+
 .to-top {
   display: flex;
   flex-direction: column;
@@ -97,7 +116,7 @@ img {
   align-items: center;
   position: fixed;
   border-radius: 99%;
-  z-index: 999;
+  z-index: 189;
   width: 60px;
   height: 60px;
   bottom: 3vh;

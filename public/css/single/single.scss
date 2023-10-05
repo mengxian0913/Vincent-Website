@@ -90,23 +90,25 @@ img {
   height: auto;
 }
 
-// .load {
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: $second-bg-color;
-//   position: fixed;
-//   z-index: 9999;
-//   top: 0;
-//   right: 0;
-//
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//
-//   h1 {
-//     font-size: 25px;
-//   }
-// }
+
+.load-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 190;
+  .load {
+    position: absolute;
+    top: 50px;
+    width: 60vw;
+    height: 100vh;
+    background-color: $second-bg-color;
+    padding: 20px 0 0 20px;
+  }
+}
 
 .to-top {
   display: flex;
@@ -115,7 +117,7 @@ img {
   align-items: center;
   position: fixed;
   border-radius: 99%;
-  z-index: 999;
+  z-index: 189;
   width: 60px;
   height: 60px;
   bottom: 3vh;
