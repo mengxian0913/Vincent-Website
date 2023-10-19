@@ -3,7 +3,7 @@ function generateCatalog(selector) {
     _containerSelector = '#markdown-content'
 
     // init
-    var P = $(_containerSelector), a, n, t, l, i, c;
+    let P = $(_containerSelector), a, n, t, l, i, c;
     a = P.find('h1,h2,h3,h4,h5,h6');
 
     // clean

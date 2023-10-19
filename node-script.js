@@ -20,14 +20,14 @@ function GetAllPost(now_path, currentURL){
     if(fs.statSync(filePath).isFile()){
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const parsedContent = matter(fileContent);
-
+      console.log(parsedContent.data.title, " ", parsedContent.data.tags);
       jsonContent.push({
         title: parsedContent.data.title,
+        tags: parsedContent.data.tags,
         date: parsedContent.data.date,
         content: parsedContent.content,
         url: currentURL + fileNameWithoutExtension + "/",
       });
-    
     }
 
     else{

@@ -30,9 +30,13 @@ searchchancelbox.addEventListener('click', function(){
     SetBodyHeight();
 });
 
-
-
-
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.code === 'Escape') {
+        // 在這裡處理按下 `Esc` 鍵的情況
+        searchcontainer.classList.remove('is-active');
+        SetBodyHeight();
+    }
+});
 
 
 
@@ -53,8 +57,17 @@ fetch('/json/posts.json')
 function MatchWords(words){
     const pattern = new RegExp(words, "gi");
     for(let i of JsonContent){
-        const isMatch = pattern.test(i.title);
-        if(isMatch){
+        const isMatchTitle = pattern.test(i.title);
+
+        let isMatchTags = false
+        for(let j of i.tags) {
+            if(pattern.test(j)) {
+                isMatchTags = true;
+                break;
+            }
+        }
+
+        if(isMatchTitle || isMatchTags){
             searchResultsList.add(i.url);   
         } else {
             searchResultsList.delete(i.url);
@@ -66,7 +79,7 @@ function MatchWords(words){
 searchInput.onkeyup = function(){
     const searchText = searchInput.value;
     if(searchText != ''){
-        console.log(searchText);
+        // console.log(searchText);
         MatchWords(searchText);   
     }
     
