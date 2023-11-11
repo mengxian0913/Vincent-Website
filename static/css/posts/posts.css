@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .timeline {
   width: 80%;
   height: auto;
@@ -42,7 +43,7 @@
 .timeline ul li a .timeline-title h1 {
   font-size: 18px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 .timeline ul li a .timeline-content {
   width: 100%;
@@ -85,7 +86,7 @@
     position: relative;
   }
   .timeline ul li:hover:after {
-    background-color: rgb(12, 70, 103);
+    background-color: rgba(12, 70, 103, 0.644);
   }
   .timeline ul li:nth-child(odd) {
     float: left;

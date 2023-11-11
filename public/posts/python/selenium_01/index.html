@@ -1,78 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css" />
-    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css" />
-    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css" />
-    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css" />
-    <link
-      rel="stylesheet"
-      href="https://vincent-s-blog.web.app/css/partials/search/search.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://vincent-s-blog.web.app/css/shortcodes/table/table.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <link
-      rel="stylesheet"
-      href="https://vincent-s-blog.web.app/css/partials/catalog/catalog.css"
-    />
-
-    <script
-      src="https://kit.fontawesome.com/fa3dac99ea.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      type="text/javascript"
-      id="MathJax-script"
-      async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="https://vincent-s-blog.web.app/js/swiper.mjs"></script>
-
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/baseof/baseof.css">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+    
+    <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
 
-    <title>Vincent's Blog</title>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/table/table.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/catalog/catalog.css">
 
-  
-  <div class="load-container">
-    <div class="load">
-      <div class="title"></div>
-      <div class="article"></div>
-      <div class="img"></div>
-      <div class="article"></div>
-    </div>  
-  </div>
-  
 
-  <div class="to-top">
-    <div class="imgcontainer">
-      <img
-        src="https://vincent-s-blog.web.app//icon/paw-print.ico"
-        alt="ToTopArrow"
-        id="ToTopArrow"
-      />
-    </div>
-  </div>
 
-  <div class="search-background">
+
+    <title>
+        
+    從零開始 selenium 01 - Vincent's Blog
+
+    </title>
+</head>
+
+<div class="search-background">
     <div class="search-container">
         <div class="row">
             <button class="fa-solid fa-xmark"></button>
@@ -88,73 +50,119 @@
     </div>
 </div>
 
-  <body>
+<body>
+
+    
+
     <nav class="move-left">
-    <div class="nav-container">
-       <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
-       <div class="tools">
-            <i class="fa-solid fa-magnifying-glass header-search"></i>
-            <div class="hamburger">
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-            </div>
-       </div>
-    </div>
-</nav>
-
-
-<div class="nav2-container">
-    <div class="menu2 m2">
-        <h1 class="m2">#tags</h1>
-        <div class="menu2-container m2">
-            <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
-            
-                <div class="box"><a href="/tags/c&#43;&#43;" style="line-height: 30px;">c&#43;&#43;</a></div>
-            
-                <div class="box"><a href="/tags/front-end" style="line-height: 30px;">front-end</a></div>
-            
-                <div class="box"><a href="/tags/javascript" style="line-height: 30px;">javascript</a></div>
-            
-                <div class="box"><a href="/tags/jquery" style="line-height: 30px;">jquery</a></div>
-            
-                <div class="box"><a href="/tags/python" style="line-height: 30px;">python</a></div>
-            
-                <div class="box"><a href="/tags/selenium" style="line-height: 30px;">selenium</a></div>
-            
-                <div class="box"><a href="/tags/%E5%8F%83%E8%A8%AA%E6%B4%BB%E5%8B%95" style="line-height: 30px;">參訪活動</a></div>
-            
-                <div class="box"><a href="/tags/%E6%97%85%E9%81%8A" style="line-height: 30px;">旅遊</a></div>
-            
-                <div class="box"><a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95" style="line-height: 30px;">演算法</a></div>
-            
-                <div class="box"><a href="/tags/%E7%88%AC%E8%9F%B2" style="line-height: 30px;">爬蟲</a></div>
-            
-                <div class="box"><a href="/tags/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8" style="line-height: 30px;">逢甲大學</a></div>
-            
+        <div class="nav-container">
+        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
+        <div class="tools">
+                <i class="fa-solid fa-magnifying-glass header-search"></i>
+                <div class="hamburger">
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                </div>
         </div>
-        
+        </div>
+    </nav>
+
+
+    <div class="nav2-container">
+        <div class="menu2 m2">
+            <h1 class="m2">#tags</h1>
+            <div class="menu2-container m2">
+                <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
+                
+                    <div class="box"><a href="/tags/c&#43;&#43;" style="line-height: 30px;">c&#43;&#43;</a></div>
+                
+                    <div class="box"><a href="/tags/front-end" style="line-height: 30px;">front-end</a></div>
+                
+                    <div class="box"><a href="/tags/javascript" style="line-height: 30px;">javascript</a></div>
+                
+                    <div class="box"><a href="/tags/jquery" style="line-height: 30px;">jquery</a></div>
+                
+                    <div class="box"><a href="/tags/python" style="line-height: 30px;">python</a></div>
+                
+                    <div class="box"><a href="/tags/selenium" style="line-height: 30px;">selenium</a></div>
+                
+                    <div class="box"><a href="/tags/%E5%8F%83%E8%A8%AA%E6%B4%BB%E5%8B%95" style="line-height: 30px;">參訪活動</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%97%85%E9%81%8A" style="line-height: 30px;">旅遊</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95" style="line-height: 30px;">演算法</a></div>
+                
+                    <div class="box"><a href="/tags/%E7%88%AC%E8%9F%B2" style="line-height: 30px;">爬蟲</a></div>
+                
+                    <div class="box"><a href="/tags/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8" style="line-height: 30px;">逢甲大學</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
+    <script src="https://vincent-s-blog.web.app//js/header.js"></script>
+
+
+    <div id="loading">
+      
+        <style>
+    #single-load-container {
+        height: 100vh;
+        width: 100vw;
+         
+         
+        background-color: #1f242d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #single-load {
+        position: relative;
+        top: 4vh;
+        height: 96vh;
+        width: 60vw;
+        background-color: #323946;
+        padding: 20px 0 0 20px;
+    }
+</style>
+
+
+<div id="single-load-container">
+    <div id="single-load">
+        <div class="title"></div>
+        <div class="article"></div>
+        <div class="img"></div>
+        <div class="article"></div>
     </div>
 </div>
 
+<script src="https://vincent-s-blog.web.app//js/single_load.js"></script>
+      
+    </div>
 
-
- <div class="catalog-container">
+    <div id="content">
+        
+            <div class="catalog-container">
     <ul class="catalog-ul">
         
     </ul>
 </div>
+        
 
-    <div class="container move-left">
-      <div class="article-container">
-        <article>
-          <h1>從零開始 selenium 01</h1>
+        
+  <div id="single-container"  class= "move-left">
+    <div class="article-container">
+      <article>
+        <h1>從零開始 selenium 01</h1>
 
-          <div style="color: grey">
-            Monday, Sep 11, 2023 
-          </div>
+        <div style="color: grey">
+          Monday, Sep 11, 2023 
+        </div>
 
-          <div id="markdown-content"><h2 id="前言">前言</h2>
+        <div id="markdown-content"><h2 id="前言">前言</h2>
 <p><sapn class="info">注意事項：以下範例皆為 os 環境下實作</span></p>
 <p>使用 selenium 實作爬蟲有什麼好處呢？
 selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網頁中自在地穿梭。
@@ -220,34 +228,35 @@ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網�
 </span></span></code></pre></div><h2 id="範例專案逢甲大學搶課機器人">範例專案：逢甲大學搶課機器人</h2>
 <p><a href="https://github.com/mengxian0913/Class-Grabbing-Robot">https://github.com/mengxian0913/Class-Grabbing-Robot</a></p>
 </div>
-        </article>
-      </div>
-
-      <section class="sec5 move-left">
-    <footer>
-        <div class="follow">
-            <a href="https://www.instagram.com/meng_337/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/mengxian0913"><i class="fa-brands fa-github"></i></a>
-                    <a href = "mailto:mengxian0913@gmail.com"><i class="fa-regular fa-envelope" style="color: #7dc7e7a7; font-size: 35px;"></i></a>
-                    <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><i class="fa-brands fa-youtube"></i></a>
-            
-        </div>
-    </footer>
-
-    <span></span>
-
-    <div class="copyright">
-        <p>
-            Copyright © 2023 Yang, Meng-Xian. All rights reserved.
-        </p>
+      </article>
     </div>
-</section>
+
+    
+  </div>
+
+  <div class="to-top">
+    <div class="imgcontainer">
+      <img
+        src="https://vincent-s-blog.web.app//icon/paw-print.ico"
+        alt="ToTopArrow"
+        id="ToTopArrow"
+      />
     </div>
-  </body>
+  </div>
+
+  
   <script src="https://vincent-s-blog.web.app//js/catalog.js"></script>
-  <script src="https://vincent-s-blog.web.app//js/header.js"></script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="https://vincent-s-blog.web.app/js/swiper.mjs"></script>
+
+
   <script src="https://vincent-s-blog.web.app//js/single.js"></script>
-  <script src="https://vincent-s-blog.web.app//js/search.js"></script>
   <script src="https://vincent-s-blog.web.app//js/prism.js "></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
@@ -268,4 +277,32 @@ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網�
     async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
   ></script>
+
+    </div>
+
+    
+    <section class="sec5 move-left">
+        <footer>
+            <div class="follow">
+                <a href="https://www.instagram.com/meng_337/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/mengxian0913"><i class="fa-brands fa-github"></i></a>
+                <a href = "mailto:mengxian0913@gmail.com"><i class="fa-regular fa-envelope" style="color: #7dc7e7a7; font-size: 35px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </footer>
+
+        <span></span>
+
+        <div class="copyright">
+            <p>
+                Copyright © 2023 Yang, Meng-Xian. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+
+</body>
+    <script src="https://vincent-s-blog.web.app//js/baseof.js"></script>
+    <script src="https://vincent-s-blog.web.app//js/search.js"></script>
+     
 </html>

@@ -44,7 +44,7 @@ nav .nav-container a span {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
 }
 nav .nav-container .tools {
   flex: 0.2;
@@ -90,7 +90,7 @@ nav .nav-container .tools .hamburger span {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-radius: 6px;
   z-index: 1;
   transform-origin: 0 0;
@@ -107,7 +107,7 @@ nav .nav-container .tools .hamburger.is-active span:nth-child(3) {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 nav .nav-container .tools .hamburger.is-active:hover span {
-  background-color: #7FC0E6;
+  background-color: #7fc0e6;
 }
 
 .nav2-container {
@@ -121,7 +121,7 @@ nav .nav-container .tools .hamburger.is-active:hover span {
   box-shadow: 0 4px 10px 0 rgba(59, 105, 116, 0.2), 0 2px 10px 0 rgba(244, 240, 240, 0.19);
 }
 .nav2-container .menu2 {
-  padding: 55px 20px 20px 20px;
+  padding: 8vh 20px 20px 20px;
   width: 100%;
   height: 100%;
   position: relative;

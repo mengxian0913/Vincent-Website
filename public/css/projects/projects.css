@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .project-section {
   width: 100vw;
   height: auto;
@@ -45,7 +46,7 @@
   width: 100%;
   flex: 55%;
   height: 100%;
-  background-color: rgba(46, 96, 150, 0.784);
+  background-color: #323946;
   padding: 10px;
 }
 .project-section .project-card .depiction h3 {

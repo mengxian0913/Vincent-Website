@@ -1,6 +1,4 @@
-$text_color: rgb(170, 170, 170);
-$bg-color: #1f242d;
-$second-bg-color: #323946;
+@import '../../config/config.scss';
 
 .catalog-container{
     position: fixed;

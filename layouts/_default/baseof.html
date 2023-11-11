@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Here is Style Block -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/baseof/baseof.css">
+    <!-- footer page -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/footer.css">
+    <!-- search bar -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/search/search.css">
+    <!-- Here is Javascript Block -->
+    <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    {{ block "css" . }}
+    {{ end }}
+
+
+
+    <title>
+        {{ block "title" . }}
+            <!-- Blocks may include default content. -->
+            {{ .Site.Title }}
+        {{ end }}
+    </title>
+</head>
+
+{{ partial "search.html" . }}
+
+<body>
+
+    {{ block "header" . }}
+    {{ end }}
+
+    <div id="loading">
+      {{ if .IsPage }}
+        {{ partial "single_load.html" . }}
+      {{ else }}
+        {{ partial "list_load.html" . }}
+      {{ end }}
+    </div>
+
+    <div id="content">
+        {{ if .IsPage }}
+            {{ partial "catalog.html" . }}
+        {{ end }}
+
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ block "footer" . }}
+    {{ end }}
+
+</body>
+    <script src="{{ .Site.BaseURL }}/js/baseof.js"></script>
+    <script src="{{ .Site.BaseURL }}/js/search.js"></script>
+    {{ block "js" . }} {{ end }}
+</html>

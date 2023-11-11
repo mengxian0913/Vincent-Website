@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#list-load {
+  width: 100vw;
+  height: 100vh;
+  background-color: #323946;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#list-load h1 {
+  font-size: 25px;
+}/*# sourceMappingURL=list_load.css.map */

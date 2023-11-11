@@ -1,10 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
 * {
   line-height: 30px;
   margin: 0;
@@ -16,6 +11,7 @@ html {
 }
 
 :root {
+  scroll-behavior: smooth;
   height: auto;
   overflow-x: hidden;
   background-color: #1f242d;
@@ -24,31 +20,14 @@ html {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.load {
-  width: 100vw;
-  height: 100vh;
-  background-color: #323946;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.load h1 {
-  font-size: 25px;
-}
-
-.container {
+#list-container {
   width: 100vw;
   height: auto;
   position: relative;
-  top: 4vh;
+  top: 50px;
   margin-top: 30px;
 }
-
-.posts-container {
+#list-container .posts-container {
   width: 100vw;
   height: auto;
   min-height: 100vh;
@@ -57,12 +36,12 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
-.posts-container ul {
+#list-container .posts-container ul {
   width: 98%;
   max-width: 1000px;
   height: auto;
 }
-.posts-container ul li {
+#list-container .posts-container ul li {
   width: 100%;
   height: 50px;
   list-style: none;
@@ -73,25 +52,25 @@ html {
   border: #323946 solid 2px;
   border-width: 2px 2px 0px 2px;
 }
-.posts-container ul li:last-child {
+#list-container .posts-container ul li:last-child {
   border-width: 2px;
 }
-.posts-container ul li a {
+#list-container .posts-container ul li a {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.posts-container ul li a h2 {
+#list-container .posts-container ul li a h2 {
   color: rgba(255, 255, 255, 0.7333333333);
   font-size: 20px;
 }
-.posts-container ul li a p {
+#list-container .posts-container ul li a p {
   color: rgba(255, 255, 255, 0.5843137255);
   font-size: 10px;
 }
-.posts-container .prev-next-pages {
+#list-container .posts-container .prev-next-pages {
   width: 80vw;
   height: auto;
   display: flex;
@@ -99,14 +78,14 @@ html {
   justify-content: center;
   align-items: flex-start;
 }
-.posts-container .prev-next-pages button {
+#list-container .posts-container .prev-next-pages button {
   margin: 10px 10px;
   width: 50px;
   height: 30px;
   border-radius: 99px;
   background-color: rgba(195, 226, 224, 0.786);
 }
-.posts-container .prev-next-pages button a {
+#list-container .posts-container .prev-next-pages button a {
   font-size: 10px;
   color: #1f242d;
   font-weight: 700;

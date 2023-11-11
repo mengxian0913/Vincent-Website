@@ -1,11 +1,4 @@
-$bg-color: #1f242d;
-$second-bg-color: #323946;
-$dark: #212121;
-$card: rgba(99, 145, 158, 0.77);
-$greenblue: rgba(12, 70, 103);
-$text_color: #ffffff;
-$summary_color: #ffffff8b;
-
+@import '../config/config.scss';
 
 .timeline{
     width: 80%;

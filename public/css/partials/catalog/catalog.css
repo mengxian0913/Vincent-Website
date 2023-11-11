@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .catalog-container {
   position: fixed;
   z-index: 100;
@@ -20,7 +21,7 @@
 .catalog-container ul li a {
   margin: 0;
   padding: 0;
-  color: rgb(170, 170, 170);
+  color: #fff;
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;

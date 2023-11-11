@@ -1,17 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import '../config/config.scss'; // import config setting
 
-$bg-color: #1f242d;
-$second-bg-color: #323946;
-$dark: #212121;
-$babyblue: #7fc0e6;
-$card: rgba(99, 145, 158, 0.77);
-$nav_color: rgba(225, 215, 225, 0.3);
-$light: #eeeeee;
-$text_color: #fff;
-$greenblue: rgba(12, 70, 103, 0.644);
-$progress: rgba(73, 175, 231, 0.777);
-$mobile_font_size: 16px;
-$circle_color: rgb(27, 73, 88);
 
 html {
   height: 100%;

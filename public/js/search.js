@@ -38,10 +38,6 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-
-
-
-
 fetch('/json/posts.json')
     .then(response => response.json())
     .then(data => {
@@ -50,20 +46,20 @@ fetch('/json/posts.json')
         }
     })
     .catch(error => console.error('Error fetching JSON:', error));
-
 ///
 
-
 function MatchWords(words){
+
     const pattern = new RegExp(words, "gi");
     for(let i of JsonContent){
         const isMatchTitle = pattern.test(i.title);
-
-        let isMatchTags = false
-        for(let j of i.tags) {
-            if(pattern.test(j)) {
-                isMatchTags = true;
-                break;
+        let isMatchTags = false;
+        if(i.tags != null) {
+            for(let j of i.tags) {
+                if(pattern.test(j)) {
+                    isMatchTags = true;
+                    break;
+                }
             }
         }
 

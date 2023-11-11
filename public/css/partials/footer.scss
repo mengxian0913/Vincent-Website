@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
-$second-bg-color: #323946;
+@import '../config/config.scss';
 
 :root{
     font-family: 'Noto Sans JP', sans-serif;
 }
  
 .sec5{
+    position: relative;
     padding: 20px;
     height: auto;
     width: 100vw;
@@ -14,7 +14,8 @@ $second-bg-color: #323946;
     align-items: center;
     flex-direction: column;
     background-color: $second-bg-color;
-    
+    top: 4vh;
+
     footer{
         width: 80vw;
         display: flex;

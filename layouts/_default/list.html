@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
-     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/footer.css">
+{{ define "title" }}
+    Articles List - Vincent's Blog
+{{ end }}
+
+
+{{ define "css" }}
      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
-     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/search/search.css">
-     <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
-     <title>Vincent's Blog</title>
-</head>
+{{ end }}
 
-<div class="load"><h1></h1></div>
 
-{{ partial "search.html" . }}
-
-<body>
-     {{ partial "header.html" . }}
-
-     <div class="container move-left">
+{{ define "main" }}
+     <div id="list-container" class="move-left">
 
           <div class="posts-container">
                <ul>
@@ -49,11 +40,9 @@
                     {{ end }}
                </div>
           </div>
-
-          {{ partial "footer.html" .}}
      </div>
-</body>
-     <script src="{{ .Site.BaseURL }}/js/header.js"></script>
+{{ end }}
+
+{{ define "js" }}
      <script src="{{ .Site.BaseURL }}/js/list.js"></script>
-     <script src="{{ .Site.BaseURL }}/js/search.js"></script>
-</html>
+{{ end }}

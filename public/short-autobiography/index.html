@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
-     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
-     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/list/list.css">
-     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
-     <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
-     <title>Vincent's Blog</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="load"><h1></h1></div>
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/baseof/baseof.css">
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+    
+    <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    
+     <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/list/list.css">
+
+
+
+
+    <title>
+        
+    Articles List - Vincent's Blog
+
+    </title>
+</head>
 
 <div class="search-background">
     <div class="search-container">
@@ -30,59 +45,80 @@
 </div>
 
 <body>
-     <nav class="move-left">
-    <div class="nav-container">
-       <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
-       <div class="tools">
-            <i class="fa-solid fa-magnifying-glass header-search"></i>
-            <div class="hamburger">
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-            </div>
-       </div>
-    </div>
-</nav>
 
+    
 
-<div class="nav2-container">
-    <div class="menu2 m2">
-        <h1 class="m2">#tags</h1>
-        <div class="menu2-container m2">
-            <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
-            
-                <div class="box"><a href="/tags/c&#43;&#43;" style="line-height: 30px;">c&#43;&#43;</a></div>
-            
-                <div class="box"><a href="/tags/front-end" style="line-height: 30px;">front-end</a></div>
-            
-                <div class="box"><a href="/tags/javascript" style="line-height: 30px;">javascript</a></div>
-            
-                <div class="box"><a href="/tags/jquery" style="line-height: 30px;">jquery</a></div>
-            
-                <div class="box"><a href="/tags/python" style="line-height: 30px;">python</a></div>
-            
-                <div class="box"><a href="/tags/selenium" style="line-height: 30px;">selenium</a></div>
-            
-                <div class="box"><a href="/tags/%E5%8F%83%E8%A8%AA%E6%B4%BB%E5%8B%95" style="line-height: 30px;">參訪活動</a></div>
-            
-                <div class="box"><a href="/tags/%E6%97%85%E9%81%8A" style="line-height: 30px;">旅遊</a></div>
-            
-                <div class="box"><a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95" style="line-height: 30px;">演算法</a></div>
-            
-                <div class="box"><a href="/tags/%E7%88%AC%E8%9F%B2" style="line-height: 30px;">爬蟲</a></div>
-            
-                <div class="box"><a href="/tags/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8" style="line-height: 30px;">逢甲大學</a></div>
-            
+    <nav class="move-left">
+        <div class="nav-container">
+        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
+        <div class="tools">
+                <i class="fa-solid fa-magnifying-glass header-search"></i>
+                <div class="hamburger">
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                </div>
         </div>
-        
+        </div>
+    </nav>
+
+
+    <div class="nav2-container">
+        <div class="menu2 m2">
+            <h1 class="m2">#tags</h1>
+            <div class="menu2-container m2">
+                <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
+                
+                    <div class="box"><a href="/tags/c&#43;&#43;" style="line-height: 30px;">c&#43;&#43;</a></div>
+                
+                    <div class="box"><a href="/tags/front-end" style="line-height: 30px;">front-end</a></div>
+                
+                    <div class="box"><a href="/tags/javascript" style="line-height: 30px;">javascript</a></div>
+                
+                    <div class="box"><a href="/tags/jquery" style="line-height: 30px;">jquery</a></div>
+                
+                    <div class="box"><a href="/tags/python" style="line-height: 30px;">python</a></div>
+                
+                    <div class="box"><a href="/tags/selenium" style="line-height: 30px;">selenium</a></div>
+                
+                    <div class="box"><a href="/tags/%E5%8F%83%E8%A8%AA%E6%B4%BB%E5%8B%95" style="line-height: 30px;">參訪活動</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%97%85%E9%81%8A" style="line-height: 30px;">旅遊</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95" style="line-height: 30px;">演算法</a></div>
+                
+                    <div class="box"><a href="/tags/%E7%88%AC%E8%9F%B2" style="line-height: 30px;">爬蟲</a></div>
+                
+                    <div class="box"><a href="/tags/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8" style="line-height: 30px;">逢甲大學</a></div>
+                
+            </div>
+        </div>
     </div>
+
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
+    <script src="https://vincent-s-blog.web.app//js/header.js"></script>
+
+
+    <div id="loading">
+      
+        <head>
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/load/list_load/list_load.css">
+</head>
+
+<div id="list-load">
+    <h1 id="list-load-title"></h1>
 </div>
 
+<script src="https://vincent-s-blog.web.app//js/list_load.js"></script>
+      
+    </div>
 
+    <div id="content">
+        
 
-
-
-     <div class="container move-left">
+        
+     <div id="list-container" class="move-left">
 
           <div class="posts-container">
                <ul>
@@ -96,29 +132,35 @@
                     
                </div>
           </div>
-
-          <section class="sec5 move-left">
-    <footer>
-        <div class="follow">
-            <a href="https://www.instagram.com/meng_337/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/mengxian0913"><i class="fa-brands fa-github"></i></a>
-                    <a href = "mailto:mengxian0913@gmail.com"><i class="fa-regular fa-envelope" style="color: #7dc7e7a7; font-size: 35px;"></i></a>
-                    <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><i class="fa-brands fa-youtube"></i></a>
-            
-        </div>
-    </footer>
-
-    <span></span>
-
-    <div class="copyright">
-        <p>
-            Copyright © 2023 Yang, Meng-Xian. All rights reserved.
-        </p>
-    </div>
-</section>
      </div>
+
+    </div>
+
+    
+    <section class="sec5 move-left">
+        <footer>
+            <div class="follow">
+                <a href="https://www.instagram.com/meng_337/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/mengxian0913"><i class="fa-brands fa-github"></i></a>
+                <a href = "mailto:mengxian0913@gmail.com"><i class="fa-regular fa-envelope" style="color: #7dc7e7a7; font-size: 35px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </footer>
+
+        <span></span>
+
+        <div class="copyright">
+            <p>
+                Copyright © 2023 Yang, Meng-Xian. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+
 </body>
-     <script src="https://vincent-s-blog.web.app//js/header.js"></script>
+    <script src="https://vincent-s-blog.web.app//js/baseof.js"></script>
+    <script src="https://vincent-s-blog.web.app//js/search.js"></script>
+    
      <script src="https://vincent-s-blog.web.app//js/list.js"></script>
-     <script src="https://vincent-s-blog.web.app//js/search.js"></script>
+
 </html>

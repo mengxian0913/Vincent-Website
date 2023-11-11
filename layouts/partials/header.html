@@ -1,30 +1,33 @@
-<nav class="move-left">
-    <div class="nav-container">
-       <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
-       <div class="tools">
-            <i class="fa-solid fa-magnifying-glass header-search"></i>
-            <div class="hamburger">
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-                <span class="hamburgers"></span>
-            </div>
-       </div>
-    </div>
-</nav>
+{{ define "header" }}
 
-
-<div class="nav2-container">
-    <div class="menu2 m2">
-        <h1 class="m2">#tags</h1>
-        <div class="menu2-container m2">
-            <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
-            {{ range $tag, $pages := .Site.Taxonomies.tags }}
-                <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="line-height: 30px;">{{ $tag }}</a></div>
-            {{ end }}
+    <nav class="move-left">
+        <div class="nav-container">
+        <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
+        <div class="tools">
+                <i class="fa-solid fa-magnifying-glass header-search"></i>
+                <div class="hamburger">
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                </div>
         </div>
-        
+        </div>
+    </nav>
+
+
+    <div class="nav2-container">
+        <div class="menu2 m2">
+            <h1 class="m2">#tags</h1>
+            <div class="menu2-container m2">
+                <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
+                {{ range $tag, $pages := .Site.Taxonomies.tags }}
+                    <div class="box"><a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="line-height: 30px;">{{ $tag }}</a></div>
+                {{ end }}
+            </div>
+        </div>
     </div>
-</div>
 
-
-
+    
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/header.css">
+    <script src="{{ .Site.BaseURL }}/js/header.js"></script>
+{{ end }}
