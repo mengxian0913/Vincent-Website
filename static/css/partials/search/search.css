@@ -39,7 +39,7 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
 }
 .search-background .search-container .row input {
   flex: 1;
@@ -63,6 +63,7 @@
   color: #555;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 10px;
 }
 .search-background .search-container #searchResults {
   width: 100%;
