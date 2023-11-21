@@ -17,6 +17,8 @@ function SetBodyHeight(){
 
     else{
         document.body.style.position = "static";
+        searchInput.value = '';
+        searchResultsList.clear();
     }
 }
 
