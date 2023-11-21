@@ -2,7 +2,7 @@
     {{ .Title }} - Vincent's Blog
 {{ end }}
 
-{{ define "css" }}
+{{ define "css" }}  
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/single/single.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/search/search.css">
@@ -27,8 +27,6 @@
         <div id="markdown-content">{{.Content}}</div>
       </article>
     </div>
-
-    {{ partial "footer" . }}
   </div>
 
   <div class="to-top">
@@ -40,7 +38,9 @@
       />
     </div>
   </div>
+{{ end }}
 
+{{ define "js" }}
   <!-- Catalog -->
   <script src="{{ .Site.BaseURL }}/js/catalog.js"></script>
   <script

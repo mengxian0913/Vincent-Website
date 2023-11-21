@@ -8,7 +8,7 @@ let JsonContent = [];
 const searchButton = document.querySelector('.header-search');
 const searchcontainer = document.querySelector('.search-background');
 const searchchancelbox = document.querySelector('.fa-xmark');
-
+const matteBackground = document.querySelector('#matte-background');
 
 function SetBodyHeight(){
     if(searchcontainer.classList.contains('is-active')){
@@ -22,11 +22,13 @@ function SetBodyHeight(){
 
 searchButton.addEventListener('click', function(){
     searchcontainer.classList.toggle('is-active');
+    matteBackground.classList.toggle('is-active');
     SetBodyHeight();
 });
 
 searchchancelbox.addEventListener('click', function(){
     searchcontainer.classList.remove('is-active');
+    matteBackground.classList.remove('is-active');
     SetBodyHeight();
 });
 
@@ -34,6 +36,7 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape' || event.code === 'Escape') {
         // 在這裡處理按下 `Esc` 鍵的情況
         searchcontainer.classList.remove('is-active');
+        matteBackground.classList.remove('is-active');
         SetBodyHeight();
     }
 });

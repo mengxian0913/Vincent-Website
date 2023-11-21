@@ -11,25 +11,26 @@ function generateCatalog(selector) {
 
     // appending
     a.each(function () {
-        n = $(this).prop('tagName').toLowerCase();
+        n = $(this).prop('tagName').toLowerCase(); // h1 h2 h3...
         i = "#" + $(this).prop('id');
         t = $(this).text();
         c = $(`<a aria-label="${t}" href="${i}" rel="nofollow">${t}</a>`);
         l = $(`<li class="${n}_nav"></li>`).append(c);
-        $(selector).append(l);
+        $(selector).append(l); 
     })
     return a;
 }
 
 const sideElements = generateCatalog("ul.catalog-ul"), all_htags = []
 let firstTag = null
+
 sideElements.each((index, element) => {
     const name = element.id
     const innerTagsCount = 0
     const sideElement = $(`[aria-label="${element.innerText}"]`)
     const top =  $(`[id="${name}"]`).offset().top
     const htag = sideElement.parent()
-    const htag_className = $(htag[0]).attr("class");
+    const htag_className = $(htag[0]).attr("class")
     const innerTags = htag.nextUntil(`[class="${htag_className}"]`)
 
     let innerFirstTag = null, i = 0
@@ -63,10 +64,10 @@ for(let i = all_htags.length - 1; i >= 0; i--){
 
 
 $(window).scroll(() => {
-    let curPos = window.pageYOffset
+    let curPos = window.pageYOffset;
     let isBottom = parseInt(curPos + document.documentElement.clientHeight) === document.documentElement.scrollHeight
     all_htags.forEach((item, index) => {
-        const {sideElement, innerTags, innerFirstTag, innerTagsCount, top} = item
+        const {sideElement, innerTags, innerFirstTag, innerTagsCount, top} = item;
         if(index < all_htags.length - 1){
             if(innerTagsCount > 1){
                 let index2 = Math.min(index + innerTagsCount, all_htags.length - 1);

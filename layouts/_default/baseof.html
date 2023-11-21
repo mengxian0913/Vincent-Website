@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    
+
     {{ block "css" . }}
     {{ end }}
 
@@ -55,7 +55,7 @@
     {{ end }}
 
 </body>
-    <script src="{{ .Site.BaseURL }}/js/baseof.js"></script>
     <script src="{{ .Site.BaseURL }}/js/search.js"></script>
+    <script src="{{ .Site.BaseURL }}/js/baseof.js"></script>
     {{ block "js" . }} {{ end }}
 </html>

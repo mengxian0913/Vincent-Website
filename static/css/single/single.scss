@@ -30,11 +30,11 @@ $line_height_2: 30px;
 }
 
 :root {
+  background-color: $bg-color;
   overflow-x: hidden;
   height: auto;
-  overflow-x: hidden;
-  background-color: $bg-color;
   color: #ffffffce;
+  font-family: 'Montserrat', sans-serif;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -77,25 +77,6 @@ hr {
 }
 
 
-.load-container {
-  height: 100vh;
-  width: 100vw;
-  background-color: $bg-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 190;
-  .load {
-    position: absolute;
-    top: 50px;
-    width: 60vw;
-    height: 100vh;
-    background-color: $second-bg-color;
-    padding: 20px 0 0 20px;
-  }
-}
-
 .to-top {
   display: flex;
   flex-direction: column;
@@ -125,6 +106,7 @@ hr {
   height: auto;
   position: relative;
   top: 50px;
+  background-color: $bg-color;
 
   .article-container {
     width: 100%;
@@ -160,7 +142,7 @@ pre {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* 手機版樣式設定 */
 
   * {

@@ -86,6 +86,7 @@ html {
 }
 
 .container {
+  background-color: $bg-color;
   width: 100%;
   height: auto;
 }
@@ -259,7 +260,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   .home {
     height: 70vh;
     min-width: 70vw;

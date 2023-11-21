@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  background-color: #323946;
+  background-color: #1f242d;
 }
 
 * {
@@ -27,11 +27,11 @@
 }
 
 :root {
+  background-color: #1f242d;
   overflow-x: hidden;
   height: auto;
-  overflow-x: hidden;
-  background-color: #1f242d;
   color: rgba(255, 255, 255, 0.8078431373);
+  font-family: "Montserrat", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -84,25 +84,6 @@ hr {
   background-color: rgba(255, 255, 255, 0.2470588235); /* 设置分隔线颜色 */
 }
 
-.load-container {
-  height: 100vh;
-  width: 100vw;
-  background-color: #1f242d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 190;
-}
-.load-container .load {
-  position: absolute;
-  top: 50px;
-  width: 60vw;
-  height: 100vh;
-  background-color: #323946;
-  padding: 20px 0 0 20px;
-}
-
 .to-top {
   display: flex;
   flex-direction: column;
@@ -130,6 +111,7 @@ hr {
   height: auto;
   position: relative;
   top: 50px;
+  background-color: #1f242d;
 }
 #single-container .article-container {
   width: 100%;
@@ -160,7 +142,7 @@ pre {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* 手機版樣式設定 */
   * p {
     font-size: 16px;

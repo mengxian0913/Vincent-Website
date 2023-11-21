@@ -36,3 +36,16 @@ ToTopArrow.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+
+//////////////
+let allImage = document.querySelectorAll('img');
+console.log(allImage.length);
+let deviceWidth = window.innerWidth;
+
+
+(function setMaximum() {
+    for(let i of allImage) {
+        console.log(allImage.length);
+    }
+})();

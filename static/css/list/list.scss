@@ -12,14 +12,19 @@
 
 :root    
 {
+    background-color: $bg-color;
     scroll-behavior: smooth;
     height: auto;
     overflow-x: hidden;
-    background-color: $bg-color;
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+body {
+    background-color: $bg-color;
+}
+
 
 #list-container{
     width: 100vw;
