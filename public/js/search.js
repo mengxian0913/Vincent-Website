@@ -19,6 +19,7 @@ function SetBodyHeight(){
         document.body.style.position = "static";
         searchInput.value = '';
         searchResultsList.clear();
+        generateResultList();
     }
 }
 
@@ -88,6 +89,12 @@ searchInput.onkeyup = function(){
         searchResultsList.clear();
     }   
 
+    //在這裡可以根據 searchResultsList 的內容生成最終 HTML
+    generateResultList();
+    
+}
+
+function generateResultList() {
     // 在這裡可以根據 searchResultsList 的內容生成最終 HTML
     const searchResultsHTML = Array.from(searchResultsList)
         .map(url => `<li><a href="${url}">${JsonContent.find(item => item.url === url).title}</a></li>`)
