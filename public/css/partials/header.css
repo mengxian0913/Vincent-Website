@@ -55,6 +55,10 @@ nav .nav-container .tools {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 nav .nav-container .tools .fa-solid {
   position: relative;
