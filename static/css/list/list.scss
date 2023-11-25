@@ -10,18 +10,9 @@
     border: none;
 }
 
-:root    
-{
-    background-color: $bg-color;
-    scroll-behavior: smooth;
-    height: auto;
-    overflow-x: hidden;
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
 body {
+    width: 100vw;
+    height: auto;
     background-color: $bg-color;
 }
 
@@ -29,10 +20,7 @@ body {
 #list-container{
     width: 100vw;
     height: auto;
-    position: relative;
-    top: 50px;
-    margin-top: 30px;
-
+    
     .posts-container{
         width: 100vw;
         height: auto;
