@@ -1,7 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
   background-color: #1f242d;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 * {
@@ -10,29 +17,30 @@
   scroll-behavior: smooth;
   border: none;
 }
-* h1 {
-  line-height: 30px;
-}
-* h2 {
-  line-height: 30px;
-}
-* h3 {
-  line-height: 30px;
-}
-* p {
-  line-height: 30px;
-}
-* li {
+
+h1 {
   line-height: 30px;
 }
 
-:root {
-  background-color: #1f242d;
-  overflow-x: hidden;
+h2 {
+  line-height: 30px;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+p {
+  line-height: 30px;
+}
+
+li {
+  line-height: 30px;
+}
+
+img {
+  max-width: 95%;
   height: auto;
-  color: rgba(255, 255, 255, 0.8078431373);
-  font-family: "Montserrat", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .light {
@@ -85,6 +93,8 @@ hr {
 }
 
 .to-top {
+  width: 60px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,10 +102,10 @@ hr {
   position: fixed;
   border-radius: 99%;
   z-index: 189;
-  width: 60px;
-  height: 60px;
   bottom: 3vh;
   right: 3vw;
+  margin: 0;
+  padding: 0;
 }
 .to-top .imgcontainer {
   cursor: pointer;
@@ -107,20 +117,15 @@ hr {
 }
 
 #single-container {
+  overflow-x: hidden;
   width: 100%;
   height: auto;
-  position: relative;
-  top: 50px;
   background-color: #1f242d;
-}
-#single-container .article-container {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#single-container .article-container article {
+#single-container article {
   width: 60vw;
   max-width: 1200px;
   min-height: 100vh;
@@ -128,13 +133,13 @@ hr {
   background-color: #323946;
   padding: 30px;
 }
-#single-container .article-container article h1 {
+#single-container article h1 {
   color: #fff;
 }
-#single-container .article-container article a {
+#single-container article a {
   color: #83d9e1;
 }
-#single-container .article-container article a:hover {
+#single-container article a:hover {
   text-decoration: underline;
 }
 
@@ -154,7 +159,7 @@ pre {
     margin: 0;
     width: 100vw;
   }
-  #single-container .article-container article {
+  #single-container article {
     width: 100%;
     margin: 10px 0px;
     padding: 15px;

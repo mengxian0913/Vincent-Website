@@ -18,5 +18,12 @@ $mobile_font_size: 16px;
 $circle_color: rgb(27, 73, 88);
 
 :root {
-    background-color: $bg-color; // setting all bage html background-color to bg-color
+    overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: $bg-color;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }

@@ -30,13 +30,9 @@ li {
   line-height: $line_height_1;
 }
 
-:root {
-  background-color: $bg-color;
-  overflow-x: hidden;
+img {
+  max-width: 95%;
   height: auto;
-  color: #ffffffce;
-  font-family: 'Montserrat', sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 @mixin font-setting($rgbkey) {
@@ -79,6 +75,8 @@ hr {
 
 
 .to-top {
+  width: 60px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,10 +84,10 @@ hr {
   position: fixed;
   border-radius: 99%;
   z-index: 189;
-  width: 60px;
-  height: 60px;
   bottom: 3vh;
   right: 3vw;
+  margin: 0;
+  padding: 0;
 
   .imgcontainer { 
     cursor: pointer;
@@ -102,38 +100,31 @@ hr {
 }
 
 #single-container {
-  
+  overflow-x: hidden;
   width: 100%;
   height: auto;
-  position: relative;
-  top: 50px;
   background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  article {
+    width: 60vw;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 25px;
+    background-color: #323946;
+    padding: 30px;
 
-  .article-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h1 {
+      color: #fff;
+    }
 
-    article {
-      width: 60vw;
-      max-width: 1200px;
-      min-height: 100vh;
-      margin: 25px;
-      background-color: #323946;
-      padding: 30px;
+    a {
+      color: $link_color;
 
-      h1 {
-        color: #fff;
-      }
-
-      a {
-        color: $link_color;
-
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -159,13 +150,11 @@ pre {
   #single-container {
     margin: 0;
     width: 100vw;
-
-    .article-container {
-      article {
-        width: 100%;
-        margin: 10px 0px;
-        padding: 15px;
-      }
+    
+    article {
+      width: 100%;
+      margin: 10px 0px;
+      padding: 15px;
     }
   }
 }

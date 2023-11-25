@@ -15,18 +15,17 @@
 
 {{ define "main" }}
   <div id="single-container"  class= "move-left">
-    <div class="article-container">
-      <article>
-        <h1>{{.Title}}</h1>
+    <article>
+      <br>
+      <h1>{{.Title}}</h1>
 
-        <div style="color: grey">
-          {{ dateFormat "Monday, Jan 2, 2006" .Date }} {{if
-          .Params.author}}Author: {{.Params.Author}}{{end}}
-        </div>
+      <div style="color: grey">
+        {{ dateFormat "Monday, Jan 2, 2006" .Date }} {{if
+        .Params.author}}Author: {{.Params.Author}}{{end}}
+      </div>
 
-        <div id="markdown-content">{{.Content}}</div>
-      </article>
-    </div>
+      <div id="markdown-content">{{.Content}}</div>
+    </article>
   </div>
 
   <!-- To top Arrow -->

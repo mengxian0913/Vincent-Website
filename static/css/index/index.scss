@@ -16,15 +16,6 @@ html {
   border: none;
 }
 
-:root {
-  height: auto;
-  overflow-x: hidden;
-  background-color: $bg-color;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
 @mixin bgsetting($width, $height, $bg, $att, $rep, $size) {
   width: $width;
   height: $height;
@@ -541,7 +532,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 900px) {
   nav {
     background-color: $bg-color;
   }

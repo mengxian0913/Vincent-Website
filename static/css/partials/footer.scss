@@ -1,23 +1,18 @@
 @import '../config/config.scss';
-
-:root{
-    font-family: 'Noto Sans JP', sans-serif;
-}
  
 .sec5{
-    position: relative;
-    padding: 20px;
-    height: auto;
     width: 100vw;
+    height: auto;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-color: $second-bg-color;
-    top: 4vh;
 
     footer{
         width: 80vw;
+        height: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
