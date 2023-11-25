@@ -8,25 +8,26 @@ $line_height_2: 30px;
   text-decoration: none;
   scroll-behavior: smooth;
   border: none;
-  h1 {
-    line-height: $line_height_2;
-  }
+}
 
-  h2 {
-    line-height: $line_height_2;
-  }
+h1 {
+  line-height: $line_height_2;
+}
 
-  h3 {
-    line-height: $line_height_2;
-  }
+h2 {
+  line-height: $line_height_2;
+}
 
-  p {
-    line-height: $line_height_1;
-  }
+h3 {
+  line-height: $line_height_2;
+}
 
-  li {
-    line-height: $line_height_1;
-  }
+p {
+  line-height: $line_height_1;
+}
+
+li {
+  line-height: $line_height_1;
 }
 
 :root {

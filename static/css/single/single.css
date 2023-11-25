@@ -10,19 +10,24 @@
   scroll-behavior: smooth;
   border: none;
 }
-* h1 {
+
+h1 {
   line-height: 30px;
 }
-* h2 {
+
+h2 {
   line-height: 30px;
 }
-* h3 {
+
+h3 {
   line-height: 30px;
 }
-* p {
+
+p {
   line-height: 30px;
 }
-* li {
+
+li {
   line-height: 30px;
 }
 
