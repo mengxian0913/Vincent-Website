@@ -483,13 +483,14 @@ nav {
 }
 
 .sec5 {
-  height: auto;
   width: 100vw;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   background-color: $second-bg-color;
+  padding: 20px 20px 0 20px;
 
   footer {
     width: 80vw;
