@@ -13,11 +13,21 @@
       <pubDate>Mon, 11 Sep 2023 15:42:56 +0800</pubDate>
       
       <guid>https://vincent-s-blog.web.app/posts/python/selenium_01/</guid>
-      <description>前言 注意事項：以下範例皆為 os 環境下實作
-使用 selenium 實作爬蟲有什麼好處呢？ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網頁中自在地穿梭。 並且，實作起來會比 Beautifulsoup 來的直觀，簡單。
-本篇文章會依序帶著大家認識 selenium
-Selenium 安裝 使用python pip 下載
-pip install selenium Webdriver 下載 brew install --cask google-drive 快速開始 引入函式 from selenium import webdriver 開啟瀏覽器 driver = webdriver.Chrome() 取得目標網站資源 url = &amp;#39;https://example.com/&amp;#39; driver.get(url) 取得目標網站資訊 title = driver.title 定位元素 from selenium.webdriver.common.by import By 網頁資料定位元素 說明 find_element(s)(By.ID, &amp;lsquo;&amp;rsquo;) 使用 id 屬性定位 find_element(s)(By.NAME, &amp;lsquo;&amp;rsquo;) 使用 name 屬性定位 find_element(s)(By.TAG_NAME, &amp;lsquo;&amp;rsquo;) 使用 tag_name 屬性定位 (div, span, input, button, etc.</description>
+      <description>前言 本篇文章探討 selenium 是什麼以及如何使用 selenium 爬取網站內容。
+selenium 的特色 跨瀏覽器的支持
+Selenium 支持多種主流瀏覽器，包括 Chrome、Firefox、Safari、Edge 等，這使得開發人員可以使用相同的測試腳本在不同的瀏覽器上執行測試。
+多語言支持
+selenium 提供多種程式語言的客戶端庫，包括 Java、Python、C#、Ruby、JavaScript 等。
+靈活性
+Selenium 允許開發人員模擬用戶與瀏覽器的互動，包括點擊、填寫表單、獲取元素等。
+支援截圖和錄影
+Selenium 可以捕獲瀏覽器操作過程的截圖，這在許多測試有幫助。
+注意事項：以下範例皆為 macos 14.0 環境下實作
+下載瀏覽器的 WebDriver 你需要安裝一個 Web Driver (開發人員用來自動化瀏覽器行為的工具)，來當作你程式使用的瀏覽器。
+注意！下載的版本必須與你當前使用的瀏覽器版本一致。(這裡我選擇的是 ChromeDriver) 下載地點傳送門：(https://chromedriver.chromium.org/downloads/version-selection) PS.你可以到 Chrome 的設定 $\rightarrow$ 關於Chrome查詢目前的版本號
+Selenium 函式庫安裝 使用python3 pip3 下載
+pip3 install selenium 開始第一個 Selenium 程式 下面是一個簡單的 Selenium 範例，用來打開瀏覽器、訪問網站、找到元素。 請根據你的瀏覽器選擇相應的 WebDriver：
+WebDriver 設定 chromedriver = &amp;#34;/opt/homebrew/bin/chromedriver&amp;#34; # 這裡設定了 ChromeDriver 的路徑。ChromeDriver 是一個用於驅動 Chrome 瀏覽器的工具，你需要下載適用於你的 Chrome 版本的 ChromeDriver，然後提供它的路徑 options = webdriver.</description>
     </item>
     
     <item>

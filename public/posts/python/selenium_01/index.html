@@ -115,16 +115,12 @@
     #single-load-container {
         height: 100vh;
         width: 100vw;
-         
-         
         background-color: #1f242d;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #single-load {
-        position: relative;
-        top: 4vh;
         height: 96vh;
         width: 60vw;
         background-color: #323946;
@@ -142,6 +138,8 @@
 
 <div id="single-load-container">
     <div id="single-load">
+        <br>
+        <br>
         <div class="title"></div>
         <div class="article"></div>
         <div class="img"></div>
@@ -167,29 +165,87 @@
       </div>
 
       <div id="markdown-content"><h2 id="前言">前言</h2>
-<p><sapn class="info">注意事項：以下範例皆為 os 環境下實作</span></p>
-<p>使用 selenium 實作爬蟲有什麼好處呢？
-selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網頁中自在地穿梭。
-並且，實作起來會比 Beautifulsoup 來的直觀，簡單。</p>
-<p>本篇文章會依序帶著大家認識 selenium</p>
-<h2 id="selenium-安裝">Selenium 安裝</h2>
-<p><strong>使用python pip 下載</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip install selenium
-</span></span></code></pre></div><h2 id="webdriver-下載">Webdriver 下載</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install --cask google-drive
-</span></span></code></pre></div><h2 id="快速開始">快速開始</h2>
-<h3 id="引入函式">引入函式</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium <span style="color:#f92672">import</span> webdriver
-</span></span></code></pre></div><h3 id="開啟瀏覽器">開啟瀏覽器</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>driver <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>Chrome()
+<p>本篇文章探討 selenium 是什麼以及如何使用 selenium 爬取網站內容。</p>
+<h3 id="selenium-的特色">selenium 的特色</h3>
+<ol>
+<li>跨瀏覽器的支持<br></li>
+</ol>
+<blockquote>
+<p>Selenium 支持多種主流瀏覽器，包括 Chrome、Firefox、Safari、Edge 等，這使得開發人員可以使用相同的測試腳本在不同的瀏覽器上執行測試。</p>
+</blockquote>
+<ol start="2">
+<li>多語言支持<br></li>
+</ol>
+<blockquote>
+<p>selenium 提供多種程式語言的客戶端庫，包括 Java、Python、C#、Ruby、JavaScript 等。</p>
+</blockquote>
+<ol start="3">
+<li>靈活性<br></li>
+</ol>
+<blockquote>
+<p>Selenium 允許開發人員模擬用戶與瀏覽器的互動，包括點擊、填寫表單、獲取元素等。</p>
+</blockquote>
+<ol start="4">
+<li>支援截圖和錄影<br></li>
+</ol>
+<blockquote>
+<p>Selenium 可以捕獲瀏覽器操作過程的截圖，這在許多測試有幫助。</p>
+</blockquote>
+<hr>
+<p><sapn class="info">注意事項：以下範例皆為 macos 14.0 環境下實作</span></p>
+<h2 id="下載瀏覽器的-webdriver">下載瀏覽器的 WebDriver</h2>
+<p>你需要安裝一個 Web Driver (開發人員用來自動化瀏覽器行為的工具)，來當作你程式使用的瀏覽器。<br>
+注意！下載的版本必須與你當前使用的瀏覽器版本一致。(這裡我選擇的是 ChromeDriver)
+<br>
+下載地點傳送門：(<a href="https://chromedriver.chromium.org/downloads/version-selection">https://chromedriver.chromium.org/downloads/version-selection</a>)
+<br>
+<font color="yellow">PS.你可以到 Chrome 的設定 $\rightarrow$ 關於Chrome查詢目前的版本號</font></p>
+<figure><img src="/images/Posts/Selenium/ChromeVersion.png"
+         alt="Chrome Version"/>
+</figure>
+
+<h2 id="selenium-函式庫安裝">Selenium 函式庫安裝</h2>
+<p><strong>使用python3 pip3 下載</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip3 install selenium
+</span></span></code></pre></div><h2 id="開始第一個-selenium-程式">開始第一個 Selenium 程式</h2>
+<p>下面是一個簡單的 Selenium 範例，用來打開瀏覽器、訪問網站、找到元素。
+<br>
+請根據你的瀏覽器選擇相應的 WebDriver：</p>
+<h3 id="webdriver-設定">WebDriver 設定</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>chromedriver <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/opt/homebrew/bin/chromedriver&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 這裡設定了 ChromeDriver 的路徑。ChromeDriver 是一個用於驅動 Chrome 瀏覽器的工具，你需要下載適用於你的 Chrome 版本的 ChromeDriver，然後提供它的路徑</span>
+</span></span><span style="display:flex;"><span>options <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>ChromeOptions()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 創建了一個 ChromeOptions 對象，這是用來配置 Chrome 啟動選項的。你可以使用這個對象來設置各種 Chrome 的選項，例如啟用無痕模式、設置代理、設置視窗大小等。</span>
+</span></span><span style="display:flex;"><span>options<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--incognito&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加一個啟動選項，這裡是啟用 Chrome 的無痕模式。&#34;--incognito&#34; 是告訴 Chrome 啟動時進入無痕模式。</span>
+</span></span><span style="display:flex;"><span>options<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;headless&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加一個啟動選項，這裡是啟用 Chrome 的 headless 模式。&#34;headless&#34; 表示無界面模式，也就是不會顯示實際的瀏覽器窗口，適用於在伺服器上運行，無需顯示瀏覽器 UI。</span>
+</span></span><span style="display:flex;"><span>driver <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>Chrome(options<span style="color:#f92672">=</span>options)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用上述配置選項初始化一個 Chrome WebDriver。這個 WebDriver 將根據提供的設置來啟動 Chrome，包括無痕模式和 headless 模式。(此時，WebDriver 已被啟動了)</span>
 </span></span></code></pre></div><h3 id="取得目標網站資源">取得目標網站資源</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://example.com/&#39;</span>
-</span></span><span style="display:flex;"><span>driver<span style="color:#f92672">.</span>get(url)
+</span></span><span style="display:flex;"><span>driver<span style="color:#f92672">.</span>get(url) 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 .get 來進入你要測試的網站</span>
 </span></span></code></pre></div><h3 id="取得目標網站資訊">取得目標網站資訊</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>title <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>title
-</span></span></code></pre></div><h3 id="定位元素">定位元素</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.common.by <span style="color:#f92672">import</span> By
-</span></span></code></pre></div><div class='table'>
+<ol>
+<li>取得當前站名：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>currentTitle <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>title 
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;當前站名：&#34;</span>, currentTitle)
+</span></span></code></pre></div></li>
+<li>取得當前 URL：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>current_url <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>current_url
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;當前網址:&#34;</span>, current_url)
+</span></span></code></pre></div></li>
+<li>取得網頁的 HTML 內容：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>page_source <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>page_source
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;網頁 HTML 內容:&#34;</span>, page_source)
+</span></span></code></pre></div></li>
+</ol>
+<p>除了以上的範例之外，您也可以透過定位元素，來取得你需要的內容。像是一個按鈕、一張圖片、一段文字</p>
+<h3 id="定位元素">定位元素</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.common.by <span style="color:#f92672">import</span> By <span style="color:#75715e"># 引入標頭</span>
+</span></span></code></pre></div><blockquote>
+<div class='table'>
     <table>
 <thead>
 <tr>
@@ -220,16 +276,22 @@ selenium 是一個可以模擬人類操作網頁的爬蟲工具，可以在網�
 </div>
 
 
-<p>我強烈建議使用 By.XPATH 絕對定位來定位元素
-<span class='info'>以 codeforces 登入頁面為例子</span></p>
+</blockquote>
+<br>
+<p>下面的例子以 <a href="https://codeforces.com/"><strong>codeforces</strong></a> 登入頁面示範</p>
+<h3 id="codeforces-登入畫面輸入-handle-以及送出的-html-代碼">Codeforces 登入畫面輸入 handle 以及送出的 Html 代碼</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width: 15em;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleOrEmail&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Login&#34;</span> /&gt;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>handle_box <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, <span style="color:#e6db74">&#34;//input[@id=&#39;handleOrEmail&#39;]&#34;</span>)
+</span></span></code></pre></div><h3 id="使用-byxpath-絕對定位">使用 By.XPATH 絕對定位</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>handle_box <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, <span style="color:#e6db74">&#34;//input[@id=&#39;handleOrEmail&#39;]&#34;</span>)
 </span></span><span style="display:flex;"><span>login_button <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, <span style="color:#e6db74">&#34;//input[@value=&#39;Login&#39;]&#34;</span>)
 </span></span></code></pre></div><h3 id="點擊以及輸入事件">點擊以及輸入事件</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>handle_box<span style="color:#f92672">.</span>send_keys(<span style="color:#e6db74">&#34;mengxian0913&#34;</span>) <span style="color:#75715e"># 輸入事件</span>
 </span></span><span style="display:flex;"><span>login_button<span style="color:#f92672">.</span>click() <span style="color:#75715e"># 點擊事件</span>
-</span></span></code></pre></div><h2 id="範例專案逢甲大學搶課機器人">範例專案：逢甲大學搶課機器人</h2>
+</span></span></code></pre></div><hr>
+<h2 id="結語">結語</h2>
+<p>本篇文章提到了 selenium 的初階教學，然而強大的 Selenium 工能並不只有這些，所以我在未來會繼續為您介紹。</p>
+<h2 id="範例專案逢甲大學搶課機器人">範例專案：逢甲大學搶課機器人</h2>
 <p><a href="https://github.com/mengxian0913/Class-Grabbing-Robot">https://github.com/mengxian0913/Class-Grabbing-Robot</a></p>
 </div>
     </article>

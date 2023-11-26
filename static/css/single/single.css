@@ -18,71 +18,52 @@
   border: none;
 }
 
-h1 {
-  line-height: 30px;
-}
-
-h2 {
-  line-height: 30px;
-}
-
-h3 {
-  line-height: 30px;
-}
-
-p {
-  line-height: 30px;
-}
-
-li {
-  line-height: 30px;
-}
-
-img {
-  max-width: 95%;
-  height: auto;
+blockquote {
+  border-radius: 10px;
+  padding: 2px 10px;
+  background-color: #535d6f;
 }
 
 .light {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(255, 255, 255, 0.28);
 }
 
 .info {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(32, 158, 226, 0.28);
 }
 
 .success {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(83, 230, 80, 0.582);
 }
 
 .warning {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(199, 113, 42, 0.783);
 }
 
 .danger {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(202, 38, 38, 0.775);
 }
 
 .mark {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: rgba(229, 229, 47, 0.726);
 }
 
 /* 修改水平分隔线的样式 */
@@ -124,6 +105,57 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#single-container h1 {
+  line-height: 30px;
+  position: relative;
+}
+#single-container h1::after {
+  content: ""; /* 或者 content: ' '; 如果你希望有一個空白字符 */
+  background-color: #b4b4b4;
+  width: 100%;
+  height: 1px;
+  position: absolute; /* 絕對定位，以相對於 h1 定位 */
+  bottom: -8px;
+  left: 0; /* 距離左側的距離，這裡設為 5% 以中心對齊 90% 的寬度 */
+}
+#single-container h1:hover {
+  border-left: 3px solid #b4b4b4;
+  padding-left: 3px;
+  border-radius: 2px;
+}
+#single-container h2 {
+  line-height: 30px;
+}
+#single-container h2:hover {
+  border-left: 3px solid #b4b4b4;
+  padding-left: 3px;
+  border-radius: 2px;
+}
+#single-container h3 {
+  line-height: 30px;
+}
+#single-container h3:hover {
+  border-left: 3px solid #b4b4b4;
+  padding-left: 3px;
+  border-radius: 2px;
+}
+#single-container p {
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.802);
+}
+#single-container p:hover {
+  border-left: 3px solid #b4b4b4;
+  padding-left: 3px;
+  border-radius: 2px;
+}
+#single-container li {
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.802);
+}
+#single-container img {
+  max-width: 95%;
+  height: auto;
 }
 #single-container article {
   width: 60vw;

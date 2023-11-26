@@ -10,37 +10,27 @@ $line_height_2: 30px;
   border: none;
 }
 
-h1 {
-  line-height: $line_height_2;
-}
-
-h2 {
-  line-height: $line_height_2;
-}
-
-h3 {
-  line-height: $line_height_2;
-}
-
-p {
-  line-height: $line_height_1;
-}
-
-li {
-  line-height: $line_height_1;
-}
-
-img {
-  max-width: 95%;
-  height: auto;
+blockquote {
+  border-radius: 10px;
+  padding: 2px 10px;
+  background-color: #535d6f;
 }
 
 @mixin font-setting($rgbkey) {
   padding: 0.3em;
   font-size: 85%;
   border-radius: 3px;
-  background-color: rgbkey;
+  background-color: $rgbkey;
 }
+
+@mixin fontBorderLeft() {
+  &:hover {
+    border-left: 3px solid #b4b4b4;
+    padding-left: 3px;
+    border-radius: 2px;
+  }
+}
+
 
 .light {
   @include font-setting(rgba(255, 255, 255, 0.28));
@@ -107,6 +97,50 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+  h1 {
+    line-height: $line_height_2;
+    position: relative;
+  
+    &::after {
+      content: ''; /* 或者 content: ' '; 如果你希望有一個空白字符 */
+      background-color: #b4b4b4;
+      width: 100%;
+      height: 1px;
+      position: absolute; /* 絕對定位，以相對於 h1 定位 */
+      bottom: -8px;
+      left: 0; /* 距離左側的距離，這裡設為 5% 以中心對齊 90% 的寬度 */
+    }
+  
+    @include fontBorderLeft();
+  }
+  
+  h2 {
+    line-height: $line_height_2;
+    @include fontBorderLeft();
+  }
+  
+  h3 {
+    line-height: $line_height_2;
+    @include fontBorderLeft();
+  }
+  
+  p {
+    line-height: $line_height_1;
+    color: rgba(255, 255, 255, 0.802);
+    @include fontBorderLeft();
+  }
+  
+  li {
+    line-height: $line_height_1;
+    color: rgba(255, 255, 255, 0.802);
+  }
+  
+  img {
+    max-width: 95%;
+    height: auto;
+  }
   
   article {
     width: 60vw;

@@ -65,17 +65,14 @@ public:
 
 ## [912. Sort an Array](https://leetcode.com/problems/sort-an-array/)
 
-
 ### 數據值域
 
 ![](https://i.imgur.com/7VGsI5o.png)
 
+<br>
 排序的時間複雜度主要考慮的是array的長度，題目給的最大長度為 $5\times10^{4}$
-
 所以要選擇複雜度較低的演算法，像是 $O(n^{2})$ 就肯定不會過。
-
 <span class="light">ps.程式 1 秒大概可以跑 $10^{9}$ 的資料量。</span>
-
 以下介紹幾種常見的排序演算法><
 
 ---
