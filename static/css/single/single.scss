@@ -129,7 +129,6 @@ hr {
   p {
     line-height: $line_height_1;
     color: rgba(255, 255, 255, 0.802);
-    @include fontBorderLeft();
   }
   
   li {
@@ -140,6 +139,7 @@ hr {
   img {
     max-width: 95%;
     height: auto;
+    @include fontBorderLeft();
   }
   
   article {

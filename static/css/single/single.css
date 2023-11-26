@@ -144,11 +144,6 @@ hr {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.802);
 }
-#single-container p:hover {
-  border-left: 3px solid #b4b4b4;
-  padding-left: 3px;
-  border-radius: 2px;
-}
 #single-container li {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.802);
@@ -156,6 +151,11 @@ hr {
 #single-container img {
   max-width: 95%;
   height: auto;
+}
+#single-container img:hover {
+  border-left: 3px solid #b4b4b4;
+  padding-left: 3px;
+  border-radius: 2px;
 }
 #single-container article {
   width: 60vw;

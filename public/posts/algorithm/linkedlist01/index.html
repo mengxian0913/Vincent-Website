@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://vincent-s-blog.web.app/icon/Badminton-racket-in-macbook.webp" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/baseof/baseof.css">
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/footer.css">
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+    
+    <script src="https://kit.fontawesome.com/fa3dac99ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+      
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/single/single.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/prism.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/search/search.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/spoiler/spoiler.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/shortcodes/table/table.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/catalog/catalog.css">
+
+
+
+
+    <title>
+        
+    如何使用C語言實作LinkedList - Vincent's Blog
+
+    </title>
+</head>
+
+<div id="matte-background" class=""></div>
+
+<div class="search-background">
+    <div class="search-container">
+        <div class="row">
+            <button class="fa-solid fa-xmark"></button>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" class="fa-solid fa-magnifying-glass" type="submit"></button>
+            
+        </div>
+        
+        <div id="searchResults">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    
+
+    <nav class="move-left">
+        <div class="nav-container">
+            <a href="/"><span style="line-height: 30px;">Vincent's Blog</span></a>
+            <div class="tools">
+                <i class="fa-solid fa-magnifying-glass header-search"></i>
+                <div class="hamburger">
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                    <span class="hamburgers"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="nav2-container">
+        <div class="menu2 m2">
+            <h1 class="m2">#tags</h1>
+            <div class="menu2-container m2">
+                <div class="box m2"><a href="/posts/" style="line-height: 30px;">all posts</a></div>
+                
+                    <div class="box"><a href="/tags/algorithm" style="line-height: 30px;">algorithm</a></div>
+                
+                    <div class="box"><a href="/tags/c" style="line-height: 30px;">c</a></div>
+                
+                    <div class="box"><a href="/tags/c&#43;&#43;" style="line-height: 30px;">c&#43;&#43;</a></div>
+                
+                    <div class="box"><a href="/tags/front-end" style="line-height: 30px;">front-end</a></div>
+                
+                    <div class="box"><a href="/tags/javascript" style="line-height: 30px;">javascript</a></div>
+                
+                    <div class="box"><a href="/tags/jquery" style="line-height: 30px;">jquery</a></div>
+                
+                    <div class="box"><a href="/tags/python" style="line-height: 30px;">python</a></div>
+                
+                    <div class="box"><a href="/tags/selenium" style="line-height: 30px;">selenium</a></div>
+                
+                    <div class="box"><a href="/tags/%E5%8F%83%E8%A8%AA%E6%B4%BB%E5%8B%95" style="line-height: 30px;">參訪活動</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%97%85%E9%81%8A" style="line-height: 30px;">旅遊</a></div>
+                
+                    <div class="box"><a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95" style="line-height: 30px;">演算法</a></div>
+                
+                    <div class="box"><a href="/tags/%E7%88%AC%E8%9F%B2" style="line-height: 30px;">爬蟲</a></div>
+                
+                    <div class="box"><a href="/tags/%E9%80%A2%E7%94%B2%E5%A4%A7%E5%AD%B8" style="line-height: 30px;">逢甲大學</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <link rel="stylesheet" href="https://vincent-s-blog.web.app/css/partials/header.css">
+    <script src="https://vincent-s-blog.web.app//js/header.js"></script>
+
+
+    <div id="loading">
+      
+        <style>
+    #single-load-container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #1f242d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #single-load {
+        height: 96vh;
+        width: 60vw;
+        background-color: #323946;
+        padding: 20px 0 0 20px;
+    }
+
+    @media (max-width: 900px) {
+        #single-load {
+            width: 100vw;
+        }
+    }
+
+</style>
+
+
+<div id="single-load-container">
+    <div id="single-load">
+        <br>
+        <br>
+        <div class="title"></div>
+        <div class="article"></div>
+        <div class="img"></div>
+        <div class="article"></div>
+    </div>
+</div>
+
+<script src="https://vincent-s-blog.web.app//js/single_load.js"></script>
+      
+    </div>
+
+    <div id="content">
+        
+
+        
+  <div id="single-container"  class= "move-left">
+    <article>
+      <br>
+      <h1>如何使用C語言實作LinkedList</h1>
+
+      <div style="color: grey">
+        Sunday, Nov 26, 2023 
+      </div>
+
+      <div id="markdown-content"><h2 id="前言">前言</h2>
+<p>一般在宣告陣列的時候會需要定義陣列的長度，像是：<br></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> MAXN <span style="color:#f92672">=</span> <span style="color:#ae81ff">1005</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> arr[MAXN]; <span style="color:#75715e">// 宣告一個長度為 1005 的整數陣列
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>陣列的記憶體是連續的，所以我們可以很容易使用迴圈遍歷陣列的每一個元素。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printArray</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>ptr, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>endptr) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(ptr <span style="color:#f92672">!=</span> endptr) {
+</span></span><span style="display:flex;"><span>        cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>ptrk<span style="color:#f92672">++</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>ptr <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code class="language-output" data-lang="output">1 2 3 4 5
+</code></pre><p>LinkedList 是一個可以根據存放資料多寡而擴充的一種資料結構，不需要在宣告的時候就定義長度，這讓我們避免多開了不必要的記憶體。
+<br>
+它由節點（Node）組成，每個節點包含數據和一個指向下一個節點的指針。鏈表有幾種主要的類型，包括單向鏈表、雙向鏈表和循環鏈表。這裡列舉一下鏈表的優缺點：</p>
+<h3 id="優點">優點</h3>
+<ol>
+<li>
+<p>動態內存分配： 鏈表的大小可以在運行時動態調整，因此不需要在一開始就分配固定大小的內存。這使得鏈表更靈活，可以有效地利用內存。</p>
+</li>
+<li>
+<p>插入和刪除操作高效： 插入和刪除節點的操作在鏈表中比較高效。對於單向鏈表，如果你有指向插入位置的指針，可以在 O(1) 時間內完成插入操作。刪除操作也類似，只需調整相鄰節點的指針即可。</p>
+</li>
+<li>
+<p>不需要預先分配空間： 與數組（Array）不同，鏈表不需要事先分配空間，因此在添加元素時不需要考慮容量的問題。
+高度擴充性</p>
+</li>
+</ol>
+<h3 id="缺點">缺點</h3>
+<ol>
+<li>
+<p>隨機訪問效率低： 訪問鏈表中的某一個元素需要從頭部開始遍歷，直到找到所需元素。這導致鏈表的隨機訪問效率較低，時間複雜度為 $O(n)$。</p>
+</li>
+<li>
+<p>線性存儲： 鏈表中的元素在內存中並不是連續存放的，這可能導致對緩存的效率較低。</p>
+</li>
+</ol>
+<h2 id="實作-linkedlist">實作 LinkedList</h2>
+<h3 id="定義-struct">定義 Struct</h3>
+<p>你需要先定義一個結構來儲存節點(Node)以及鏈結(Link)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> Node {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> data; <span style="color:#75715e">// other variable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>nextNode;
+</span></span><span style="display:flex;"><span>}Node;
+</span></span></code></pre></div><h3 id="頭節點與-malloc">頭節點與 malloc</h3>
+<p>宣告一個頭節點，他會是 LinkedList 的第一個元素，並且指向下一個。
+<br>
+我們可以用 malloc 分配一個 Node 空間給 head 。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>Node <span style="color:#f92672">*</span>head <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node)); <span style="color:#75715e">// 強制轉型成 (Node *) 型態
+</span></span></span></code></pre></div><h3 id="指向下一個節點">指向下一個節點</h3>
+<p>宣告三個 Node a 和 b 和 c，為 a $\rightarrow$ b $\rightarrow$ c。
+<br></p>
+<h4 id="方法一">方法一</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    Node <span style="color:#f92672">*</span>a <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    Node <span style="color:#f92672">*</span>b <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> b;
+</span></span><span style="display:flex;"><span>    Node <span style="color:#f92672">*</span>c <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>    c <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> c;
+</span></span><span style="display:flex;"><span>    c <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="方法二">方法二</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  Node <span style="color:#f92672">*</span>a <span style="color:#f92672">=</span> (Node<span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> (Node<span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">=</span> a <span style="color:#f92672">-&gt;</span> nextNode;
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> (Node<span style="color:#f92672">*</span>) <span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>  a <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="實作-n-個節點的-linkedlist">實作 n 個節點的 LinkedList</h3>
+<div class="spoiler">
+    <button class="spoiler-title">解答</button>
+    <div class="spoiler-content">
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> Node {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> val;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span> nextNode;
+</span></span><span style="display:flex;"><span>} Node;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  Node <span style="color:#f92672">*</span>head <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> n;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>n);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>n) <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Node <span style="color:#f92672">*</span>current <span style="color:#f92672">=</span> head;
+</span></span><span style="display:flex;"><span>  current <span style="color:#f92672">-&gt;</span> val <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">-&gt;</span> nextNode <span style="color:#f92672">=</span> (Node <span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(Node));
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">=</span> current <span style="color:#f92672">-&gt;</span> nextNode;
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">-&gt;</span> val <span style="color:#f92672">=</span> i;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(; head; head <span style="color:#f92672">=</span> head <span style="color:#f92672">-&gt;</span> nextNode) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, head <span style="color:#f92672">-&gt;</span> val);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </div>
+</div>
+</div>
+    </article>
+  </div>
+
+  
+  <div class="to-top">
+    <div class="imgcontainer">
+      <img src="https://vincent-s-blog.web.app//images/arrow-up-svgrepo-com.svg" alt="ToTopArrow" id="ToTopArrow">
+    </div>
+  </div>
+
+    </div>
+
+    
+    <section class="sec5 move-left">
+        <footer>
+            <div class="follow">
+                <a href="https://www.instagram.com/meng_337/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/mengxian0913"><i class="fa-brands fa-github"></i></a>
+                <a href = "mailto:mengxian0913@gmail.com"><i class="fa-regular fa-envelope" style="color: #7dc7e7a7; font-size: 35px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCPBKnFDsCD3kIm_APgxGHew"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </footer>
+
+        <span></span>
+
+        <div class="copyright">
+            <p>
+                Copyright © 2023 Yang, Meng-Xian. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+
+</body>
+    <script src="https://vincent-s-blog.web.app//js/search.js"></script>
+    <script src="https://vincent-s-blog.web.app//js/baseof.js"></script>
+    
+  
+  <script src="https://vincent-s-blog.web.app//js/catalog.js"></script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="https://vincent-s-blog.web.app/js/swiper.mjs"></script>
+
+
+  <script src="https://vincent-s-blog.web.app//js/single.js"></script>
+  <script src="https://vincent-s-blog.web.app//js/prism.js "></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+  <script src="https://vincent-s-blog.web.app/js/spoiler.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+    };
+  </script>
+
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  ></script>
+
+</html>
