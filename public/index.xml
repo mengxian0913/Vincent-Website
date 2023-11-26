@@ -8,7 +8,7 @@
     <language>en-us, zh-TW, zh</language>
     <lastBuildDate>Sun, 26 Nov 2023 22:13:35 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>如何使用C語言實作LinkedList</title>
+      <title>如何使用 C 語言實作Linked List</title>
       <link>https://vincent-s-blog.web.app/posts/algorithm/linkedlist01/</link>
       <pubDate>Sun, 26 Nov 2023 22:13:35 +0800</pubDate>
       
