@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>neovim on My New Hugo Site</title>
+    <link>https://vincent-s-blog.web.app/tags/neovim/</link>
+    <description>Recent content in neovim on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us, zh-TW, zh</language>
+    <lastBuildDate>Sun, 17 Dec 2023 23:08:04 +0800</lastBuildDate><atom:link href="https://vincent-s-blog.web.app/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim setting scss to css</title>
+      <link>https://vincent-s-blog.web.app/posts/else-tags/scsstocss/</link>
+      <pubDate>Sun, 17 Dec 2023 23:08:04 +0800</pubDate>
+      
+      <guid>https://vincent-s-blog.web.app/posts/else-tags/scsstocss/</guid>
+      <description>引言 在這篇文章中，我將探討 Neovim 使用者在編寫 SCSS 檔案時，如何進行轉譯以生成對應的 CSS 檔案，以供 HTML 渲染使用。
+許多前端工程師喜歡使用 SCSS 來替代傳統的 CSS 編寫，而如果你使用的是Visual Studio Code (VSCode)，你可以透過 watch 插件輕鬆完成這項任務。然而，對於 Neovim 使用者，如何手動設定呢？
+在下文中，我將分享一些 Neovim 的設定方法，讓你能夠自行進行 SCSS 到 CSS 的轉譯，以應用於你的前端專案中。
+正文 安裝 Npm 首先，確保你的系統已安裝 npm（Node.js 包管理器）。如果你使用 macOS，你可以使用 Homebrew 安裝 npm：
+brew install npm 安裝 Sass 接下來，安裝 Sass，一個強大的 CSS 預處理器，透過以下指令：
+npm install -g sass 配置自動編譯 現在，我們將設定 Neovim 自動將 SCSS 檔案編譯成 CSS 檔案。請使用 Lua 語言編寫你的 Neovim 設定，創建一個名為 scss.lua 的檔案。
+路徑：
+./config/nvim/lua/user/plugins/scss.lua 在 scss.lua 中，加入以下設定：</description>
+    </item>
+    
+  </channel>
+</rss>

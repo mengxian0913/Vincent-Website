@@ -1,25 +1,24 @@
-@import '../config/config.scss';
+@import "../config/config.scss";
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: $bg-color;
-    height: auto;
-    min-height: 100vh;
-    width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 #loading {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-
 #content {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100vw;
 }
