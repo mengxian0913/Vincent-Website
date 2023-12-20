@@ -1,115 +1,109 @@
-@import '../config/config.scss';
+@import "../config/config.scss";
 
-.project-section{
-    width: 100vw;
-    height: auto;
+.project-section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0 10px 0;
+
+  .project-card {
+    background-color: antiquewhite;
+    width: 300px;
+    height: 350px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0 0 10px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
 
-    .project-card{
-        background-color: antiquewhite;
-        width: 300px;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 5px 5px 20px black;
-        
-        transition: all .3s ease-in-out;
-        margin: 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
 
-        .img{
-            width: 100%;
-            flex: 45%;
-            background-color: rgba(159, 204, 189, 0.7);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            img{
-                position: relative;
-                width: 102%;
-                height: auto;
-                transition: all .3s ease-in-out;
-            }
+    .img {
+      width: 100%;
+      flex: 45%;
+      background-color: rgba(159, 204, 189, 0.7);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-            &:hover{
-                img{
-                    transform: scale(120%);
-                }
-            }
+      img {
+        position: relative;
+        width: 102%;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+      }
 
-            
+      &:hover {
+        img {
+          transform: scale(120%);
         }
-
-        .depiction{
-            position: relative;
-            width: 100%;
-            flex: 55%;
-            height: 100%;
-            background-color: $second-bg-color;
-            padding: 10px;
-
-            h3{
-                width: 100%;
-                border-bottom:gray 1px groove;
-                margin-bottom: 5px;
-                
-            }
-
-            p{
-                width: 100%;
-            }
-
-            .button{
-                position: absolute;
-                z-index: 10;
-                bottom: -15px;
-                border: none;
-                font-size: 12px;
-                color: #FFF;
-                padding: 8px 16px;
-                background-color: #4070F4;
-                border-radius: 6px;
-                margin: 14px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                
-                a{
-                    color: #FFF;
-                    font-size: 10px;
-                }
-
-                &:hover{
-                    background-color:  rgba(39, 50, 93, 0.656);;
-                }
-            }
-
-            p{
-                line-height: 25px;
-                font-size: 15px;
-            }
-        }
-
-
-        &:hover{
-            transform: translateY(-10px);
-        }
-
+      }
     }
+
+    .depiction {
+      position: relative;
+      width: 100%;
+      flex: 55%;
+      height: 100%;
+      background-color: $second-bg-color;
+      padding: 10px;
+
+      h3 {
+        width: 100%;
+        border-bottom: gray 1px groove;
+        margin-bottom: 5px;
+      }
+
+      p {
+        width: 100%;
+      }
+
+      .button {
+        position: absolute;
+        z-index: 10;
+        bottom: -15px;
+        border: none;
+        font-size: 12px;
+        color: #fff;
+        padding: 8px 16px;
+        background-color: #4070f4;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        a {
+          color: #fff;
+          font-size: 10px;
+        }
+
+        &:hover {
+          background-color: rgba(39, 50, 93, 0.656);
+        }
+      }
+
+      p {
+        line-height: 25px;
+        font-size: 15px;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
 }
 
-
-@media screen and (min-width: 830px){
-    .project-section{
-        padding: 50px;
-    }
+@media screen and (min-width: 830px) {
+  .project-section {
+    padding: 50px;
+  }
 }

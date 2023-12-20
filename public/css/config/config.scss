@@ -1,5 +1,5 @@
 // font setting
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300;1,400&family=M+PLUS+Rounded+1c:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 $text_color: #fff;
 $summary_color: #ffffff8b;
 $link_color: #83d9e1; // for unclick link
@@ -18,12 +18,12 @@ $mobile_font_size: 16px;
 $circle_color: rgb(27, 73, 88);
 
 :root {
-    overflow-x: hidden;
-    width: 100vw;
-    height: auto;
-    min-height: 100vh;
-    background-color: $bg-color;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-family: "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  background-color: $bg-color;
+  // color: #fff;
+  color: #f0f0f0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }

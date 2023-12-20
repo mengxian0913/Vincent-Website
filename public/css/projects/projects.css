@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300;1,400&family=M+PLUS+Rounded+1c:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
   background-color: #1f242d;
+  color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .project-section {
@@ -67,16 +73,16 @@
   bottom: -15px;
   border: none;
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   padding: 8px 16px;
-  background-color: #4070F4;
+  background-color: #4070f4;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .project-section .project-card .depiction .button a {
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
 }
 .project-section .project-card .depiction .button:hover {
@@ -94,4 +100,6 @@
   .project-section {
     padding: 50px;
   }
-}/*# sourceMappingURL=projects.css.map */
+}
+
+/*# sourceMappingURL=projects.css.map */

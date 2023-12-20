@@ -1,110 +1,104 @@
 #matte-background {
-    position: absolute;
-    top: 0;
-    left: -100vw;
-    height: auto;
-    min-height: 100vh;
-    width: 100vw;
-    z-index: 199;
-    backdrop-filter: blur(5px);
-    
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 199;
+  backdrop-filter: blur(5px);
 
-    &.is-active {
-       left: 0;
-    }
+  &.is-active {
+    left: 0;
+  }
 }
 
+.search-background {
+  transition: all linear 300ms;
+  position: absolute;
+  z-index: 200;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
 
+  // backdrop-filter: blur(5px);
 
-.search-background{
-    transition: all linear 300ms;
-    position: absolute;
-    z-index: 200;
-    width: 100vw;
+  top: 0;
+  left: -100vw;
+
+  &.is-active {
+    left: 0;
+  }
+
+  .search-container {
+    background-color: #eee;
+    width: 98%;
+    max-width: 1000px;
     height: auto;
-    min-height: 100vh;
+    margin: 20px auto;
+    border-radius: 5px;
+    .row {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      padding: 10px;
 
-    // backdrop-filter: blur(5px);
+      input {
+        flex: 1;
+        height: 25px;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+      }
 
-    top: 0;
-    left: -100vw;
+      button {
+        background: transparent;
+        border: 0;
+        outline: 0;
+      }
 
-    &.is-active{
-        left: 0;
+      .fa-xmark {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+
+      .fa-solid {
+        width: 20px;
+        color: #555;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
     }
 
-    .search-container{
-        background-color: #EEE;
-        width: 98%;
-        max-width: 1000px;
-        height: auto;
-        margin: 20px auto;
-        border-radius: 5px;
-        .row{
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            padding: 10px;
+    #searchResults {
+      width: 100%;
+      height: fit-content;
 
-            
-            input{
-                flex: 1;
-                height: 25px;
-                background: transparent;
-                border: 0;
-                outline: 0;
-                font-size: 16px;
-            }
-        
-            button{
-                background: transparent;
-                border: 0;
-                outline: 0;
-            }
+      ul {
+        width: 100%;
+        height: fit-content;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-            .fa-xmark{
-                margin-left: 0;
-                margin-right: 10px;
+        li {
+          width: 100%;
+          height: fit-content;
+          padding: 5px 20px 5px 20px;
+          a {
+            color: #00e;
+            &:visited {
+              color: #551a8b;
             }
-        
-            .fa-solid{
-                width: 20px;
-                color: #555;
-                font-size: 20px;
-                cursor: pointer;
-                margin-right: 10px;
+            &:hover {
+              color: #06e;
             }
+          }
         }
-    
-        #searchResults{
-            width: 100%;
-            height: fit-content;
-    
-            ul{
-                width: 100%;
-                height: fit-content;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-    
-                li{
-                    width: 100%;
-                    height: fit-content;
-                    padding: 5px 20px 5px 20px;
-                    a {
-                        color: #00e; 
-                        &:visited {
-                            color: #551a8b; 
-                        }
-                        &:hover {
-                            color: #06e; 
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }    
+      }
+    }
+  }
 }
-

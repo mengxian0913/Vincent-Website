@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300;1,400&family=M+PLUS+Rounded+1c:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
   background-color: #1f242d;
+  color: #f0f0f0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .catalog-container {
@@ -35,4 +41,6 @@
   .catalog-container {
     display: none;
   }
-}/*# sourceMappingURL=catalog.css.map */
+}
+
+/*# sourceMappingURL=catalog.css.map */

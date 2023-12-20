@@ -1,219 +1,215 @@
-@import '../config/config.scss';
+@import "../config/config.scss";
 
-nav{
+nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 192;
+  background-color: $bg-color;
+  padding: 16px 32px;
+  border-bottom: 3px $greenblue solid;
+  backdrop-filter: blur(0.5px);
+  transition: all 300ms ease-in-out;
+
+  .nav-container {
+    max-width: 1280px;
     width: 100%;
     height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 192;
-    background-color: $bg-color;
-    padding: 16px 32px;
-    border-bottom: 3px $greenblue solid;
-    backdrop-filter: blur(0.5px);
-    transition: all 300ms ease-in-out;
+    margin: 0 auto; // 子內容物置中
 
-    
-    .nav-container{
-        max-width: 1280px;
-        width: 100%;
-        height: auto;
-        margin: 0 auto; // 子內容物置中
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        display: flex;  
-        justify-content: space-between;
-        align-items: center;
-        
-            
-        a{
-            width: fit-content;
-            height: auto;
-            span{
-                font-size:  20px;
-                font-weight: 600;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: $text_color;
-            }
-        }
-    
-        .tools{
-            width: 150px;
-            height: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .fa-solid{
-                position: relative;
-                bottom: 1px;
-                padding: 4px 8px;
-                border-radius: 5px;
-                width: auto;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                background-color: #EEEEEE;
-                color: #555;
-                font-size: 20px;
-                margin-right: 10px;
-            }
-
-            .hamburger{
-                padding: 2px;
-                display: block;
-                position: relative;
-                z-index: 1;
-                user-select: none;
-                appearance: none;
-                border: none;
-                outline: none;
-                background: none;
-                cursor: pointer;
-    
-                span{
-                    display: block;
-                    width: 33px;
-                    height: 4px;
-                    margin-bottom: 5px;
-                    position: relative;
-        
-                    background-color: $light;
-                    border-radius: 6px;
-                    z-index: 1;
-                    transform-origin: 0 0;
-                    transition: .4s;
-                }
-        
-                &.is-active span:nth-child(1){
-                    transform: translate(0px, -2px) rotate(45deg);
-                }
-        
-                &.is-active span:nth-child(2){
-                    opacity: 0;
-                    transform: translateX(15px);
-                }
-        
-                &.is-active span:nth-child(3){
-                    transform: translate(-3px, 3px) rotate(-45deg);
-                }
-        
-                &.is-active:hover span{
-                    background-color: $babyblue;
-                }
-            }
-        }
-
+    a {
+      width: fit-content;
+      height: auto;
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $text_color;
+      }
     }
-}
 
-
-.nav2-container{
-    z-index: 191;
-    transition: .4s;
-    position: fixed;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: $dark;
-    box-shadow: 0 4px 10px 0 rgba(59, 105, 116, 0.2), 0 2px 10px 0 rgba(244, 240, 240, 0.19);
-
-    .menu2{
-        padding: 8vh 20px 20px 20px;
-        width: 100%;
-        height: 100%;
+    .tools {
+      width: 150px;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .fa-solid {
         position: relative;
+        bottom: 1px;
+        padding: 4px 8px;
+        border-radius: 5px;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #eeeeee;
+        color: #555;
+        font-size: 20px;
+        margin-right: 10px;
+      }
 
-        h1{
-            font-size: 18px;
-            text-transform: uppercase;
-            border-bottom: #FFF solid 1.5px;
+      .hamburger {
+        padding: 2px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        user-select: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+
+        span {
+          display: block;
+          width: 33px;
+          height: 4px;
+          margin-bottom: 5px;
+          position: relative;
+
+          background-color: $light;
+          border-radius: 6px;
+          z-index: 1;
+          transform-origin: 0 0;
+          transition: 0.4s;
         }
 
-        .menu2-container{
-            margin: 0;
-            width: 100%;
-            height: auto;
-            padding: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            // justify-content: flex-start;
-            // align-items: flex-start;
-
-            .box{
-                width: fit-content;
-                height: fit-content;
-                margin: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                a{
-                    text-transform: uppercase;
-                    color: #FFF;
-                    font-weight: 600; 
-                    font-size: 14px;
-                    transition: .4s;
-                    padding: 3px 9px;
-                    border-radius: 99px;
-                    
-                    &.is-active, &:hover{
-                        background-color: rgba(25, 134, 193, 0.687);
-                    }
-                }
-            }
-
+        &.is-active span:nth-child(1) {
+          transform: translate(0px, -2px) rotate(45deg);
         }
 
-        
-    }
+        &.is-active span:nth-child(2) {
+          opacity: 0;
+          transform: translateX(15px);
+        }
 
-    &.is-active{
-        right: 0;
-        // transform: translateY(65px);
+        &.is-active span:nth-child(3) {
+          transform: translate(-3px, 3px) rotate(-45deg);
+        }
+
+        &.is-active:hover span {
+          background-color: $babyblue;
+        }
+      }
     }
+  }
 }
 
-.scroll-down{
-    nav{
-        transform: translate3d(0, -100%, 0);
+.nav2-container {
+  z-index: 191;
+  transition: 0.4s;
+  position: fixed;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: $dark;
+  box-shadow:
+    0 4px 10px 0 rgba(59, 105, 116, 0.2),
+    0 2px 10px 0 rgba(244, 240, 240, 0.19);
+
+  .menu2 {
+    padding: 8vh 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    h1 {
+      font-size: 18px;
+      text-transform: uppercase;
+      border-bottom: #fff solid 1.5px;
     }
+
+    .menu2-container {
+      margin: 0;
+      width: 100%;
+      height: auto;
+      padding: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+
+      .box {
+        width: fit-content;
+        height: fit-content;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          font-weight: 600;
+          font-size: 14px;
+          transition: 0.4s;
+          padding: 3px 9px;
+          border-radius: 99px;
+
+          &.is-active,
+          &:hover {
+            background-color: rgba(25, 134, 193, 0.687);
+          }
+        }
+      }
+    }
+  }
+
+  &.is-active {
+    right: 0;
+    // transform: translateY(65px);
+  }
 }
 
-.scroll-up{
-    nav{
-        border-bottom: 3px $greenblue solid;
-    }
+.scroll-down {
+  nav {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.scroll-up {
+  nav {
+    border-bottom: 3px $greenblue solid;
+  }
 }
 
 @media (max-width: 900px) {
-    /* 手機版樣式設定 */
+  /* 手機版樣式設定 */
 
-    nav {
-        .nav-container {
-            a {
-                span {
-                    font-size: 18px;
-                }
-            }
-
-            .tools {
-                width: 100px;
-            }
+  nav {
+    .nav-container {
+      a {
+        span {
+          font-size: 18px;
         }
-    }
+      }
 
-    .nav2-container .menu2{
-        padding: 55px 20px 20px 20px;
-        .menu2-container{
-            .box{
-                margin: 6px;
-                a{
-                    font-size: 14px;
-                    padding: 3px 10px;
-                }
-            }
-        }   
+      .tools {
+        width: 100px;
+      }
     }
+  }
+
+  .nav2-container .menu2 {
+    padding: 55px 20px 20px 20px;
+    .menu2-container {
+      .box {
+        margin: 6px;
+        a {
+          font-size: 14px;
+          padding: 3px 10px;
+        }
+      }
+    }
+  }
 }

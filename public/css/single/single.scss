@@ -1,4 +1,4 @@
-@import '../config/config.scss';
+@import "../config/config.scss";
 
 $line_height_1: 30px;
 $line_height_2: 30px;
@@ -31,7 +31,6 @@ blockquote {
   }
 }
 
-
 .light {
   @include font-setting(rgba(255, 255, 255, 0.28));
 }
@@ -63,7 +62,6 @@ hr {
   background-color: #ffffff3f; /* 设置分隔线颜色 */
 }
 
-
 .to-top {
   width: 60px;
   height: 60px;
@@ -79,7 +77,7 @@ hr {
   margin: 0;
   padding: 0;
 
-  .imgcontainer { 
+  .imgcontainer {
     cursor: pointer;
     transition: all ease-in-out 300ms;
     img {
@@ -98,13 +96,12 @@ hr {
   justify-content: center;
   align-items: center;
 
-
   h1 {
     line-height: $line_height_2;
     position: relative;
-  
+
     &::after {
-      content: ''; /* 或者 content: ' '; 如果你希望有一個空白字符 */
+      content: ""; /* 或者 content: ' '; 如果你希望有一個空白字符 */
       background-color: #b4b4b4;
       width: 100%;
       height: 1px;
@@ -112,36 +109,36 @@ hr {
       bottom: -8px;
       left: 0; /* 距離左側的距離，這裡設為 5% 以中心對齊 90% 的寬度 */
     }
-  
+
     @include fontBorderLeft();
   }
-  
+
   h2 {
     line-height: $line_height_2;
     @include fontBorderLeft();
   }
-  
+
   h3 {
     line-height: $line_height_2;
     @include fontBorderLeft();
   }
-  
+
   p {
     line-height: $line_height_1;
     color: rgba(255, 255, 255, 0.802);
   }
-  
+
   li {
     line-height: $line_height_1;
     color: rgba(255, 255, 255, 0.802);
   }
-  
+
   img {
     max-width: 95%;
     height: auto;
     @include fontBorderLeft();
   }
-  
+
   article {
     width: 60vw;
     max-width: 1200px;
@@ -184,7 +181,7 @@ pre {
   #single-container {
     margin: 0;
     width: 100vw;
-    
+
     article {
       width: 100%;
       margin: 10px 0px;
