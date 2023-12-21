@@ -1,7 +1,5 @@
 # Vincent's Blog Template
 
-`author: Meng-Xian, Yang`
-
 ## Partial
 
 - header

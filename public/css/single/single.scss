@@ -3,6 +3,18 @@
 $line_height_1: 30px;
 $line_height_2: 30px;
 
+$successFontColor: #3c763d;
+$successBgColor: #dff0d8;
+
+$infoFontColor: #31708f;
+$infoBgColor: #d9edf7;
+
+$warningFontColor: #8a6d3b;
+$warningBgColor: #fcf8e3;
+
+$dangerFontColor: #a94442;
+$dangerBgColor: #f2dede;
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -16,11 +28,11 @@ blockquote {
   background-color: #535d6f;
 }
 
-@mixin font-setting($rgbkey) {
-  padding: 0.3em;
-  font-size: 85%;
+@mixin font-setting($backgroundColor, $fontColor) {
   border-radius: 3px;
-  background-color: $rgbkey;
+  padding: 3px;
+  background-color: $backgroundColor;
+  color: $fontColor;
 }
 
 @mixin fontBorderLeft() {
@@ -32,27 +44,27 @@ blockquote {
 }
 
 .light {
-  @include font-setting(rgba(255, 255, 255, 0.28));
+  @include font-setting(rgba(255, 255, 255, 0.28), #eee);
 }
 
 .info {
-  @include font-setting(rgba(32, 158, 226, 0.28));
+  @include font-setting($infoBgColor, $infoFontColor);
 }
 
 .success {
-  @include font-setting(rgba(83, 230, 80, 0.582));
+  @include font-setting($successBgColor, $successFontColor);
 }
 
 .warning {
-  @include font-setting(rgba(199, 113, 42, 0.783));
+  @include font-setting($warningBgColor, $warningFontColor);
 }
 
 .danger {
-  @include font-setting(rgba(202, 38, 38, 0.775));
+  @include font-setting($dangerBgColor, $dangerFontColor);
 }
 
 .mark {
-  @include font-setting(rgba(229, 229, 47, 0.726));
+  @include font-setting(rgba(229, 229, 47, 0.726), #eee);
 }
 
 /* 修改水平分隔线的样式 */

@@ -24,45 +24,45 @@ blockquote {
 }
 
 .light {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
+  padding: 3px;
   background-color: rgba(255, 255, 255, 0.28);
+  color: #eee;
 }
 
 .info {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
-  background-color: rgba(32, 158, 226, 0.28);
+  padding: 3px;
+  background-color: #d9edf7;
+  color: #31708f;
 }
 
 .success {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
-  background-color: rgba(83, 230, 80, 0.582);
+  padding: 3px;
+  background-color: #dff0d8;
+  color: #3c763d;
 }
 
 .warning {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
-  background-color: rgba(199, 113, 42, 0.783);
+  padding: 3px;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
 }
 
 .danger {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
-  background-color: rgba(202, 38, 38, 0.775);
+  padding: 3px;
+  background-color: #f2dede;
+  color: #a94442;
 }
 
 .mark {
-  padding: 0.3em;
-  font-size: 85%;
   border-radius: 3px;
+  padding: 3px;
   background-color: rgba(229, 229, 47, 0.726);
+  color: #eee;
 }
 
 /* 修改水平分隔线的样式 */
