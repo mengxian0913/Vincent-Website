@@ -2,7 +2,7 @@
 title: "如何使用 C 語言實作Linked List"
 date: 2023-11-26T22:13:35+08:00
 draft: false
-tags: ["C", "algorithm"]
+tags: ["C", "ALGORITHM"]
 ---
 
 ## 前言

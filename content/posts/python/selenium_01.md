@@ -2,7 +2,7 @@
 title: "從零開始 selenium 01"
 date: 2023-09-11T15:42:56+08:00
 draft: false
-tags: ["python", "selenium", "爬蟲"]
+tags: ["PYTHON", "SELENIUM", "爬蟲"]
 ---
 
 ## 前言

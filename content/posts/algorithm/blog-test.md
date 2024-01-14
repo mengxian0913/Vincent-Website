@@ -2,7 +2,7 @@
 title: "計概作業 5 演算法十八般武藝"
 date: 2023-08-08T22:49:50+08:00
 draft: false
-tags: ["演算法", "c++"]
+tags: ["演算法", "C++"]
 ---
 
 ## [704. Binary Search](https://leetcode.com/problems/binary-search/)

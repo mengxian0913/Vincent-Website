@@ -2,7 +2,7 @@
 title: "Jquery Attr 函式介紹"
 date: 2023-08-23T18:03:33+08:00
 draft: false
-tags: ['jquery', 'javascript', 'front-end']
+tags: ['JQUERY', 'JAVASCRIPT', 'FRONT-END']
 ---
 
 attr 是 jQuery 中的方法，用於獲取或設置元素的屬性值。attr 代表 "attribute"，即元素的屬性。這個方法允許您操作元素的 HTML 屬性，例如 <span class="info">**class、id、href、src**</span> 等。

@@ -2,7 +2,7 @@
 title: "Neovim setting scss to css"
 date: 2023-12-17T23:08:04+08:00
 draft: false
-tags: ["neovim", "scss", "css"]
+tags: ["NEOVIM", "SCSS", "CSS"]
 ---
 
 ## 引言

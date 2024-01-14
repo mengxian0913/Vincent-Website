@@ -17,6 +17,30 @@
   border: none;
 }
 
+#single-tags {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+#single-tags li {
+  font-size: 14px;
+  margin: 5px;
+  background-color: #3498db; /* 使用其中一個標籤顏色 */
+  color: #ffffff; /* 字體顏色 */
+  padding: 0px 7px; /* 調整 padding */
+  border-radius: 15px; /* 調整 border-radius */
+  cursor: pointer; /* 提示可點擊 */
+  transition: background-color 0.3s ease; /* 添加漸變效果 */
+}
+#single-tags li:hover {
+  background-color: #2980b9; /* 滑鼠懸停時的背景顏色 */
+}
+
 blockquote {
   border-radius: 10px;
   padding: 2px 10px;

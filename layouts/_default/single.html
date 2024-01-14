@@ -1,73 +1,100 @@
-{{ define "title" }}
-    {{ .Title }} - Vincent's Blog
-{{ end }}
+{{ define "title" }} {{ .Title }} - Vincent's Blog {{ end }} {{ define "css" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/single/single.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css" />
+<link
+  rel="stylesheet"
+  href="{{ .Site.BaseURL }}css/partials/search/search.css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ .Site.BaseURL }}css/shortcodes/spoiler/spoiler.css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ .Site.BaseURL }}css/shortcodes/table/table.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ .Site.BaseURL }}css/partials/catalog/catalog.css"
+/>
+{{ end }} {{ define "main" }}
+<div id="single-container" class="move-left">
+  <article>
+    <br />
+    <h1>{{.Title}}</h1>
 
-{{ define "css" }}  
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/single/single.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/search/search.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/shortcodes/spoiler/spoiler.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/shortcodes/table/table.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/partials/catalog/catalog.css">
-{{ end }}
-
-
-{{ define "main" }}
-  <div id="single-container"  class= "move-left">
-    <article>
-      <br>
-      <h1>{{.Title}}</h1>
-
-      <div style="color: grey">
-        {{ dateFormat "Monday, Jan 2, 2006" .Date }} {{if
-        .Params.author}}Author: {{.Params.Author}}{{end}}
-      </div>
-
-      <div id="markdown-content">{{.Content}}</div>
-    </article>
-  </div>
-
-  <!-- To top Arrow -->
-  <div class="to-top">
-    <div class="imgcontainer">
-      <img src="{{ .Site.BaseURL }}/images/arrow-up-svgrepo-com.svg" alt="ToTopArrow" id="ToTopArrow">
+    <div style="color: grey">
+      {{ dateFormat "Monday, Jan 2, 2006" .Date }} {{if .Params.author}}Author:
+      {{.Params.Author}}{{end}}
     </div>
+
+    <ul id="single-tags">
+      {{ $tagsData := .Site.Data.json.tags }} {{ range .Params.tags }} {{$tag :=
+      . }} {{ $background := index (index $tagsData $tag) "background" }} {{
+      $fontcolor := index (index $tagsData $tag) "text" }} {{ $hover:= index
+      (index $tagsData $tag) "hover"}}
+      <li
+        style="background-color: {{ $background }}; color: {{ $fontcolor }};"
+        onmouseover="this.style.backgroundColor='{{ $hover }}';"
+        onmouseout="this.style.backgroundColor='{{ $background }}';"
+      >
+        {{ $tag }}
+      </li>
+      {{ end }}
+    </ul>
+
+    <div id="markdown-content">{{.Content}}</div>
+  </article>
+</div>
+
+<!-- To top Arrow -->
+<div class="to-top">
+  <div class="imgcontainer">
+    <img
+      src="{{ .Site.BaseURL }}/images/arrow-up-svgrepo-com.svg"
+      alt="ToTopArrow"
+      id="ToTopArrow"
+    />
   </div>
-{{ end }}
+</div>
+{{ end }} {{ define "js" }}
+<!-- Catalog -->
+<script src="{{ .Site.BaseURL }}/js/catalog.js"></script>
+<script
+  type="text/javascript"
+  id="MathJax-script"
+  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script type="module" src="{{ .Site.BaseURL }}js/swiper.mjs"></script>
 
-{{ define "js" }}
-  <!-- Catalog -->
-  <script src="{{ .Site.BaseURL }}/js/catalog.js"></script>
-  <script
-    type="text/javascript"
-    id="MathJax-script"
-    async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script type="module" src="{{ .Site.BaseURL }}js/swiper.mjs"></script>
+<script src="{{ .Site.BaseURL }}/js/single.js"></script>
+<script src="{{ .Site.BaseURL }}/js/prism.js "></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/spoiler.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
 
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-  <script src="{{ .Site.BaseURL }}/js/single.js"></script>
-  <script src="{{ .Site.BaseURL }}/js/prism.js "></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
-  <script src="{{ .Site.BaseURL }}js/spoiler.js"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ["$", "$"],
-          ["\\(", "\\)"],
-        ],
-      },
-    };
-  </script>
+<script src="{{ .Site.BaseURL }}js/shortcode/block.js"></script>
 
-  <script
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
-  ></script>
 {{ end }}

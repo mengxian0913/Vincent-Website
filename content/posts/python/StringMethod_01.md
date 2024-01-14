@@ -2,7 +2,7 @@
 title: "淺談 Python String .find() 函式"
 date: 2023-09-04T00:00:13+08:00
 draft: false
-tags: ["python"]
+tags: ["PYTHON"]
 ---
 
 ## .find(val)

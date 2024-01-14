@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "gray-matter": "^4.0.3",
+    "i": "^0.3.7",
+    "npm": "^10.3.0",
     "swiper": "^10.1.0",
     "toml": "^3.0.0"
   },

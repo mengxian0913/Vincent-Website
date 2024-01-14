@@ -1,50 +1,36 @@
-{{ define "title" }}
-    Articles List - Vincent's Blog
-{{ end }}
+{{ define "title" }} Articles List - Vincent's Blog {{ end }} {{ define "css" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css" />
+{{ end }} {{ define "main" }}
+<div id="list-container" class="move-left">
+  <div class="posts-container">
+    <br />
+    <br />
+    <br />
+    <ul>
+      {{ range .Paginator.Pages}} {{ if and (eq .Section "posts") (not .Draft)
+      }}
+      <li>
+        <a href="{{ .Permalink }}">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Date.Format "2006-01-02" }}</p>
+        </a>
+      </li>
+      {{ end }} {{ end }}
+    </ul>
 
-
-{{ define "css" }}
-     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/list/list.css">
-{{ end }}
-
-
-{{ define "main" }}
-     <div id="list-container" class="move-left">
-          <div class="posts-container">
-               <br>
-               <br>
-               <br>
-               <ul>
-                    {{ range .Paginator.Pages}}
-                         {{ if eq .Section "posts" }}
-                              <li>
-                                   <a href="{{ .Permalink }}">
-                                        <h2>{{ .Title }}</h2>
-                                        <p>{{ .Date.Format "2006-01-02" }}</p>
-                                   </a>
-                              </li>
-                         {{ end }}
-                    {{ end }}
-               </ul>
-
-               <div class="prev-next-pages">
-
-                    {{ if .Paginator.HasPrev }}
-                         <button>
-                              <a href="{{ .Paginator.Prev.URL }}">Prev</a>
-                         </button>
-                    {{ end }}
-                    
-                    {{ if .Paginator.HasNext }}
-                         <button>
-                              <a href="{{ .Paginator.Next.URL }}">Next</a>
-                         </button>
-                    {{ end }}
-               </div>
-          </div>
-     </div>
-{{ end }}
-
-{{ define "js" }}
-     <script src="{{ .Site.BaseURL }}/js/list.js"></script>
+    <div class="prev-next-pages">
+      {{ if .Paginator.HasPrev }}
+      <button>
+        <a href="{{ .Paginator.Prev.URL }}">Prev</a>
+      </button>
+      {{ end }} {{ if .Paginator.HasNext }}
+      <button>
+        <a href="{{ .Paginator.Next.URL }}">Next</a>
+      </button>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }} {{ define "js" }}
+<script src="{{ .Site.BaseURL }}/js/list.js"></script>
 {{ end }}

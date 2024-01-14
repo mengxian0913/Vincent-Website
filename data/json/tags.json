@@ -1,0 +1,82 @@
+{
+  "C++": {
+    "background": "#3498db",
+    "text": "#ffffff",
+    "hover": "#2980b9"
+  },
+  "C": {
+    "background": "#2ecc71",
+    "text": "#ffffff",
+    "hover": "#27ae60"
+  },
+  "ALGORITHM": {
+    "background": "#e74c3c",
+    "text": "#ffffff",
+    "hover": "#c0392b"
+  },
+  "演算法": {
+    "background": "#9b59b6",
+    "text": "#ffffff",
+    "hover": "#8e44ad"
+  },
+  "旅遊": {
+    "background": "#2c3e50",
+    "text": "#ffffff",
+    "hover": "#34495e"
+  },
+  "參訪活動": {
+    "background": "#f39c12",
+    "text": "#000000",
+    "hover": "#d35400"
+  },
+  "逢甲大學": {
+    "background": "#1abc9c",
+    "text": "#ffffff",
+    "hover": "#16a085"
+  },
+  "NEOVIM": {
+    "background": "#e67e22",
+    "text": "#ffffff",
+    "hover": "#d35400"
+  },
+  "SCSS": {
+    "background": "#bdc3c7",
+    "text": "#000000",
+    "hover": "#95a5a6"
+  },
+  "CSS": {
+    "background": "#ecf0f1",
+    "text": "#000000",
+    "hover": "#bdc3c7"
+  },
+  "JQUERY": {
+    "background": "#3498db",
+    "text": "#ffffff",
+    "hover": "#2980b9"
+  },
+  "JAVASCRIPT": {
+    "background": "#27ae60",
+    "text": "#ffffff",
+    "hover": "#2ecc71"
+  },
+  "FRONT-END": {
+    "background": "#c0392b",
+    "text": "#ffffff",
+    "hover": "#e74c3c"
+  },
+  "PYTHON": {
+    "background": "#8e44ad",
+    "text": "#ffffff",
+    "hover": "#9b59b6"
+  },
+  "SELENIUM": {
+    "background": "#34495e",
+    "text": "#ffffff",
+    "hover": "#2c3e50"
+  },
+  "爬蟲": {
+    "background": "#d35400",
+    "text": "#ffffff",
+    "hover": "#e74c3c"
+  }
+}
